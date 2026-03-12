@@ -1,0 +1,22 @@
+{
+  "enabled": true,
+  "eyebrow": "Service Areas",
+  "title": "Areas We Serve",
+  "subtitle": "We provide renewable energy solutions across Ireland. Find your local service area below.",
+  "bannerImage": "/images/hero/hero-solar-panels.webp",
+  "locations": [
+    {
+      "slug": "dublin",
+      "name": "Dublin",
+      "title": "Solar Panels Dublin | Solar Installation & PV Systems",
+      "description": "<p>We serve Dublin and the surrounding areas with professional solar panel installation, battery storage, EV chargers, and heat pump solutions.</p>",
+      "image": "/images/hero/hero-solar-panels.webp",
+      "services": ["Solar Panels", "Battery Storage", "EV Chargers", "Heat Pumps"],
+      "highlights": [
+        { "value": "500+", "label": "Dublin Installs" },
+        { "value": "€2,100", "label": "SEAI Grant" },
+        { "value": "70%", "label": "Bill Savings" }
+      ]
+    }
+  ]
+}

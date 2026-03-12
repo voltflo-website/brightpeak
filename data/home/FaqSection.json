@@ -1,0 +1,192 @@
+{
+  "enabled": true,
+  "eyebrow": "Bright Peak Energy",
+  "title": "Solar Guide",
+  "subtitle": "No silly questions here —just straight answers",
+  "categories": [
+    {
+      "slug": "the-basics-of-solar",
+      "title": "The Basics of Solar",
+      "description": "Learn the basics of solar energy, how it works, and whether your home is a good fit."
+    },
+    {
+      "slug": "costs-financing",
+      "title": "Costs & Financing",
+      "description": "Understand the costs of going solar, available grants and incentives, and how to finance your installation."
+    },
+    {
+      "slug": "installation-process",
+      "title": "Installation & Process",
+      "description": "Everything you need to know about what happens before, during, and after your solar installation."
+    },
+    {
+      "slug": "performance-maintenance",
+      "title": "Performance & Maintenance",
+      "description": "Find out how solar panels perform in different weather, what maintenance is needed, and how net metering works."
+    },
+    {
+      "slug": "battery-grid",
+      "title": "Battery & Grid",
+      "description": "Learn about battery storage, backup power during outages, and how solar works with the electricity grid."
+    },
+    {
+      "slug": "company-warranty",
+      "title": "Company & Warranty",
+      "description": "Find out about our qualifications, warranties, insurance, and how to get started with your project."
+    }
+  ],
+  "items": [
+    {
+      "question": "Solar: How does it all work?",
+      "answer": "<p>To make Solar work for you home or business you ned Solar Panels, an Inverter and (optional) Battery Storage.</p><p></p><p>Here's how all of that works together:</p><p></p><p><strong>☀️ Solar Panels</strong></p><ul><li><p>Capture sunlight and generate <em>DC electricity </em>(direct current)</p></li><li><p>Raw electricity that can't be used directly in your home as-is</p></li><li><p>Output varies with light levels throughout the day</p></li></ul><p></p><p><strong>⚡ Inverter</strong></p><ul><li><p>The \"brain\" of the system</p></li><li><p>Converts DC electricity from the panels into <em>AC electricity</em> (alternating current) — which is what your home appliances run on</p></li><li><p>Also manages the flow of electricity between panels, battery, home, and grid</p></li><li><p>Modern hybrid inverters handle everything in one unit</p></li></ul><p></p><p><strong>🔋 Battery</strong></p><ul><li><p>Stores excess electricity generated during the day that your home isn't using in that moment</p></li><li><p>At night (or on cloudy days) when panels aren't producing enough, the battery discharges to power your home</p></li><li><p>Without a battery, unused daytime electricity goes straight to the grid</p></li></ul><p></p>",
+      "category": "the-basics-of-solar"
+    },
+    {
+      "question": "Is my home a good candidate for solar?",
+      "answer": "Most homes are good candidates if they have a south-, east-, or west-facing roof with minimal shading, in good structural condition. A site assessment will confirm your home's solar potential.",
+      "category": "the-basics-of-solar"
+    },
+    {
+      "question": "How long do solar panels last?",
+      "answer": "Most panels are warrantied for 25–30 years and often perform well beyond that. Degradation is typically less than 0.5% per year.",
+      "category": "installation-process"
+    },
+    {
+      "question": "Where do you work?",
+      "answer": "We're based in Dublin but we cover all of Ireland — from Dublin to Cork, Galway, Limerick, and everywhere in between. If you're not sure, just give us a shout and we'll let you know!",
+      "category": "company-warranty"
+    },
+    {
+      "question": "What are your hours?",
+      "answer": "We're normally around 8am – 5pm, but we actually offer a 24-hour service if you need us. We're always just a phone call away.",
+      "category": "company-warranty"
+    },
+    {
+      "question": "How much does a solar installation cost?",
+      "answer": "Costs vary based on system size, roof complexity, and equipment. Most residential systems range from €8,000–€18,000 before incentives and SEAI grants.",
+      "category": "costs-financing"
+    },
+    {
+      "question": "How much will I actually save?",
+      "answer": "Most of our customers save around €2,000 a year on their energy bills — some even more! With a well-designed system, you could cut your bills by up to 70%. Not bad, right?",
+      "category": "costs-financing"
+    },
+    {
+      "question": "What SEAI grants are available?",
+      "answer": "The SEAI offers grants of up to €2,100 for solar PV panels and €600 for battery storage. We handle all the grant paperwork for you, making the process hassle-free.",
+      "category": "costs-financing"
+    },
+    {
+      "question": "What incentives or tax credits are available?",
+      "answer": "The SEAI (Sustainable Energy Authority of Ireland) offers grants for solar PV, battery storage, and heat pumps. Many homeowners can access up to €2,100 for solar panels alone. We guide you through all available incentives to maximise your savings.",
+      "category": "costs-financing"
+    },
+    {
+      "question": "What financing options do you offer?",
+      "answer": "Options typically include cash purchase, solar loans, and flexible payment plans. Each has different ownership and savings implications — we'll help you find the best fit for your budget.",
+      "category": "costs-financing"
+    },
+    {
+      "question": "How long until I break even?",
+      "answer": "Most homeowners see a payback period of 5–8 years, depending on local electricity rates, system size, and financing. After that, it's essentially free electricity.",
+      "category": "costs-financing"
+    },
+    {
+      "question": "What does the installation process look like?",
+      "answer": "It typically involves a site assessment, system design, permitting, installation (usually 1–2 days), utility interconnection, and final inspection — often 4–8 weeks start to finish.",
+      "category": "installation-process"
+    },
+    {
+      "question": "How long does it take to install?",
+      "answer": "Most home installs are done in just 1-2 days. We turn up on time, keep everything spotless, and get you generating your own power before you know it.",
+      "category": "installation-process"
+    },
+    {
+      "question": "Will installation damage my roof?",
+      "answer": "No. Professional installers use flashing and mounting hardware designed to maintain your roof's integrity. We offer a roof penetration warranty for complete peace of mind.",
+      "category": "installation-process"
+    },
+    {
+      "question": "Do I need to be home during installation?",
+      "answer": "You don't need to be present the whole time, but someone should be available at the start and end of the installation day.",
+      "category": "installation-process"
+    },
+    {
+      "question": "How will I know who's turning up at my house?",
+      "answer": "Our team always arrive with ID badges, in clean uniform, and ready to go. If you're ever unsure, just call the office and we'll confirm who's on the way.",
+      "category": "installation-process"
+    },
+    {
+      "question": "Does solar work in cloudy weather?",
+      "answer": "<p>Yes! Solar panels work with daylight, not just direct sunshine. Ireland gets plenty of diffused light even on overcast days. While output is lower than on a sunny day, modern panels are highly efficient and still generate meaningful electricity year-round.</p>",
+      "category": "the-basics-of-solar"
+    },
+    {
+      "question": "What happens on cloudy days or at night?",
+      "answer": "Panels still generate some electricity on cloudy days. At night, you draw from the grid or a battery storage system. With a well-sized battery, you can use your stored solar energy through the evening.",
+      "category": "performance-maintenance"
+    },
+    {
+      "question": "Do solar panels require maintenance?",
+      "answer": "Very little. Occasional cleaning and an annual inspection are typically all that's needed. Most issues are caught through remote monitoring, so problems are rare and quickly resolved.",
+      "category": "performance-maintenance"
+    },
+    {
+      "question": "What is net metering?",
+      "answer": "Net metering (or micro-generation export) lets you send excess solar energy back to the grid in exchange for bill credits, effectively using the grid as a 'battery.' In Ireland, the Clean Export Guarantee allows you to earn for every kWh you export.",
+      "category": "battery-grid"
+    },
+    {
+      "question": "Do I need a battery?",
+      "answer": "<p><em>Good question</em></p><p>You've taken the step of installing solar panels — or you're seriously thinking about it. Now comes the next question almost every homeowner asks: do I need a battery too? The honest answer is: it depends. But for many Irish households, the answer is a resounding yes. Here's why.</p><h3><strong>What Does a Solar Battery Actually Do?</strong></h3><p>Solar panels generate electricity during daylight hours — typically between 9am and 4pm. But most Irish households use the most electricity in the evenings, when panels produce little or nothing. Without a battery, any excess electricity your panels generate during the day gets exported to the grid. With a battery, that surplus energy is stored and ready to use when you need it most.</p><h3><strong>When a Battery Makes a Lot of Sense</strong></h3><p>A battery is likely a great investment for you if:</p><p>•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You're out of the house during the day — if nobody is home while the panels are generating, most of that energy would otherwise go straight to the grid for a low return.</p><p>•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You use a lot of electricity in the evenings — cooking, charging an EV, running appliances after work.</p><p>•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You want to reduce your reliance on the grid — and protect yourself from rising electricity prices.</p><p>•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You have a larger solar system — more panels means more surplus to store.</p><p>•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You're interested in backup power — some batteries can keep your home running during a grid outage.</p><p>&nbsp;</p><h3><strong>When a Battery is Less Essential</strong></h3><p>A battery may be less of a priority if someone is at home throughout the day using electricity as it's generated, or if you're working with a tighter budget. In that case, solar panels alone still deliver strong returns and you can always add a battery later.</p>",
+      "category": "the-basics-of-solar"
+    },
+    {
+      "question": "Should I add battery storage?",
+      "answer": "Batteries are ideal if you want backup power during outages, have time-of-use utility rates, or want to maximise energy independence. They add cost but significantly increase resilience and self-consumption of your solar energy.",
+      "category": "the-basics-of-solar"
+    },
+    {
+      "question": "What happens during a power outage?",
+      "answer": "Without a battery, grid-tied systems shut off for safety. With a battery backup, you can keep essential circuits running — lights, fridge, internet, and more — until the grid comes back online.",
+      "category": "battery-grid"
+    },
+    {
+      "question": "Are you properly qualified?",
+      "answer": "Absolutely! We are SEAI Approved Installers with over 20 years of experience. We hold all the necessary certifications and qualifications. You're in very safe hands.",
+      "category": "company-warranty"
+    },
+    {
+      "question": "Are you licensed and insured?",
+      "answer": "Yes — we carry full public liability insurance and worker's compensation coverage. We are SEAI registered and fully compliant with all Irish regulations. Always ask any installer to verify — we're happy to provide proof.",
+      "category": "company-warranty"
+    },
+    {
+      "question": "Do you use sub-contractors?",
+      "answer": "Nope, never! Every single person who works on your home is part of our own team. We believe in consistency and quality — and that means doing the job ourselves.",
+      "category": "company-warranty"
+    },
+    {
+      "question": "Do you guarantee your work?",
+      "answer": "Of course! We offer a lifetime workmanship guarantee on everything we do. We stand behind our work 100%.",
+      "category": "company-warranty"
+    },
+    {
+      "question": "What warranties do you offer?",
+      "answer": "A typical package includes a 25-year panel performance warranty, 10–12 year equipment warranty, and our lifetime workmanship guarantee. You're covered from every angle.",
+      "category": "company-warranty"
+    },
+    {
+      "question": "How do I get started?",
+      "answer": "Schedule a free consultation or site assessment. We'll evaluate your energy usage, roof, and goals, then design a system tailored to your home. Just give us a call or fill in the contact form — it's that simple.",
+      "category": "the-basics-of-solar"
+    },
+    {
+      "question": "What equipment do I need?",
+      "answer": "<p>To make Solar work for your home or business you need Solar Panels, an Inverter and a (optional) battery storage.</p><p>See the Solar Guide item \"How does it all work?\" for more detail.</p><p></p>",
+      "category": "the-basics-of-solar"
+    }
+  ],
+  "bannerImage": "/images/solar-guide_background.webp",
+  "faqStyle": "portal"
+}

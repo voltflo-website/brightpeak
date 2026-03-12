@@ -1,0 +1,25 @@
+# dependencies
+node_modules/
+
+# next.js build
+.next/
+out/
+
+# misc
+.DS_Store
+*.pem
+*.tsbuildinfo
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# env files
+.env
+.env*.local
+
+# Replit
+.replit-artifact/
+.replit
+replit.nix

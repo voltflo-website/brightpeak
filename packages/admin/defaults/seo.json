@@ -1,0 +1,216 @@
+{
+  "siteUrl": "https://www.brightpeak-energy.com",
+  "siteName": "BrightPeak Energy",
+  "defaultTitle": "Solar Panels Ireland | Renewable Energy Solutions | BrightPeak Energy",
+  "defaultDescription": "Ireland's trusted renewable energy installer. Solar panels, battery storage, EV chargers & commercial solar. SEAI approved, 20+ years experience, 2,800+ installations.",
+  "defaultImage": "/images/hero/hero-solar-panels.webp",
+  "locale": "en_IE",
+  "twitterHandle": "",
+  "business": {
+    "name": "BrightPeak Energy",
+    "legalName": "BrightPeak Energy Limited",
+    "type": "LocalBusiness",
+    "url": "https://www.brightpeak-energy.com",
+    "logo": "/images/brightpeak-energy-logo-v2.png",
+    "description": "Ireland's trusted renewable energy installer providing solar panels, battery storage, EV chargers, heat pumps, and commercial solar solutions for homes and businesses. SEAI approved with 20+ years experience.",
+    "foundingYear": 2006,
+    "phone": "+35312070006",
+    "email": "info@brightpeak-energy.com",
+    "address": {
+      "street": "",
+      "city": "Dublin",
+      "region": "Dublin",
+      "postalCode": "",
+      "country": "IE"
+    },
+    "geo": {
+      "latitude": 53.3498,
+      "longitude": -6.2603
+    },
+    "openingHours": ["Mo-Fr 08:00-17:00"],
+    "priceRange": "€€",
+    "areaServed": "Ireland",
+    "sameAs": [
+      "https://www.facebook.com/brightpeakenergy",
+      "https://www.youtube.com/@brightpeakenergy"
+    ]
+  },
+  "pages": {
+    "/": {
+      "title": "Solar Panels Ireland | Renewable Energy Solutions | BrightPeak Energy",
+      "description": "Ireland's trusted renewable energy installer. Solar panels, battery storage, EV chargers & commercial solar. SEAI approved, 20+ years experience, 2,800+ installations.",
+      "keywords": "solar panels Ireland, solar energy, renewable energy, battery storage, EV chargers, BrightPeak Energy",
+      "ogImage": "/images/hero/hero-solar-panels.webp"
+    },
+    "/about": {
+      "title": "Renewable Energy Experts Ireland | 20+ Years Experience | BrightPeak Energy",
+      "description": "Learn about BrightPeak Energy, Ireland's trusted renewable energy installer with over 20 years experience. SEAI approved with over 2,800 installations completed.",
+      "keywords": "about BrightPeak Energy, renewable energy company Ireland, SEAI approved installer, renewable energy experts",
+      "ogImage": "/images/hero/hero-solar-panels.webp"
+    },
+    "/solar-panels": {
+      "title": "Solar Panels Ireland | Solar PV Installation & Systems | BrightPeak Energy",
+      "description": "Professional solar panel installation across Ireland. Save up to 70% on electricity bills with SEAI grants available. Free quote available.",
+      "keywords": "solar panels Ireland, solar PV systems, residential solar, solar panel installation Dublin, SEAI grants solar",
+      "ogImage": "/images/services/solar-panels.webp"
+    },
+    "/battery-storage": {
+      "title": "Battery Storage Ireland | Home Solar Battery Systems | BrightPeak Energy",
+      "description": "Home battery storage systems. Store excess solar energy, reduce grid dependence, and power your home 24/7. SEAI approved installers in Ireland.",
+      "keywords": "battery storage Ireland, home battery, solar battery storage, energy storage systems",
+      "ogImage": "/images/services/battery-storage.webp"
+    },
+    "/commercial-solar": {
+      "title": "Commercial Solar Ireland | Business Solar PV Installation | BrightPeak Energy",
+      "description": "Commercial solar PV installations for Irish businesses. Reduce operating costs, meet sustainability targets. 2,800+ installations completed.",
+      "keywords": "commercial solar Ireland, business solar panels, commercial solar installation, corporate solar energy",
+      "ogImage": "/images/hero/hero-solar-panels.webp"
+    },
+    "/ev-chargers": {
+      "title": "EV Charger Installation Ireland | Home & Commercial Charging | BrightPeak Energy",
+      "description": "Professional EV charger installation for homes and businesses across Ireland. Charge your electric vehicle with clean solar energy.",
+      "keywords": "EV charger installation Ireland, electric vehicle charger, home EV charger, EV charging station Dublin",
+      "ogImage": "/images/services/ev-charger.webp"
+    },
+    "/grants": {
+      "title": "SEAI Solar Grants Ireland 2025 | Up to €2,100 Available | BrightPeak Energy",
+      "description": "Find out about available SEAI grants and funding options for solar panels in Ireland. We guide you through the process to maximise your savings.",
+      "keywords": "SEAI grants solar, solar panel grants Ireland, renewable energy grants, government grants solar Ireland",
+      "ogImage": "/images/hero/hero-solar-panels.webp"
+    },
+    "/finance": {
+      "title": "Solar Finance Ireland | Flexible Payment Plans | BrightPeak Energy",
+      "description": "Affordable solar panel finance options. Flexible payment plans, no large upfront cost. Go solar today with easy monthly payments.",
+      "keywords": "solar panel finance, solar payment plans, affordable solar panels, solar finance options Ireland",
+      "ogImage": "/images/hero/hero-solar-panels.webp"
+    },
+    "/funding-options": {
+      "title": "Commercial Solar Funding | SEAI Grants & Tax Relief | BrightPeak Energy",
+      "description": "Business funding options for commercial solar. SEAI grants, ACCA tax relief, and support schemes to reduce upfront costs for your business.",
+      "keywords": "business solar funding Ireland, commercial solar grants, SEAI business grants, business energy grants",
+      "ogImage": "/images/hero/hero-solar-panels.webp"
+    },
+    "/contact": {
+      "title": "Free Solar Consultation Ireland | Get a Quote | BrightPeak Energy",
+      "description": "Contact BrightPeak Energy for a free solar consultation. Call +353 1 207 0006, email info@brightpeak-energy.com. Dublin, Ireland.",
+      "keywords": "contact BrightPeak Energy, solar consultation Ireland, solar panel quote Dublin, renewable energy consultation",
+      "ogImage": "/images/hero/hero-solar-panels.webp"
+    },
+    "/testimonials": {
+      "title": "Solar Panel Reviews Ireland | 1,000+ Customer Reviews | BrightPeak Energy",
+      "description": "Read 1,000+ reviews from happy BrightPeak Energy customers. See why homeowners and businesses across Ireland trust us for solar installations.",
+      "keywords": "BrightPeak Energy reviews, solar panel reviews Ireland, customer testimonials, solar installer reviews",
+      "ogImage": "/images/hero/hero-solar-panels.webp"
+    },
+    "/privacy-policy": {
+      "title": "Privacy Policy | BrightPeak Energy",
+      "description": "Read the BrightPeak Energy privacy policy. Learn how we collect, use, and protect your personal data in compliance with GDPR.",
+      "keywords": "",
+      "ogImage": "/images/hero/hero-solar-panels.webp"
+    },
+    "/cookies": {
+      "title": "Cookie Policy | BrightPeak Energy",
+      "description": "Learn about how BrightPeak Energy uses cookies. Manage your cookie preferences and understand our cookie usage.",
+      "keywords": "",
+      "ogImage": "/images/hero/hero-solar-panels.webp"
+    },
+    "/underfloor-heating": {
+      "title": "Underfloor Heating Ireland | Installation & Systems | BrightPeak Energy",
+      "description": "Professional underfloor heating installation across Ireland. Energy-efficient heating solutions for homes and businesses. SEAI approved installers with 20+ years experience.",
+      "keywords": "underfloor heating Ireland, underfloor heating installation, wet underfloor heating, underfloor heating Dublin, energy efficient heating",
+      "ogImage": "/images/hero/hero-solar-panels.webp"
+    },
+    "/heat-pumps": {
+      "title": "Heat Pumps Ireland | Air to Water & Geothermal Installation | BrightPeak Energy",
+      "description": "Expert heat pump installation across Ireland. Air to water, geothermal, and exhaust air heat pumps for new builds and retrofits. SEAI approved installers with 20+ years experience.",
+      "keywords": "heat pumps Ireland, air to water heat pump, geothermal heat pump, exhaust air heat pump, heat pump installation Dublin, SEAI heat pump grant",
+      "ogImage": "/images/hero/hero-solar-panels.webp"
+    },
+    "/our-work": {
+      "title": "Solar Installation Projects Ireland | Case Studies | BrightPeak Energy",
+      "description": "Browse our portfolio of completed solar, battery storage, heat pump, and EV charger projects across Ireland. Over 2,800 installations completed.",
+      "keywords": "solar projects Ireland, renewable energy portfolio, solar installation case studies, BrightPeak Energy projects",
+      "ogImage": "/images/case-studies/residential-project.webp"
+    },
+    "/news": {
+      "title": "Solar Energy News Ireland | Industry Updates & Guides | BrightPeak Energy",
+      "description": "Stay up to date with the latest solar energy news, SEAI grant updates, and expert advice from BrightPeak Energy.",
+      "keywords": "solar energy news Ireland, SEAI grants news, renewable energy updates, solar panel articles",
+      "ogImage": "/images/hero/hero-solar-panels.webp"
+    },
+    "/solar-guide": {
+      "title": "Solar Panel Guide Ireland | FAQs & Expert Advice | BrightPeak Energy",
+      "description": "Your complete solar guide — get answers to common questions about solar panels, battery storage, SEAI grants, and installation timelines. Expert advice from BrightPeak Energy.",
+      "keywords": "solar guide Ireland, solar energy questions, SEAI grant guide, battery storage questions, solar installation guide",
+      "ogImage": "/images/hero/hero-solar-panels.webp"
+    },
+    "/services": {
+      "title": "Solar & Renewable Energy Services Ireland | BrightPeak Energy",
+      "description": "Explore all BrightPeak Energy services: solar panels, battery storage, EV chargers, heat pumps, underfloor heating, and commercial solar solutions across Ireland.",
+      "keywords": "renewable energy services Ireland, solar panel services, battery storage services, EV charger installation, heat pump services",
+      "ogImage": "/images/hero/hero-solar-panels.webp"
+    },
+    "/locations": {
+      "title": "Solar Installers Near You | Service Areas Ireland | BrightPeak Energy",
+      "description": "Find BrightPeak Energy renewable energy services in your area. We serve Dublin, Cork, Galway, and more with solar panels, battery storage, EV chargers, and heat pumps.",
+      "keywords": "solar panels Dublin, solar panels Cork, solar panels Galway, renewable energy Ireland locations, solar installer near me",
+      "ogImage": "/images/hero/hero-solar-panels.webp"
+    },
+    "/news-videos": {
+      "title": "Solar Energy Videos Ireland | Installation Tips & Updates | BrightPeak Energy",
+      "description": "Watch videos and read the latest news about solar energy, installation tips, and project updates from BrightPeak Energy.",
+      "keywords": "solar energy videos, solar installation videos, renewable energy news Ireland",
+      "ogImage": "/images/hero/hero-solar-panels.webp"
+    }
+  },
+  "services": [
+    {
+      "name": "Solar Panel Installation",
+      "description": "Professional residential solar PV system installation across Ireland. Save up to 70% on electricity bills with SEAI grants available.",
+      "url": "/solar-panels",
+      "image": "/images/services/solar-panels.webp",
+      "areaServed": "Ireland",
+      "provider": "BrightPeak Energy"
+    },
+    {
+      "name": "Battery Storage Installation",
+      "description": "Home battery storage systems. Store excess solar energy and power your home 24/7 with SEAI approved installation.",
+      "url": "/battery-storage",
+      "image": "/images/services/battery-storage.webp",
+      "areaServed": "Ireland",
+      "provider": "BrightPeak Energy"
+    },
+    {
+      "name": "EV Charger Installation",
+      "description": "Professional EV charger installation for homes and businesses. Charge your electric vehicle with clean solar energy.",
+      "url": "/ev-chargers",
+      "image": "/images/services/ev-charger.webp",
+      "areaServed": "Ireland",
+      "provider": "BrightPeak Energy"
+    },
+    {
+      "name": "Commercial Solar Solutions",
+      "description": "Commercial and business solar PV installations. Reduce operating costs and meet sustainability targets.",
+      "url": "/commercial-solar",
+      "image": "/images/hero/hero-solar-panels.webp",
+      "areaServed": "Ireland",
+      "provider": "BrightPeak Energy"
+    },
+    {
+      "name": "Underfloor Heating Installation",
+      "description": "Professional underfloor heating installation for homes and businesses across Ireland. Energy-efficient heating solutions with expert installation.",
+      "url": "/underfloor-heating",
+      "image": "/images/hero/hero-solar-panels.webp",
+      "areaServed": "Ireland",
+      "provider": "BrightPeak Energy"
+    },
+    {
+      "name": "Heat Pump Installation",
+      "description": "Expert heat pump installation across Ireland. Air to water, geothermal, and exhaust air heat pumps for new builds and retrofits.",
+      "url": "/heat-pumps",
+      "image": "/images/hero/hero-solar-panels.webp",
+      "areaServed": "Ireland",
+      "provider": "BrightPeak Energy"
+    }
+  ]
+}

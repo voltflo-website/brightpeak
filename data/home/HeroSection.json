@@ -1,0 +1,80 @@
+{
+  "enabled": true,
+  "heroLayout": "diagonal",
+  "mobileLayout": "fullscreen",
+  "showEyebrow": true,
+  "eyebrow": "#1 Certified Solar Panel Installers in Dublin",
+  "eyebrowColor": "#f5ec00",
+  "backgroundImageEnabled": true,
+  "backgroundColor": "#ffffff",
+  "overlayOpacity": 4,
+  "image": {
+    "src": "/images/hero-bg.webp",
+    "alt": "Beautiful Dublin home with solar panels"
+  },
+  "heroAlignment": "center",
+  "wordWrapHeadlines": true,
+  "headlineLines": [
+    "Power Your Home",
+    "With Solar Power",
+    "Save Up To 70% On Energy Bills"
+  ],
+  "headlineFontSizes": {
+    "line1Desktop": "4",
+    "line2Desktop": "4",
+    "line3Desktop": "3",
+    "line1Mobile": "2.5",
+    "line2Mobile": "2.5",
+    "line3Mobile": "2.5"
+  },
+  "headlineColors": {
+    "line1": "#ffffff",
+    "line2": "#f5ec00",
+    "line3": "#ffffff"
+  },
+  "subheadingColor": "#fffff",
+  "subheading": "We are your one-stop-shop in Dublin for advanced clean energy solutions, including Solar panels, EV Chargers, Geothermal heat pumps, and Air-to-water heat pumps.",
+  "cta": [
+    {
+      "label": "Calculate Your Savings",
+      "href": "https://brightpeak.comprehensive.voltflo.ie",
+      "variant": "home"
+    },
+    {
+      "label": "Speak to an Expert",
+      "href": "/contact",
+      "variant": "business"
+    }
+  ],
+  "ctaArrow": "→",
+  "heroBadges": {
+    "showOnMobile": false,
+    "items": [
+      "SEAI Approved",
+      "Lifetime Guarantee"
+    ]
+  },
+  "stats": {
+    "enabled": true,
+    "items": [
+      {
+        "value": "1,000+",
+        "label": "Happy Customers"
+      },
+      {
+        "value": "600+",
+        "label": "Projects Completed"
+      },
+      {
+        "value": "18+",
+        "label": "Years Experience"
+      }
+    ]
+  },
+  "specialBadge": {
+    "enabled": false,
+    "name": "Special Badge",
+    "image": "/images/hero/special-badge.png"
+  },
+  "scrollLabel": "Explore"
+}

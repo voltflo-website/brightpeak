@@ -1,0 +1,65 @@
+{
+  "enabled": true,
+  "hero": {
+    "title": "Cookie Policy",
+    "subtitle": "How BrightPeak Energy uses cookies and similar technologies on our website.",
+    "bannerImage": "/images/services/solar-closeup.webp"
+  },
+  "sections": [
+    {
+      "title": "What Are Cookies?",
+      "body": "Cookies are small text files that are placed on your device when you visit a website. They are widely used to make websites work more efficiently, provide a better user experience, and give website owners useful information about how their site is being used."
+    },
+    {
+      "title": "How We Use Cookies",
+      "body": "BrightPeak Energy (brightpeak-energy.com) uses cookies for the following purposes:",
+      "cookieTypes": [
+        {
+          "title": "Essential Cookies",
+          "desc": "These cookies are necessary for the website to function properly. They enable basic features like page navigation, secure access, and form submissions. The website cannot function without these cookies.",
+          "required": true
+        },
+        {
+          "title": "Analytics Cookies",
+          "desc": "We use analytics cookies to understand how visitors interact with our website. This helps us improve the site experience, identify popular content, and fix any issues. These cookies collect anonymous, aggregated data.",
+          "required": false
+        },
+        {
+          "title": "Functional Cookies",
+          "desc": "These cookies remember your preferences, such as your chosen theme or language settings, to provide a more personalised experience when you return to our site.",
+          "required": false
+        },
+        {
+          "title": "Marketing Cookies",
+          "desc": "These cookies may be set by our advertising partners. They are used to build a profile of your interests and show you relevant advertisements on other websites. They do not directly store personal data.",
+          "required": false
+        }
+      ]
+    },
+    {
+      "title": "Third-Party Cookies",
+      "body": "Some cookies on our website are set by third-party services that appear on our pages. We use third-party services for analytics, social media integration, and advertising. These third parties may set their own cookies subject to their own privacy policies."
+    },
+    {
+      "title": "Managing Cookies",
+      "body": "You can control and manage cookies in several ways:",
+      "bullets": [
+        "Most browsers allow you to refuse or delete cookies through their settings",
+        "You can set your browser to notify you when a cookie is being set",
+        "You can delete cookies that have already been stored on your device"
+      ],
+      "afterBullets": "Please note that disabling cookies may affect the functionality of our website and your user experience."
+    },
+    {
+      "title": "Updates to This Policy",
+      "body": "We may update this Cookie Policy from time to time to reflect changes in technology, regulation, or our business practices. Any updates will be posted on this page with a revised date."
+    },
+    {
+      "title": "Contact Us",
+      "body": "If you have any questions about our use of cookies, please contact us at",
+      "contactEmail": "info@brightpeak-energy.com",
+      "contactPhone": "+353 1 207 0006"
+    }
+  ],
+  "lastUpdated": "This Cookie Policy was last updated in January 2025."
+}

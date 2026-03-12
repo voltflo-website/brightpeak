@@ -1,0 +1,56 @@
+{
+  "enabled": true,
+  "defaultThumbnail": "/images/news/news-default-banner.webp",
+  "sectionTitle": "News & Videos",
+  "eyebrow": "Latest Updates",
+  "title": "News & Videos",
+  "subtitle": "Stay up to date with the latest solar energy news, project updates, and helpful videos from our team.",
+  "newsItems": [
+    {
+      "title": "BrightPeak Energy Completes Largest Commercial Install Yet",
+      "summary": "We've just finished our biggest commercial solar installation to date — a major project for a local Irish business, saving them thousands each year.",
+      "date": "2026-02-01",
+      "url": "",
+      "content": "Our team has completed a record-breaking commercial installation in Dublin. The large-scale system will generate significant savings for the business while reducing their carbon footprint dramatically."
+    },
+    {
+      "title": "SEAI Grants Increase for 2026",
+      "summary": "Great news for homeowners — SEAI grants for solar PV have been updated, making it even more affordable to go solar in Ireland.",
+      "date": "2026-01-15",
+      "url": "",
+      "content": "The Sustainable Energy Authority of Ireland has announced updated grant amounts for residential solar PV installations. Homeowners can now claim up to €2,100 towards their solar system, making the switch to clean energy more affordable than ever."
+    },
+    {
+      "title": "How a Battery Can Make All the Difference",
+      "summary": "Pairing a battery with your solar panels maximises your savings and gives you energy independence. Here's why it matters.",
+      "date": "2026-02-21",
+      "url": "",
+      "content": "Adding a battery to your solar PV system means you can store excess energy generated during the day and use it in the evening when electricity prices are highest. This can significantly increase your self-consumption rate and reduce your reliance on the grid."
+    }
+  ],
+  "videoItems": [
+    {
+      "title": "Do solar panels add to the value of your house?",
+      "summary": "Find out how solar panels can increase your property value.",
+      "image": "",
+      "date": "2026-02-10",
+      "url": "https://youtube.com/shorts/RoHe3owFg6s?si=OykxKEA2MlfhliDY"
+    },
+    {
+      "title": "All about grants",
+      "summary": "Solar is complicated and expensive? Watch our team explain that it doesn't need to be.",
+      "image": "",
+      "date": "2026-02-05",
+      "url": "https://youtube.com/shorts/OBE9ncxkE4w?si=rFqkqrXuZTEjHkis"
+    },
+    {
+      "title": "Learn all about us",
+      "summary": "Learn how to save money by using your solar system strategically throughout the day.",
+      "image": "",
+      "date": "2026-02-15",
+      "url": "https://youtu.be/yxB90djnGSU?si=5FgWJe__OKJ4BW6K"
+    }
+  ],
+  "viewAllLabel": "",
+  "viewAllHref": ""
+}

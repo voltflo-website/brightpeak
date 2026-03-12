@@ -1,0 +1,38 @@
+{
+  "sections": {
+    "navigation": true,
+    "hero": true,
+    "serviceCards": true,
+    "trustBar": false,
+    "video": true,
+    "whyChoose": true,
+    "impact": false,
+    "caseStudies": true,
+    "how": true,
+    "testimonials": true,
+    "testimonialsPage": false,
+    "faq": true,
+    "accreditations": true,
+    "newsVideos": true,
+    "finalCta": true,
+    "footer": true,
+    "custom_new_section": false,
+    "custom_special-offer": false
+  },
+  "order": [
+    "hero",
+    "custom_special-offer",
+    "custom_new_section",
+    "serviceCards",
+    "how",
+    "video",
+    "accreditations",
+    "whyChoose",
+    "testimonials",
+    "testimonialsPage",
+    "caseStudies",
+    "newsVideos",
+    "faq",
+    "finalCta"
+  ]
+}

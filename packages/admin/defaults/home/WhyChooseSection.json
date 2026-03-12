@@ -1,0 +1,26 @@
+{
+  "enabled": true,
+  "eyebrow": "Why Choose Us",
+  "title": "Putting Customers First Since 2006",
+  "description": "BrightPeak are one of Ireland's leading renewable and mechanical installers, specialising in both domestic and commercial projects of any size. From our vast experience we know that every home and family have different requirements. We tailor our renewable systems to match your needs, treating every project as if it was our own home.",
+  "image": {
+    "src": "/images/about/company-van.webp",
+    "alt": "BrightPeak Energy van outside a home with solar panels"
+  },
+  "award": {
+    "icon": "🏆",
+    "title": "Pioneers Since 2006",
+    "subtitle": "Solar & Renewable Energy"
+  },
+  "trustItems": [
+    "✓ SEAI Approved Installer",
+    "✓ Lifetime Workmanship Guarantee",
+    "✓ 20+ Years Experience",
+    "✓ No Sub-Contracting",
+    "✓ Bespoke Energy Solutions"
+  ],
+  "cta": {
+    "label": "Get to Know Us →",
+    "href": "/about"
+  }
+}

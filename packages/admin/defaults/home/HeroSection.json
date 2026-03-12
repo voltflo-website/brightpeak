@@ -1,0 +1,80 @@
+{
+  "enabled": true,
+  "heroLayout": "fullscreen",
+  "mobileLayout": "noimage",
+  "showEyebrow": false,
+  "eyebrow": "Certified Solar Panel Installers",
+  "eyebrowColor": "#009968",
+  "backgroundImageEnabled": true,
+  "backgroundColor": "#ffffff",
+  "overlayOpacity": 5,
+  "image": {
+    "src": "/images/hero-bg.webp",
+    "alt": "Beautiful Irish home with solar panels"
+  },
+  "heroAlignment": "left",
+  "wordWrapHeadlines": false,
+  "headlineLines": [
+    "Power & Heat Your",
+    "Home With The ",
+    "Sun And The Air"
+  ],
+  "headlineFontSizes": {
+    "line1Desktop": "4",
+    "line2Desktop": "4",
+    "line3Desktop": "4",
+    "line1Mobile": "2.5",
+    "line2Mobile": "2.5",
+    "line3Mobile": "2.5"
+  },
+  "headlineColors": {
+    "line1": "#ffffff",
+    "line2": "#fff",
+    "line3": "#009968"
+  },
+  "subheadingColor": "#fffff",
+  "subheading": "We are your one-stop-shop for advanced clean energy solutions, including Solar panels, EV Chargers, Geothermal heat pumps, and Air-to-water heat pumps.",
+  "cta": [
+    {
+      "label": "Get a Free Quote",
+      "href": "https://brightpeak.comprehensive.voltflo.ie",
+      "variant": "home"
+    },
+    {
+      "label": "Speak to an Expert",
+      "href": "/contact",
+      "variant": "business"
+    }
+  ],
+  "ctaArrow": "\u2192",
+  "heroBadges": {
+    "showOnMobile": false,
+    "items": [
+      "SEAI Approved",
+      "Lifetime Guarantee"
+    ]
+  },
+  "stats": {
+    "enabled": true,
+    "items": [
+      {
+        "value": "1,000+",
+        "label": "Happy Customers"
+      },
+      {
+        "value": "2,800+",
+        "label": "Projects Completed"
+      },
+      {
+        "value": "20+",
+        "label": "Years Experience"
+      }
+    ]
+  },
+  "specialBadge": {
+    "enabled": false,
+    "name": "Special Badge",
+    "image": "/images/hero/special-badge.png"
+  },
+  "scrollLabel": "Explore"
+}

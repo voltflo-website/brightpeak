@@ -1,0 +1,34 @@
+{
+  "sections": {
+    "navigation": true,
+    "hero": true,
+    "serviceCards": true,
+    "trustBar": false,
+    "video": true,
+    "whyChoose": true,
+    "impact": false,
+    "caseStudies": true,
+    "how": true,
+    "testimonials": true,
+    "testimonialsPage": false,
+    "faq": true,
+    "accreditations": true,
+    "newsVideos": true,
+    "finalCta": true,
+    "footer": true
+  },
+  "order": [
+    "hero",
+    "serviceCards",
+    "how",
+    "video",
+    "accreditations",
+    "whyChoose",
+    "testimonials",
+    "testimonialsPage",
+    "caseStudies",
+    "newsVideos",
+    "faq",
+    "finalCta"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "enabled": true,
+  "pages": [
+    {
+      "enabled": true,
+      "slug": "new_section",
+      "type": "iframe",
+      "placement": "homepage",
+      "iframeUrl": "https://brightpeak-energy.comprehensive.voltflo.ie",
+      "hero": {
+        "eyebrow": "",
+        "title": "",
+        "subtitle": "",
+        "bannerImage": ""
+      },
+      "content": {
+        "eyebrow": "Assad",
+        "title": "asdasdasd",
+        "cards": []
+      }
+    },
+    {
+      "enabled": false,
+      "slug": "roofing",
+      "type": "section",
+      "placement": "page",
+      "iframeUrl": "https://www.google.com",
+      "hero": {
+        "eyebrow": "Roofing eyebrow",
+        "title": "Roofing",
+        "subtitle": "",
+        "bannerImage": ""
+      },
+      "content": {
+        "eyebrow": "",
+        "title": "",
+        "cards": []
+      }
+    },
+    {
+      "enabled": false,
+      "slug": "special-offer",
+      "type": "image",
+      "placement": "homepage",
+      "iframeUrl": "",
+      "imageUrl": "/images/special-offer.webp",
+      "hero": {
+        "eyebrow": "",
+        "title": "Special Offer",
+        "subtitle": "",
+        "bannerImage": ""
+      },
+      "content": {
+        "eyebrow": "",
+        "title": "",
+        "cards": []
+      }
+    }
+  ]
+}

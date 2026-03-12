@@ -1,0 +1,115 @@
+{
+  "enabled": true,
+  "hero": {
+    "eyebrow": "Trusted Home Solar Installers",
+    "title": "Solar Panel Installation",
+    "subtitle": "Hundreds of homeowners have trusted BrightPeak to power their homes with clean, reliable solar energy.",
+    "bannerImage": "/images/services/solar-panels-modern.webp"
+  },
+  "whySolar": {
+    "eyebrow": "Solar Panels",
+    "title": "A Smart Investment That Pays for Itself",
+    "cards": [
+      {
+        "subHeading": "What is Solar PV?",
+        "paragraph": "Let's start by explaining what it is and how it works. Solar PV (photovoltaic) is a renewable technology that converts sunlight directly into electricity using semiconductor materials, typically silicon, in panels. \"Photo\" means light and \"voltaic\" means electricity. So the panels use the sun's light to make electricity that you can use to power your home.",
+        "image": "/images/services/man-on-roof-solar.webp"
+      },
+      {
+        "subHeading": "How much electricity does it create?",
+        "paragraph": "The panels today are quite efficient. Most houses in Ireland can fit enough panels on their roof to meet a majority of their needs. One thing worth noting is that in the winter you won't generate as much but in the summer you will generate a lot. Ireland has very long days in the summer. Adding a battery will also significantly help you manage your electricity.",
+        "image": "/images/services/men-installing-panels.webp"
+      },
+      {
+        "subHeading": "Why choose BrightPeak Energy?",
+        "paragraph": "As one of Ireland's leading renewable energy installers with over 18 years of experience and 2,800+ completed projects, we deliver bespoke solar solutions tailored to your home. We handle everything from SEAI grants to installation, and all work is done by our own qualified team — no sub-contracting.",
+        "image": "/images/about/company-van.webp"
+      }
+    ],
+    "bullets": [
+      "SEAI Grants Available — up to €1,800 towards your solar system",
+      "Professional installation — smooth, tidy, and on time",
+      "We handle everything — paperwork, installation, and setup",
+      "Lifetime workmanship guarantee for total peace of mind",
+      "Lower your electricity bills every month",
+      "Get paid for surplus power sent back to the grid"
+    ],
+    "enabled": true
+  },
+  "process": {
+    "eyebrow": "Our Process",
+    "title": "From Consultation to Installation",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Free Site Survey",
+        "desc": "We visit your property to assess your roof, energy usage, and advise on the best solar system for your needs"
+      },
+      {
+        "step": "2",
+        "title": "Custom Design",
+        "desc": "We design a bespoke solar PV system tailored to your home for maximum energy generation"
+      },
+      {
+        "step": "3",
+        "title": "Professional Install",
+        "desc": "Our own certified team installs your system — no sub-contracting. Clean, tidy, and on budget"
+      },
+      {
+        "step": "4",
+        "title": "Start Saving",
+        "desc": "Your system goes live and you immediately start generating your own clean electricity"
+      }
+    ],
+    "enabled": true
+  },
+  "included": {
+    "title": "What's Included",
+    "items": [
+      {
+        "title": "Premium Solar Panels",
+        "desc": "Cutting-edge solar technology with 25+ year performance warranty and maximum efficiency",
+        "icon": "☀️"
+      },
+      {
+        "title": "Hybrid Inverter",
+        "desc": "High-efficiency inverters that convert solar energy for home use and battery storage",
+        "icon": "🔌"
+      },
+      {
+        "title": "Full Monitoring",
+        "desc": "Real-time monitoring app so you can track your energy generation and savings",
+        "icon": "📱"
+      },
+      {
+        "title": "SEAI Grant Handling",
+        "desc": "We guide you through the grant process and help you claim up to €1,800",
+        "icon": "📋"
+      },
+      {
+        "title": "Certified Installation",
+        "desc": "Installed by our own Safe Electric certified electricians — no sub-contracting",
+        "icon": "🔒"
+      },
+      {
+        "title": "Lifetime Guarantee",
+        "desc": "We stand over our work with a lifetime workmanship guarantee for your total peace of mind",
+        "icon": "🛡️"
+      }
+    ],
+    "enabled": true
+  },
+  "cta": {
+    "title": "Ready to Go Solar?",
+    "subtitle": "Fill in the quick form to receive your tailored home solar panel installation quote. We also offer a free site survey to advise on the best solar system for your needs.",
+    "primaryButton": {
+      "label": "Get Free Quote",
+      "href": "/contact"
+    },
+    "secondaryButton": {
+      "label": "Learn About Grants",
+      "href": "/grants"
+    },
+    "enabled": true
+  }
+}

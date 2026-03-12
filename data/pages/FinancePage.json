@@ -1,0 +1,71 @@
+{
+  "enabled": true,
+  "hero": {
+    "eyebrow": "Affordable Solar",
+    "title": "Finance Your Solar Installation",
+    "subtitle": "Go solar with flexible payment plans. No large upfront cost required — spread the cost and start saving from day one.",
+    "bannerImage": "/images/services/solar-panels.webp"
+  },
+  "partnership": {
+    "eyebrow": "Flexible Finance Options",
+    "title": "Spread the Cost of Solar",
+    "paragraphs": [
+      "We offer affordable finance options for your solar installation, so you can start saving on your energy bills immediately without a large upfront investment.",
+      "With competitive interest rates and flexible terms, your monthly repayments can often be less than your current electricity bill savings — meaning solar pays for itself from day one.",
+      "Apply online in minutes and receive a decision quickly. Our team will guide you through every step of the finance application process."
+    ],
+    "features": [
+      {
+        "title": "Flexible Terms",
+        "desc": "Choose repayment terms to suit your budget and circumstances",
+        "icon": "📅"
+      },
+      {
+        "title": "Competitive Rates",
+        "desc": "Low interest rates through our trusted finance partners",
+        "icon": "💷"
+      },
+      {
+        "title": "Quick Approval",
+        "desc": "Apply online and get a decision within minutes",
+        "icon": "⚡"
+      },
+      {
+        "title": "No Hidden Fees",
+        "desc": "Transparent pricing with no hidden charges or setup fees",
+        "icon": "✅"
+      }
+    ],
+    "enabled": true
+  },
+  "howItWorks": {
+    "title": "How Solar Finance Works",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Get Your Quote",
+        "desc": "We provide a free quote for your solar installation including all costs"
+      },
+      {
+        "step": "2",
+        "title": "Apply for Finance",
+        "desc": "Complete a quick online application for instant approval"
+      },
+      {
+        "step": "3",
+        "title": "Start Saving",
+        "desc": "Your system is installed and you begin saving on energy bills immediately"
+      }
+    ],
+    "enabled": true
+  },
+  "cta": {
+    "title": "Go Solar Today — Pay Over Time",
+    "subtitle": "Get a free quote and explore our flexible finance options.",
+    "primaryButton": {
+      "label": "Get Free Quote",
+      "variant": "primary"
+    },
+    "enabled": true
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "enabled": false,
+  "hero": {
+    "eyebrow": "Renewable Heating Experts",
+    "title": "Heat Pumps",
+    "subtitle": "Heat pumps are not a new technology — they have been used very effectively in Europe and Scandinavia for over 40 years. BrightPeak are experts in designing, supplying, and installing heat pump systems for homes and businesses across Ireland.",
+    "bannerImage": "/images/services/heat-pump.webp"
+  },
+  "intro": {
+    "eyebrow": "Air to Water Heat Pumps",
+    "title": "What is an Air to Water Heat Pump?",
+    "image": "/images/services/heat-pump.webp",
+    "imageAlt": "Nibe air to water heat pump indoor and outdoor units",
+    "paragraphs": [
+      "An Air to Water Heat Pump is a direct replacement for your existing gas or oil boiler system. It comprises of an outdoor unit that looks very like an air conditioning unit which is connected to an indoor module inside your house that looks like a fridge, housing a hot water cylinder and a heat pump controller.",
+      "The heat pump system will heat your radiator or underfloor heating system using its climate control system to ensure a constant 21 degrees in your house. It will also provide hot water on demand for your showers and taps 24/7.",
+      "The heat pump system runs fully off electricity and are all tested at over 400% efficiency, meaning for every €1 you spend on electricity you will receive €4 worth of heat. We will expertly design your radiators, underfloor heating, and control systems to work seamlessly with the lower heating temperatures of the air to water heat pump."
+    ],
+    "enabled": true
+  },
+  "pumpTypes": {
+    "title": "Types of Heat Pump Systems",
+    "items": [
+      {
+        "title": "Air to Water Heat Pump",
+        "icon": "💨"
+      },
+      {
+        "title": "Exhaust Air Heat Pump",
+        "icon": "🌀"
+      },
+      {
+        "title": "Geothermal Heat Pump",
+        "icon": "🌍"
+      }
+    ],
+    "enabled": true
+  },
+  "exhaustAir": {
+    "eyebrow": "Compact Solution",
+    "title": "Exhaust Air Heat Pumps",
+    "image": "",
+    "imageAlt": "",
+    "paragraphs": [
+      "An Exhaust Air Heat Pump is a great solution for smaller new build houses and apartments. Systems like the Nibe F735 do not require an outdoor unit. The system comprises of a fridge-style unit located in your house with ducting run back from all the wet areas — bathrooms and kitchen.",
+      "The heat pump extracts the warm stale air from these areas and runs this air through the compressor cycle, creating hot water for heating your radiators or underfloor heating, and also hot water for your showers and taps. The heat pump also acts as an extract ventilation system for the house, satisfying Part F of the building regulations. Heating, hot water, and ventilation — all from one machine."
+    ],
+    "enabled": true
+  },
+  "geothermal": {
+    "eyebrow": "Maximum Efficiency",
+    "title": "Geothermal Heat Pumps",
+    "image": "",
+    "imageAlt": "",
+    "paragraphs": [
+      "Geothermal Heat Pumps are extremely efficient, reaching COPs of nearly 5.0 or 500%. They also have the added advantage of not requiring an outdoor unit. The system comprises of an indoor heat pump unit connected to two collector pipes that carry a liquid called brine, collecting heat through a borehole drilled down 150m into the earth.",
+      "The liquid leaves the heat pump and travels down the borehole collecting heat from the earth, which it brings back to the geothermal heat pump located in your house. They are very popular in colder climates as the outside temperature doesn't affect the performance of the heat pump. The only downside is they tend to be more expensive."
+    ],
+    "enabled": true
+  },
+  "newBuild": {
+    "eyebrow": "New Builds",
+    "title": "New Build Projects",
+    "paragraphs": [
+      "BrightPeak have recognised that in order for a new build house to meet the strict building regulations, a house has to have some renewable energy contribution helping the house's energy requirements.",
+      "We feel the best option for a new build is an Air to Water heat pump system. It provides maximum levels of comfort and the cheapest running costs — in fact it's a \"no brainer\". It's also an extremely simple system for the end user to live with. A new build house needs to be a minimum of an A3 BER rating, meaning the house has very low heat loss. We set up all our heat pumps to run 24/7, meaning you always have a warm house and always have hot water."
+    ],
+    "enabled": true
+  },
+  "retrofit": {
+    "eyebrow": "Retrofitting",
+    "title": "Retrofitting & SEAI Grants",
+    "paragraphs": [
+      "We are vastly experienced with older houses and fully set up to make the SEAI grant available to you. The SEAI grant requires a heat pump installation to meet a set of criteria — the fabric of the house needs to come below 2.0 Heat Loss Indicator when the house gets a technical assessment by the BER assessor.",
+      "The radiators and underfloor heating system need to be sized to meet the heat loss and lower flow temperatures produced by a heat pump system. We expertly design both the heat pump system and the radiators or underfloor heating system to meet the heat loss of each house. We will also look after the SEAI grant pack to ensure you can avail of your heat pump grant.",
+      "We have heat pumps installed in listed buildings and churches. Every project is suitable for a heat pump if designed correctly."
+    ],
+    "enabled": true
+  },
+  "benefits": {
+    "eyebrow": "Why Install Heat Pumps",
+    "title": "Benefits of Heat Pumps",
+    "items": [
+      {
+        "title": "Increased Home Value",
+        "desc": "A heat pump system significantly increases your home's BER rating, making it more attractive to buyers and increasing its market value. An energy-efficient home is a valuable asset in today's property market.",
+        "icon": "🏠"
+      },
+      {
+        "title": "Cost Cutting",
+        "desc": "Heat pumps operate at over 400% efficiency — for every €1 you spend on electricity, you receive €4 worth of heat. This translates to significant savings on your heating bills compared to traditional gas or oil systems.",
+        "icon": "💶"
+      },
+      {
+        "title": "Planning & Saving",
+        "desc": "With SEAI grants available for heat pump installations, the upfront cost is significantly reduced. We handle all the grant paperwork and guide you through the process to maximise your savings.",
+        "icon": "📋"
+      },
+      {
+        "title": "Environmentally Friendly",
+        "desc": "Heat pumps use renewable energy from the air or ground, dramatically reducing your carbon footprint. By switching from fossil fuels, you're making a real difference for the environment and future generations.",
+        "icon": "🌱"
+      }
+    ],
+    "enabled": true
+  },
+  "cta": {
+    "title": "Get a No-Obligation Quote Today!",
+    "subtitle": "Whether it's a new build or retrofit — our team will design the perfect heat pump system for your home or commercial project. Get in touch for a free consultation and SEAI grant guidance.",
+    "primaryButton": {
+      "label": "Get Free Quote",
+      "variant": "basic_form"
+    },
+    "secondaryButton": {
+      "label": "Call Us Today",
+      "variant": "basic_form"
+    },
+    "enabled": true
+  }
+}

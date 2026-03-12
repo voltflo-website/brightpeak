@@ -1,0 +1,77 @@
+{
+  "enabled": true,
+  "hero": {
+    "eyebrow": "PV Battery Storage",
+    "title": "Battery Storage Solutions",
+    "subtitle": "Maximise your solar energy utilisation with BrightPeak Energy' PV Battery Storage solutions. It makes so much sense to pair a battery with your solar panels.",
+    "bannerImage": "/images/banners/home-battery-storage-three.webp"
+  },
+  "about": {
+    "eyebrow": "Why Battery Storage",
+    "title": "Maximise Your Solar Investment",
+    "contentBlocks": [
+      {
+        "subHeading": "What does a battery do?",
+        "paragraph": "<p>Solar panels generate electricity during daylight hours \u2014 typically between 9am and 4pm. But most Irish households use the most electricity in the evenings, when panels produce little or nothing. Without a battery, any excess electricity your panels generate during the day gets exported to the grid. With a battery, that surplus energy is stored and ready to use when you need it most.</p>"
+      },
+      {
+        "subHeading": "When does it make sense?",
+        "paragraph": "<p>It makes sense if nobody is home during the day while the panels are generating electricity. If you don't use it then most of that energy will go back to the grid.</p><p>A battery may be less of a priority if someone is at home throughout the day using electricity as it's generated, or if you're working with a tighter budget. In that case, solar panels alone still deliver strong returns and you can always add a battery later as prices continue to fall.</p>"
+      },
+      {
+        "subHeading": "Using or selling electricity units",
+        "paragraph": "<p>Ireland has some of the highest electricity prices in Europe \u2014 currently around 40\u201350 cent per kWh. Under the Clean Export Guarantee (CEG), your energy supplier must pay you for surplus electricity you send to the grid, but export rates typically range from 10\u201324 cent per kWh.</p><p>That gap \u2014 buying at 40\u201350c, selling at 10\u201324c \u2014 is exactly why storing and self-consuming your own solar energy is so valuable. Every unit of electricity you use from your battery instead of the grid saves you the full import rate.</p>"
+      }
+    ],
+    "image": {
+      "src": "/images/case-studies/battery-install.webp",
+      "alt": "Home battery storage system"
+    },
+    "enabled": true
+  },
+  "benefits": {
+    "title": "Benefits of Battery Storage",
+    "items": [
+      {
+        "title": "Maximise Solar Utilisation",
+        "desc": "Store excess solar energy instead of exporting it \u2014 use every kilowatt you generate. ",
+        "icon": "\u2600\ufe0f"
+      },
+      {
+        "title": "Lower Energy Bills",
+        "desc": "Use the battery in the evening to power your home (instead of the grid), because that's when grid electricity costs are highest.  Then at night when you go to bed charge the battery using cheaper night-time gris rates.",
+        "icon": "\ud83d\udcb0"
+      },
+      {
+        "title": "Energy Independence",
+        "desc": "Protect your home from grid outages and rising energy prices with stored power",
+        "icon": "\ud83d\udd0b"
+      },
+      {
+        "title": "Eco-Friendly Solution",
+        "desc": "Fully utilise clean, renewable energy and enhance the environmental benefits of your solar system",
+        "icon": "\ud83c\udf31"
+      },
+      {
+        "title": "Increased Property Value",
+        "desc": "A battery storage system adds value to your home and demonstrates energy efficiency",
+        "icon": "\ud83c\udfe0"
+      },
+      {
+        "title": "Seamless Integration",
+        "desc": "Our systems integrate perfectly with your existing solar setup for a complete energy solution",
+        "icon": "\ud83d\udd04"
+      }
+    ],
+    "enabled": true
+  },
+  "cta": {
+    "title": "Add Battery Storage to Your Home",
+    "subtitle": "Whether you already have solar panels or are starting fresh, we can design the perfect battery storage solution for your home.",
+    "primaryButton": {
+      "label": "Get Free Quote",
+      "variant": "primary"
+    },
+    "enabled": true
+  }
+}

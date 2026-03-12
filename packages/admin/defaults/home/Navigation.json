@@ -1,0 +1,92 @@
+{
+  "enabled": true,
+  "showIcons": false,
+  "logoAlt": "",
+  "logoSrc": "",
+  "logoPosition": "navbar",
+  "utilityLinks": [
+    {
+      "label": "About Us",
+      "href": "/about"
+    },
+    {
+      "label": "Finance",
+      "href": "/finance"
+    },
+    {
+      "label": "Grants",
+      "href": "/grants"
+    }
+  ],
+  "links": [
+    {
+      "label": "For Home",
+      "type": "dropdown",
+      "icon": "home",
+      "mobileLabel": "🏠 For Home",
+      "children": [
+        {
+          "label": "Solar Panels",
+          "href": "/solar-panels"
+        },
+        {
+          "label": "Battery Storage",
+          "href": "/battery-storage"
+        }
+      ]
+    },
+    {
+      "label": "For Business",
+      "type": "dropdown",
+      "icon": "business",
+      "mobileLabel": "🏢 For Business",
+      "children": [
+        {
+          "label": "Commercial Solar",
+          "href": "/commercial-solar"
+        },
+        {
+          "label": "Funding Options",
+          "href": "/funding-options"
+        }
+      ]
+    },
+    {
+      "label": "EV Chargers",
+      "href": "/ev-chargers",
+      "icon": "ev"
+    },
+    {
+      "label": "News",
+      "href": "/news-videos",
+      "icon": "news"
+    },
+    {
+      "label": "Our Work",
+      "href": "/our-work",
+      "icon": "work"
+    },
+    {
+      "label": "Locations",
+      "href": "/locations",
+      "icon": ""
+    },
+    {
+      "label": "About",
+      "href": "/about",
+      "icon": "about"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact",
+      "icon": "contact"
+    }
+  ],
+  "chevron": "▾",
+  "mobileArrow": "›",
+  "mobile": {
+    "closeLabel": "✕",
+    "openMenuLabel": "Open menu",
+    "closeMenuLabel": "Close menu"
+  }
+}

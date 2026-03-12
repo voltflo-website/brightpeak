@@ -1,0 +1,12 @@
+{
+  "enabled": true,
+  "eyebrow": "Got Questions?",
+  "title": "We've Got Answers",
+  "subtitle": "Find answers to common questions about our services.",
+  "categories": [
+    { "slug": "general", "title": "General Questions", "description": "Learn the basics about our services." }
+  ],
+  "items": [
+    { "question": "Sample question?", "answer": "Sample answer.", "category": "general" }
+  ]
+}

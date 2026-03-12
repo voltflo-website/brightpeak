@@ -1,0 +1,35 @@
+{
+  "companyName": "Your Company Name",
+  "logoSrc": "/images/branding/logo.png",
+  "logoAlt": "Your Company Name",
+  "siteUrl": "https://www.example.com",
+  "copyright": "© 2025 Your Company Name. All rights reserved.",
+  "phone": {
+    "icon": "📞",
+    "label": "+353 1 207 0006",
+    "href": "tel:+35312070006"
+  },
+  "email": {
+    "icon": "✉️",
+    "label": "info@example.com",
+    "href": "mailto:info@example.com"
+  },
+  "address": {
+    "line1": "",
+    "line2": "",
+    "city": "",
+    "county": "",
+    "country": ""
+  },
+  "openingHours": "Mon - Fri: 8am - 5pm",
+  "socialLinks": [
+    {
+      "label": "Facebook",
+      "href": "https://www.facebook.com/brightpeakenergy"
+    },
+    {
+      "label": "YouTube",
+      "href": "https://www.youtube.com/@brightpeakenergy"
+    }
+  ]
+}

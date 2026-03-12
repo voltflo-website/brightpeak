@@ -1,0 +1,73 @@
+{
+  "enabled": true,
+  "hero": {
+    "eyebrow": "PV Battery Storage",
+    "title": "Battery Storage Solutions",
+    "subtitle": "Maximise your solar energy utilisation with BrightPeak Energy' PV Battery Storage solutions. It makes so much sense to pair a battery with your solar panels.",
+    "bannerImage": "/images/services/battery-storage-modern.webp"
+  },
+  "about": {
+    "eyebrow": "Why Battery Storage",
+    "title": "Maximise Your Solar Investment",
+    "contentBlocks": [
+      {
+        "subHeading": "What does a battery do?",
+        "paragraph": "The solar panels generate electricity which charges the battery. The battery then supplies power to your home."
+      },
+      {
+        "subHeading": "Why is it good to have one?",
+        "paragraph": "Pairing a battery with your solar panels is a smart investment. You can save even more money and become even more grid independent."
+      }
+    ],
+    "image": {
+      "src": "/images/case-studies/battery-storage-install.webp",
+      "alt": "Home battery storage system"
+    },
+    "enabled": true
+  },
+  "benefits": {
+    "title": "Benefits of Battery Storage",
+    "items": [
+      {
+        "title": "Maximise Solar Utilisation",
+        "desc": "Store excess solar energy instead of exporting it — use every kilowatt you generate",
+        "icon": "☀️"
+      },
+      {
+        "title": "Lower Energy Bills",
+        "desc": "Use stored solar energy in the evening when grid electricity costs are highest",
+        "icon": "💰"
+      },
+      {
+        "title": "Energy Independence",
+        "desc": "Protect your home from grid outages and rising energy prices with stored power",
+        "icon": "🔋"
+      },
+      {
+        "title": "Eco-Friendly Solution",
+        "desc": "Fully utilise clean, renewable energy and enhance the environmental benefits of your solar system",
+        "icon": "🌱"
+      },
+      {
+        "title": "Increased Property Value",
+        "desc": "A battery storage system adds value to your home and demonstrates energy efficiency",
+        "icon": "🏠"
+      },
+      {
+        "title": "Seamless Integration",
+        "desc": "Our systems integrate perfectly with your existing solar setup for a complete energy solution",
+        "icon": "🔄"
+      }
+    ],
+    "enabled": true
+  },
+  "cta": {
+    "title": "Add Battery Storage to Your Home",
+    "subtitle": "Whether you already have solar panels or are starting fresh, we can design the perfect battery storage solution for your home.",
+    "primaryButton": {
+      "label": "Get Free Quote",
+      "href": "/contact"
+    },
+    "enabled": true
+  }
+}

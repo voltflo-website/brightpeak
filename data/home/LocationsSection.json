@@ -1,0 +1,48 @@
+{
+  "enabled": true,
+  "eyebrow": "Service Areas",
+  "title": "Areas We Serve",
+  "subtitle": "We provide renewable energy solutions across Ireland. Find your local service area below.",
+  "bannerImage": "/images/hero/hero-solar-panels.webp",
+  "locations": [
+    {
+      "slug": "dublin",
+      "name": "Dublin",
+      "title": "Solar Panels Dublin | Solar Installation & PV Systems",
+      "description": "<p>BrightPeak Energy is proud to serve Dublin and the surrounding areas with professional solar panel installation, battery storage, EV chargers, and heat pump solutions. As Ireland's capital and largest city, Dublin homeowners and businesses are leading the way in adopting clean energy.</p><p>Whether you're in Dublin city centre, Dun Laoghaire, Swords, Tallaght, or anywhere across the county, our experienced team is ready to help you reduce your energy bills and carbon footprint.</p>",
+      "image": "/images/locations/dublin.webp",
+      "services": ["Solar Panels", "Battery Storage", "EV Chargers", "Heat Pumps", "Underfloor Heating", "Commercial Solar"],
+      "highlights": [
+        { "value": "500+", "label": "Dublin Installs" },
+        { "value": "€2,100", "label": "SEAI Grant" },
+        { "value": "70%", "label": "Bill Savings" }
+      ]
+    },
+    {
+      "slug": "wicklow",
+      "name": "Wicklow",
+      "title": "Solar Panels Wicklow | Solar Installation & PV Systems",
+      "description": "<p>BrightPeak Energy serves County Wicklow with expert renewable energy installations. From Bray to Arklow, Greystones to Wicklow Town — we bring the same quality workmanship and professional service to every project in the Garden of Ireland.</p><p>Wicklow homeowners are increasingly turning to solar energy to combat rising electricity costs. Our SEAI-approved team can design and install a system tailored to your home or business.</p>",
+      "image": "/images/locations/wicklow.webp",
+      "services": ["Solar Panels", "Battery Storage", "EV Chargers", "Heat Pumps"],
+      "highlights": [
+        { "value": "200+", "label": "Wicklow Installs" },
+        { "value": "€2,100", "label": "SEAI Grant" },
+        { "value": "70%", "label": "Bill Savings" }
+      ]
+    },
+    {
+      "slug": "wexford",
+      "name": "Wexford",
+      "title": "Solar Panels Wexford | Solar Installation & PV Systems",
+      "description": "<p>BrightPeak Energy provides full renewable energy services across County Wexford. As one of the sunniest counties in Ireland, Wexford is ideal for solar energy — homeowners here consistently see excellent returns on their solar investment.</p><p>From Wexford Town to Enniscorthy, Gorey to New Ross — we cover all of County Wexford with the same high standard of installation and aftercare.</p>",
+      "image": "/images/locations/wexford.webp",
+      "services": ["Solar Panels", "Battery Storage", "EV Chargers", "Heat Pumps"],
+      "highlights": [
+        { "value": "150+", "label": "Wexford Installs" },
+        { "value": "€2,100", "label": "SEAI Grant" },
+        { "value": "70%", "label": "Bill Savings" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "enabled": true,
+  "showIcons": false,
+  "logoAlt": "BrightPeak Energy",
+  "logoSrc": "/images/company-logo.png",
+  "logoPosition": "navbar",
+  "utilityLinks": [
+    {
+      "label": "About Us",
+      "href": "/about"
+    },
+    {
+      "label": "Finance",
+      "href": "/finance"
+    },
+    {
+      "label": "Grants",
+      "href": "/grants"
+    }
+  ],
+  "links": [
+    {
+      "label": "Home Solar",
+      "type": "dropdown",
+      "icon": "home",
+      "mobileLabel": "🏠 For Home",
+      "children": [
+        {
+          "label": "Solar Panels",
+          "href": "/solar-panels"
+        },
+        {
+          "label": "Battery Storage",
+          "href": "/battery-storage"
+        }
+      ]
+    },
+    {
+      "label": "For Business",
+      "type": "dropdown",
+      "icon": "business",
+      "mobileLabel": "🏢 For Business",
+      "children": [
+        {
+          "label": "Commercial Solar",
+          "href": "/commercial-solar"
+        },
+        {
+          "label": "Funding Options",
+          "href": "/funding-options"
+        }
+      ]
+    },
+    {
+      "label": "EV Chargers",
+      "href": "/ev-chargers",
+      "icon": "ev"
+    },
+    {
+      "label": "Underfloor Heating",
+      "href": "/underfloor-heating",
+      "icon": ""
+    },
+    {
+      "label": "Heat Pumps",
+      "href": "/heat-pumps",
+      "icon": ""
+    },
+    {
+      "label": "News",
+      "href": "/news",
+      "icon": "news"
+    },
+    {
+      "label": "Solar Guide",
+      "href": "/solar-guide",
+      "icon": ""
+    },
+    {
+      "label": "Our Work",
+      "href": "/our-work",
+      "icon": "work"
+    },
+    {
+      "label": "Locations",
+      "href": "/locations",
+      "icon": ""
+    }
+  ],
+  "chevron": "▾",
+  "mobileArrow": "›",
+  "mobile": {
+    "closeLabel": "✕",
+    "openMenuLabel": "Open menu",
+    "closeMenuLabel": "Close menu"
+  }
+}

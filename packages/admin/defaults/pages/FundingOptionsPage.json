@@ -1,0 +1,74 @@
+{
+  "enabled": true,
+  "hero": {
+    "eyebrow": "Business Funding",
+    "title": "Business Funding Options",
+    "subtitle": "Discover tax incentives, funding support, and finance options available for commercial solar installations in Ireland.",
+    "bannerImage": "/images/services/commercial-solar.webp"
+  },
+  "fundingSchemes": {
+    "title": "Available Funding & Incentives",
+    "items": [
+      {
+        "title": "Accelerated Capital Allowance",
+        "desc": "Write off 100% of the cost of qualifying energy-efficient equipment against your corporation tax in the first year. This significantly reduces the effective cost of your solar investment.",
+        "icon": "📊"
+      },
+      {
+        "title": "SEAI Business Grants",
+        "desc": "SEAI offers grants and supports for businesses investing in energy efficiency and renewable energy. Contact us to find out what grants your business may qualify for.",
+        "icon": "💶"
+      },
+      {
+        "title": "Feed-in Tariffs",
+        "desc": "Earn money for surplus electricity your business exports back to the grid. This provides an ongoing income stream alongside your energy savings.",
+        "icon": "⚡"
+      },
+      {
+        "title": "Commercial Finance Options",
+        "desc": "We work with leading finance providers to offer flexible commercial lending solutions. Asset finance, leasing, and green loans are all available for qualifying businesses.",
+        "icon": "🏦"
+      }
+    ],
+    "enabled": true
+  },
+  "helpSection": {
+    "title": "We Help You Maximise Every Benefit Available",
+    "paragraphs": [
+      "Navigating business tax incentives and funding schemes can be complex. Our team has extensive experience helping businesses access all available benefits, ensuring you minimise your upfront investment.",
+      "We provide a comprehensive breakdown of all applicable tax incentives, feed-in tariff projections, and finance options as part of your free consultation — so you can make an informed decision with full visibility of costs and savings."
+    ],
+    "button": {
+      "label": "Speak to Our Team",
+      "href": "/contact"
+    },
+    "stats": [
+      {
+        "value": "100%",
+        "label": "Capital Allowance Write-Off"
+      },
+      {
+        "value": "3-5yr",
+        "label": "Typical Payback"
+      },
+      {
+        "value": "50%",
+        "label": "Bill Reduction"
+      },
+      {
+        "value": "25yr+",
+        "label": "Panel Warranty"
+      }
+    ],
+    "enabled": true
+  },
+  "cta": {
+    "title": "Let's Find the Right Funding for Your Business",
+    "subtitle": "Contact us for a free consultation and funding assessment.",
+    "primaryButton": {
+      "label": "Get in Touch",
+      "href": "/contact"
+    },
+    "enabled": true
+  }
+}

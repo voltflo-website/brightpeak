@@ -1,0 +1,107 @@
+{
+  "enabled": true,
+  "footerStyle": "light",
+  "founder": {
+    "enabled": false,
+    "imageSrc": "/images/about/founder-portrait.webp",
+    "label": "Perry Williams, Founder"
+  },
+  "logoAlt": "BrightPeak Energy",
+  "logoSrc": "/images/company-logo.png",
+  "tagline": "With over 18 years of experience, BrightPeak Energy is Ireland's trusted partner delivering bespoke solar panel systems, battery storage, heat pumps, and EV charger installations for homes and businesses across Ireland.",
+  "badges": {
+    "primary": "SEAI Approved Installer",
+    "secondary": "Lifetime Workmanship Guarantee"
+  },
+  "columns": [
+    {
+      "title": "Solutions",
+      "links": [
+        {
+          "label": "All Services",
+          "href": "/services"
+        },
+        {
+          "label": "Solar Panels",
+          "href": "/solar-panels"
+        },
+        {
+          "label": "Commercial Solar",
+          "href": "/commercial-solar"
+        },
+        {
+          "label": "Battery Storage",
+          "href": "/battery-storage"
+        },
+        {
+          "label": "EV Chargers",
+          "href": "/ev-chargers"
+        }
+      ]
+    },
+    {
+      "title": "Resources",
+      "links": [
+        {
+          "label": "Our Work",
+          "href": "/our-work"
+        },
+        {
+          "label": "News",
+          "href": "/news"
+        },
+        {
+          "label": "Solar Guide",
+          "href": "/solar-guide"
+        },
+        {
+          "label": "Testimonials",
+          "href": "/testimonials"
+        },
+        {
+          "label": "Grants",
+          "href": "/grants"
+        },
+        {
+          "label": "Locations",
+          "href": "/locations"
+        },
+        {
+          "label": "About Us",
+          "href": "/about"
+        },
+        {
+          "label": "Contact Us",
+          "href": "/contact"
+        }
+      ]
+    }
+  ],
+  "contact": {
+    "heading": "Get in Touch",
+    "phoneIcon": "📞",
+    "emailIcon": "✉️",
+    "locationIcon": "📍",
+    "cta": {
+      "label": "Get a Quote",
+      "variant": "primary"
+    }
+  },
+  "bottom": {
+    "copyright": "© 2026 BrightPeak Energy. All rights reserved.",
+    "links": [
+      {
+        "label": "Privacy Policy",
+        "href": "/privacy-policy"
+      },
+      {
+        "label": "Cookie Policy",
+        "href": "/cookies"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      }
+    ]
+  }
+}

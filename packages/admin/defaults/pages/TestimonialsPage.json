@@ -1,0 +1,97 @@
+{
+  "enabled": true,
+  "hero": {
+    "eyebrow": "Customer Reviews",
+    "title": "What Our Customers Say",
+    "subtitle": "Over 1,000 happy customers across Ireland — here's what they have to say about working with BrightPeak Energy.",
+    "bannerImage": "/images/hero/hero-solar-panels.webp"
+  },
+  "reviews": [
+    {
+      "name": "Miriam Murphy",
+      "location": "Dublin",
+      "rating": 5,
+      "text": "Professional service from beginning to end. BrightPeak Energy handled everything — from the SEAI grant paperwork to the installation itself. The team were courteous, tidy, and completed the job on time. Our electricity bills have dropped significantly since the system was installed.",
+      "service": "Solar PV & Battery"
+    },
+    {
+      "name": "Enda Collins",
+      "location": "Dublin",
+      "rating": 5,
+      "text": "I couldn't recommend BrightPeak highly enough. From the initial consultation through to the completed installation, every step was handled professionally. The system is performing brilliantly and we're already seeing great savings on our energy bills.",
+      "service": "Solar PV"
+    },
+    {
+      "name": "Carol Dalton",
+      "location": "Dublin",
+      "rating": 5,
+      "text": "The BrightPeak team were amazing from start to finish. They explained everything clearly, handled all the grant paperwork, and the installation was completed in just one day. Couldn't be happier with the results.",
+      "service": "Solar PV & Battery"
+    },
+    {
+      "name": "Patrick J Cusack",
+      "location": "Dublin",
+      "rating": 5,
+      "text": "We can only speak in the highest possible terms about BrightPeak Energy. The quality of workmanship, the professionalism of the team, and the aftercare have been exceptional. A first-class company.",
+      "service": "Solar PV"
+    },
+    {
+      "name": "Derek Boyle",
+      "location": "Dublin",
+      "rating": 5,
+      "text": "Installed a 6.3 kWh system on my house. The team were professional, efficient, and left the place spotless. The system is generating more than expected and I'm delighted with the savings.",
+      "service": "Solar PV"
+    },
+    {
+      "name": "Tom Farrell",
+      "location": "Dublin",
+      "rating": 5,
+      "text": "One of the best contractors I've dealt with. BrightPeak handled everything from start to finish — grant application, design, installation, and follow-up. Top-notch service all round.",
+      "service": "Solar PV & Battery"
+    },
+    {
+      "name": "Tom Johnson",
+      "location": "Dublin",
+      "rating": 5,
+      "text": "Everyone at BrightPeak was fantastic. From the office staff to the installation team, they were all knowledgeable, friendly, and professional. The system is working brilliantly and we're very happy.",
+      "service": "Solar PV"
+    },
+    {
+      "name": "Eugene Hughes",
+      "location": "Dublin",
+      "rating": 5,
+      "text": "BrightPeak team did a really excellent job on our solar installation. Very professional from start to finish. They handled the SEAI grant, designed the system perfectly for our roof, and the installation was clean and efficient.",
+      "service": "Solar PV & Battery"
+    },
+    {
+      "name": "D Judge",
+      "location": "Dublin",
+      "rating": 5,
+      "text": "Team BrightPeak deserve 10 stars. Brilliant company to deal with. Everything was explained clearly, the installation was completed on time, and the system is performing exactly as promised. Highly recommended.",
+      "service": "Solar PV"
+    }
+  ],
+  "stats": [
+    {
+      "value": "1,000+",
+      "label": "Happy Customers"
+    },
+    {
+      "value": "4.8",
+      "label": "Average Rating"
+    },
+    {
+      "value": "100%",
+      "label": "Would Recommend"
+    }
+  ],
+  "cta": {
+    "title": "Join Our Happy Customers",
+    "subtitle": "Get a free quote and see why homeowners and businesses across Ireland trust BrightPeak Energy.",
+    "primaryButton": {
+      "label": "Get Free Quote",
+      "href": "/contact"
+    },
+    "enabled": true
+  }
+}

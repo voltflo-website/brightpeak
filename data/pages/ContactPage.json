@@ -1,0 +1,137 @@
+{
+  "enabled": true,
+  "hero": {
+    "eyebrow": "Get in Touch",
+    "title": "Contact Us",
+    "subtitle": "Ready to start your solar journey? Our friendly team is here to help. Get in touch today for a free, no-obligation consultation.",
+    "bannerImage": "/images/hero/hero-solar-panels.webp"
+  },
+  "form": {
+    "title": "Send Us a Message",
+    "fields": [
+      {
+        "name": "firstName",
+        "label": "First Name",
+        "type": "text",
+        "placeholder": "John",
+        "half": true
+      },
+      {
+        "name": "lastName",
+        "label": "Last Name",
+        "type": "text",
+        "placeholder": "Smith",
+        "half": true
+      },
+      {
+        "name": "email",
+        "label": "Email Address",
+        "type": "email",
+        "placeholder": "john@example.com"
+      },
+      {
+        "name": "phone",
+        "label": "Phone Number",
+        "type": "tel",
+        "placeholder": "+353 1 207 0006"
+      }
+    ],
+    "serviceSelect": {
+      "label": "Service Interested In",
+      "placeholder": "Select a service",
+      "options": [
+        {
+          "value": "solar-residential",
+          "label": "Residential Solar Panels"
+        },
+        {
+          "value": "solar-commercial",
+          "label": "Commercial Solar"
+        },
+        {
+          "value": "battery",
+          "label": "Battery Storage"
+        },
+        {
+          "value": "ev-charger",
+          "label": "EV Charger"
+        },
+        {
+          "value": "other",
+          "label": "Other"
+        }
+      ]
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Tell us about your project..."
+    },
+    "submitButton": "Send Message",
+    "enabled": true
+  },
+  "contactInfo": {
+    "title": "Contact Information",
+    "items": [
+      {
+        "icon": "📞",
+        "title": "Phone",
+        "content": "+353 1 207 0006",
+        "href": "tel:+35312070006"
+      },
+      {
+        "icon": "✉️",
+        "title": "Email",
+        "content": "info@brightpeak-energy.com",
+        "href": "mailto:info@brightpeak-energy.com"
+      },
+      {
+        "icon": "📍",
+        "title": "Location",
+        "content": "Deansgrange Business Park, Blackrock, Dublin",
+        "href": null
+      },
+      {
+        "icon": "🕐",
+        "title": "Office Hours",
+        "content": "Monday – Friday: 9:00am – 5:00pm",
+        "href": null
+      }
+    ],
+    "enabled": true
+  },
+  "certifications": {
+    "title": "Our Certifications",
+    "items": [
+      "SEAI Registered Installer",
+      "Safe Electric Certified",
+      "Certified Sigenergy Installers",
+      "Carlow Business Awards Winner 2024 & 2025"
+    ],
+    "enabled": true
+  },
+  "areasServed": {
+    "title": "Areas We Cover",
+    "areas": [
+      "Dublin",
+      "Blackrock",
+      "Dún Laoghaire",
+      "Bray",
+      "Wicklow",
+      "Carlow",
+      "Kilkenny",
+      "Wexford",
+      "Kildare",
+      "Meath",
+      "Louth",
+      "Nationwide"
+    ],
+    "enabled": true
+  },
+  "quickQuote": {
+    "title": "Prefer a Quick Quote?",
+    "description": "Use our online quote builder to get an instant estimate for your solar installation.",
+    "buttonLabel": "Get Free Quote",
+    "buttonHref": "/contact",
+    "enabled": true
+  }
+}

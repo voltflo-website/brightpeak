@@ -1,0 +1,68 @@
+{
+  "enabled": true,
+  "defaultThumbnail": "/images/news/news-default-banner.webp",
+  "sectionTitle": "News & Videos",
+  "eyebrow": "Latest Updates",
+  "title": "News & Videos",
+  "subtitle": "Stay up to date with the latest solar energy news, project updates, and helpful videos from our team.",
+  "newsItems": [
+    {
+      "slug": "how-does-it-all-work",
+      "title": "So how does it all work?",
+      "summary": "<p>Solar Panels, Inverters, Batteries....how do they all work together?</p>",
+      "date": "2026-02-01",
+      "url": "",
+      "content": "<hr><p><strong>Each Component's Role</strong></p><p></p><p><strong>☀️ Solar Panels</strong></p><ul><li><p>Capture sunlight and generate <em>DC electricity </em>(direct current)</p></li><li><p>Raw electricity that can't be used directly in your home as-is</p></li><li><p>Output varies with light levels throughout the day</p></li></ul><p></p><p><strong>⚡ Inverter</strong></p><ul><li><p>The \"brain\" of the system</p></li><li><p>Converts DC electricity from the panels into <em>AC electricity</em> (alternating current) — which is what your home appliances run on</p></li><li><p>Also manages the flow of electricity between panels, battery, home, and grid</p></li><li><p>Modern hybrid inverters handle everything in one unit</p></li></ul><p></p><p><strong>🔋 Battery</strong></p><ul><li><p>Stores excess electricity generated during the day that your home isn't using in that moment</p></li><li><p>At night (or on cloudy days) when panels aren't producing enough, the battery discharges to power your home</p></li><li><p>Without a battery, unused daytime electricity goes straight to the grid</p></li></ul><p></p>"
+    },
+    {
+      "slug": "do-you-need-a-battery",
+      "title": "Do you need a battery?",
+      "summary": "<p><em>Everything Irish homeowners need to know before making the decision.</em></p>",
+      "date": "2026-02-21",
+      "url": "",
+      "content": "<p>You've taken the step of installing solar panels — or you're seriously thinking about it. Now comes the next question almost every homeowner asks: do I need a battery too? The honest answer is: it depends. But for many Irish households, the answer is a resounding yes. Here's why.</p><h3>What Does a Solar Battery Actually Do?</h3><p>Solar panels generate electricity during daylight hours — typically between 9am and 4pm. But most Irish households use the most electricity in the evenings, when panels produce little or nothing. Without a battery, any excess electricity your panels generate during the day gets exported to the grid. With a battery, that surplus energy is stored and ready to use when you need it most.</p><h3>When a Battery Makes a Lot of Sense</h3><p>A battery is likely a great investment for you if:</p><p>•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You're out of the house during the day — if nobody is home while the panels are generating, most of that energy would otherwise go straight to the grid for a low return.</p><p>•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You use a lot of electricity in the evenings — cooking, charging an EV, running appliances after work.</p><p>•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You want to reduce your reliance on the grid — and protect yourself from rising electricity prices.</p><p>•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You have a larger solar system — more panels means more surplus to store.</p><p>•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You're interested in backup power — some batteries can keep your home running during a grid outage.</p><p>&nbsp;</p><h3>When a Battery is Less Essential</h3><p>A battery may be less of a priority if someone is at home throughout the day using electricity as it's generated, or if you're working with a tighter budget. In that case, solar panels alone still deliver strong returns and you can always add a battery later as prices continue to fall.</p><h3>The Irish Electricity Price Factor</h3><p>Ireland has some of the highest electricity prices in Europe — currently around 40–50 cent per kWh. Under the Clean Export Guarantee (CEG), your energy supplier must pay you for surplus electricity you send to the grid, but export rates typically range from 10–24 cent per kWh.</p><p>That gap — buying at 40–50c, selling at 10–24c — is exactly why storing and self-consuming your own solar energy is so valuable. Every unit of electricity you use from your battery instead of the grid saves you the full import rate.</p><h3>What Does a Battery Cost?</h3><p>A home battery typically adds €3,000–€5,000 to the cost of a solar installation, depending on capacity and brand. The payback period is longer than panels alone, but battery prices have been falling steadily year on year. Many homeowners find the combination of panels and a battery delivers the best long-term value.</p><h3>How Much More Self-Sufficient Will I Be?</h3><p>A solar system without a battery typically covers around 30–40% of a household's annual electricity needs. Add a quality battery and that figure rises to 70–90%, depending on system size and usage habits. For most families, that's a transformative reduction in electricity bills.</p><h3><strong>The Bottom Line</strong></h3><p>A battery makes the most sense if you're out during the day, use significant electricity in the evenings, and want to maximise your energy independence. For most Irish homeowners, it's a worthwhile addition — but solar panels alone still deliver excellent returns even without one. The best approach is to get a proper assessment of your home's energy usage so you can make the right call for your situation.</p><p>&nbsp;</p><p><strong>Want to find out if a solar battery is right for your home? Contact our team for a free, no-obligation energy assessment.</strong></p>"
+    },
+    {
+      "slug": "largest-commercial-install",
+      "title": "BrightPeak Energy Completes Largest Commercial Install Yet",
+      "summary": "We've just finished our biggest commercial solar installation to date — a major project for a local Irish business, saving them thousands each year.",
+      "date": "2026-02-01",
+      "url": "",
+      "content": "Our team has completed a record-breaking commercial installation in Dublin. The large-scale system will generate significant savings for the business while reducing their carbon footprint dramatically."
+    },
+    {
+      "slug": "seai-grants-increase-2026",
+      "title": "SEAI Grants Increase for 2026",
+      "summary": "<p>Great news for homeowners — SEAI grants for solar PV have been updated, making it even more affordable to go solar in Ireland.</p>",
+      "date": "2026-01-15",
+      "url": "",
+      "content": "<p>The Sustainable Energy Authority of Ireland has announced updated grant amounts for residential solar PV installations. Homeowners can now claim up to €2,100 towards their solar system, making the switch to clean energy more affordable than ever.</p>"
+    }
+  ],
+  "videoItems": [
+    {
+      "title": "Do solar panels add to the value of your house?",
+      "summary": "Find out how solar panels can increase your property value.",
+      "image": "",
+      "date": "2026-02-10",
+      "url": "https://youtube.com/shorts/RoHe3owFg6s?si=OykxKEA2MlfhliDY"
+    },
+    {
+      "title": "All about grants",
+      "summary": "Solar is complicated and expensive? Watch our team explain that it doesn't need to be.",
+      "image": "",
+      "date": "2026-02-05",
+      "url": "https://youtube.com/shorts/OBE9ncxkE4w?si=rFqkqrXuZTEjHkis"
+    },
+    {
+      "title": "Learn all about us",
+      "summary": "Learn how to save money by using your solar system strategically throughout the day.",
+      "image": "",
+      "date": "2026-02-15",
+      "url": "https://youtu.be/yxB90djnGSU?si=5FgWJe__OKJ4BW6K"
+    }
+  ],
+  "viewAllLabel": "",
+  "viewAllHref": "",
+  "bannerImage": "/images/services/solar-panels-modern.webp"
+}

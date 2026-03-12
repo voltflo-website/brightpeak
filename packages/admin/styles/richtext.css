@@ -1,0 +1,127 @@
+.rte-wrap {
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.rte-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  padding: 4px 6px;
+  background: #f3f4f6;
+  border-bottom: 1.5px solid #e5e7eb;
+  align-items: center;
+}
+
+.rte-btn {
+  padding: 3px 8px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+  color: #374151;
+  transition: background 0.15s, color 0.15s;
+  line-height: 1.4;
+}
+.rte-btn:hover {
+  background: #e5e7eb;
+}
+.rte-btn-active {
+  background: #002e7a;
+  color: #fff;
+  border-color: #002e7a;
+}
+.rte-btn-active:hover {
+  background: #003d99;
+}
+
+.rte-sep {
+  width: 1px;
+  height: 18px;
+  background: #d1d5db;
+  margin: 0 4px;
+  flex-shrink: 0;
+}
+
+.rte-wrap .tiptap {
+  padding: 10px 12px;
+  min-height: 100px;
+  outline: none;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: #1f2937;
+}
+
+.rte-wrap .tiptap p {
+  margin: 0 0 0.5em;
+}
+.rte-wrap .tiptap p:last-child {
+  margin-bottom: 0;
+}
+.rte-wrap .tiptap h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0.8em 0 0.4em;
+}
+.rte-wrap .tiptap h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0.6em 0 0.3em;
+}
+.rte-wrap .tiptap h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0.5em 0 0.25em;
+}
+.rte-wrap .tiptap ul {
+  list-style-type: disc;
+  padding-left: 1.5em;
+  margin: 0.4em 0;
+}
+.rte-wrap .tiptap ol {
+  list-style-type: decimal;
+  padding-left: 1.5em;
+  margin: 0.4em 0;
+}
+.rte-wrap .tiptap li {
+  margin-bottom: 0.2em;
+  display: list-item;
+}
+.rte-wrap .tiptap li p {
+  margin: 0;
+  display: inline;
+}
+.rte-wrap .tiptap a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+.rte-wrap .tiptap strong {
+  font-weight: 700;
+}
+
+.rte-sidebar {
+  border-width: 1px;
+  border-radius: 5px;
+}
+.rte-sidebar .rte-toolbar {
+  padding: 3px 4px;
+  gap: 1px;
+}
+.rte-sidebar .rte-btn {
+  padding: 2px 5px;
+  font-size: 0.68rem;
+}
+.rte-sidebar .rte-sep {
+  height: 14px;
+  margin: 0 2px;
+}
+.rte-sidebar .tiptap {
+  padding: 6px 8px;
+  min-height: 70px;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}

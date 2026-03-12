@@ -1,0 +1,12 @@
+{
+  "enabled": true,
+  "eyebrow": "Get to Know Us",
+  "title": "Say Hello to BrightPeak Energy!",
+  "subtitle": "With over 20 years of experience, we've been Dublin and Ireland's trusted partner delivering solar panels and renewable energy solutions across the country. Hit play and see what makes us different!",
+  "video": {
+    "src": "https://youtu.be/yxB90djnGSU?si=5FgWJe__OKJ4BW6K",
+    "playIcon": "▶",
+    "playLabel": "Play video"
+  },
+  "caption": "Over 2,800 projects completed and 1,000+ happy customers across Ireland."
+}
