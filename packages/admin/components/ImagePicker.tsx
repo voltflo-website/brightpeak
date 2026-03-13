@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback, useRef } from "react";
+import { apiUrl } from "../basePath";
 
 interface ImageInfo {
   path: string;
@@ -21,13 +22,11 @@ function formatSize(bytes: number): string {
   return (bytes / (1024 * 1024)).toFixed(1) + " MB";
 }
 
-function getHeaders(): Record<string, string> {
-  const headers: Record<string, string> = {};
+function getAdminPassword(): string {
   if (typeof window !== "undefined") {
-    const pass = sessionStorage.getItem("admin_password");
-    if (pass) headers["x-admin-password"] = pass;
+    return sessionStorage.getItem("admin_password") || "";
   }
-  return headers;
+  return "";
 }
 
 export default function ImagePicker({ value, onChange, onClose }: ImagePickerProps) {
@@ -54,7 +53,7 @@ export default function ImagePicker({ value, onChange, onClose }: ImagePickerPro
     setLoading(true);
     setError(null);
     try {
-      const res = await fetch("/api/admin/images", { headers: getHeaders() });
+      const res = await fetch(apiUrl("/adm/images", getAdminPassword()));
       if (res.status === 401) {
         setError("Authentication failed. Please log in to the admin panel again.");
         setLoading(false);
@@ -77,9 +76,9 @@ export default function ImagePicker({ value, onChange, onClose }: ImagePickerPro
   const handleDelete = useCallback(async (imgPath: string, force = false) => {
     setDeleting(true);
     try {
-      const res = await fetch("/api/admin/images", {
+      const res = await fetch(apiUrl("/adm/images", getAdminPassword()), {
         method: "DELETE",
-        headers: { ...getHeaders(), "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ imagePath: imgPath, force }),
       });
       const data = await res.json();
@@ -127,9 +126,8 @@ export default function ImagePicker({ value, onChange, onClose }: ImagePickerPro
       formData.append("file", uploadFile);
       formData.append("folder", uploadFolder);
 
-      const res = await fetch("/api/admin/images", {
+      const res = await fetch(apiUrl("/adm/images", getAdminPassword()), {
         method: "POST",
-        headers: getHeaders(),
         body: formData,
       });
       const data = await res.json();
