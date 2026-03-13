@@ -12,7 +12,11 @@ function checkAuth(request: NextRequest): boolean {
   if (process.env.ADMIN_ENABLED !== "true") return false;
   const adminPassword = (process.env.ADMIN_PASSWORD || "").trim();
   if (!adminPassword) return false;
-  const provided = (request.headers.get("x-admin-password") || "").trim();
+  const provided = (
+    request.headers.get("x-admin-password") ||
+    new URL(request.url).searchParams.get("pw") ||
+    ""
+  ).trim();
   return provided === adminPassword;
 }
 
