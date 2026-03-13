@@ -1,5 +1,5 @@
 import path from "path";
-import { createAdminHandler } from "../../../../../packages/admin/api/handler";
+import { createAdminHandler } from "../../../../packages/admin/api/handler";
 
 export const dynamic = "force-dynamic";
 

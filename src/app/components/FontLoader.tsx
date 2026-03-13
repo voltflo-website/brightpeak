@@ -36,7 +36,7 @@ export default function FontLoader() {
   const [font, setFont] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/api/admin/data?file=SiteSettings.json")
+    fetch("/adm/data?file=SiteSettings.json")
       .then((r) => r.json())
       .then((json) => {
         if (json?.data?.font) {

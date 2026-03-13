@@ -18,8 +18,12 @@ function saveSubmissions(submissions: any[]) {
 }
 
 function checkAuth(req: NextRequest): boolean {
-  const pw = req.headers.get("x-admin-password") || "";
-  return pw === process.env.ADMIN_PASSWORD;
+  const pw = (
+    req.headers.get("x-admin-password") ||
+    new URL(req.url).searchParams.get("pw") ||
+    ""
+  ).trim();
+  return pw === (process.env.ADMIN_PASSWORD || "").trim();
 }
 
 export async function GET(req: NextRequest) {
