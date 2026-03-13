@@ -77,13 +77,14 @@ export function CombinedSectionManager({
                 alignItems: "center",
                 gap: "8px",
                 padding: "8px 10px",
-                background: enabled ? "#1a1a2e" : "#111",
-                border: `1px solid ${dragging === index ? "#009968" : "#333"}`,
+                background: enabled ? "#ffffff" : "#f9fafb",
+                border: `1px solid ${dragging === index ? "#009968" : "#9ca3af"}`,
                 borderRadius: "6px",
                 cursor: "grab",
                 userSelect: "none",
                 opacity: enabled ? 1 : 0.5,
                 transition: "all 0.15s",
+                boxShadow: "0 1px 2px rgba(0,0,0,0.04)",
               }}
               draggable
               onDragStart={() => handleDragStart(index)}
@@ -91,7 +92,7 @@ export function CombinedSectionManager({
               onDragEnd={handleDragEnd}
               onDragOver={(e) => e.preventDefault()}
             >
-              <span style={{ color: "#666", fontSize: "1rem", flexShrink: 0 }}>⠿</span>
+              <span style={{ color: "#9ca3af", fontSize: "1rem", flexShrink: 0 }}>⠿</span>
               <label style={{ position: "relative", display: "inline-flex", alignItems: "center", flexShrink: 0, cursor: "pointer" }}>
                 <input
                   type="checkbox"
@@ -103,7 +104,7 @@ export function CombinedSectionManager({
                   display: "block",
                   width: "32px",
                   height: "18px",
-                  background: enabled ? "#009968" : "#555",
+                  background: enabled ? "#009968" : "#d1d5db",
                   borderRadius: "9px",
                   position: "relative",
                   transition: "background 0.2s",
@@ -124,7 +125,7 @@ export function CombinedSectionManager({
                 flex: 1,
                 fontSize: "0.8rem",
                 fontWeight: 500,
-                color: enabled ? "#e5e7eb" : "#666",
+                color: enabled ? "#1d1d22" : "#9ca3af",
                 textDecoration: enabled ? "none" : "line-through",
               }}>
                 {ORDER_SECTION_LABELS[item] || (item.startsWith("custom_") ? `Custom: ${customTitles[item] || formatLabel(item.replace("custom_", ""))}` : formatLabel(item))}
@@ -135,9 +136,9 @@ export function CombinedSectionManager({
                   disabled={index === 0}
                   style={{
                     background: "none",
-                    border: "1px solid #444",
+                    border: "1px solid #d1d5db",
                     borderRadius: "3px",
-                    color: index === 0 ? "#333" : "#999",
+                    color: index === 0 ? "#d1d5db" : "#6b7280",
                     fontSize: "0.55rem",
                     padding: "1px 5px",
                     cursor: index === 0 ? "not-allowed" : "pointer",
@@ -151,9 +152,9 @@ export function CombinedSectionManager({
                   disabled={index === fullOrder.length - 1}
                   style={{
                     background: "none",
-                    border: "1px solid #444",
+                    border: "1px solid #d1d5db",
                     borderRadius: "3px",
-                    color: index === fullOrder.length - 1 ? "#333" : "#999",
+                    color: index === fullOrder.length - 1 ? "#d1d5db" : "#6b7280",
                     fontSize: "0.55rem",
                     padding: "1px 5px",
                     cursor: index === fullOrder.length - 1 ? "not-allowed" : "pointer",

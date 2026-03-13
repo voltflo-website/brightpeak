@@ -111,7 +111,7 @@ export const SECTION_GROUPS: { label: string; files: string[] }[] = [
 export const SECTION_ORDER = SECTION_GROUPS.flatMap((g) => g.files);
 
 export const ORDER_SECTION_LABELS: Record<string, string> = {
-  hero: "Hero Section Settings",
+  hero: "Hero Pages",
   serviceCards: "Service Cards",
   video: "Featured Video",
   whyChoose: "Why Choose Us",
@@ -129,7 +129,7 @@ export const NON_ORDERABLE_SECTIONS = new Set(["navigation", "footer", "impact",
 
 export const FIELD_LABEL_OVERRIDES: Record<string, string> = {
   "enabled": "Enabled",
-  "hero": "Hero Section Settings",
+  "hero": "Hero Pages",
   "heroAlignment": "Hero Headline Alignment",
   "heroLayout": "Desktop Layout",
   "mobileLayout": "Phone Layout",

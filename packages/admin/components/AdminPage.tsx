@@ -218,9 +218,11 @@ export default function AdminPage() {
   if (!mounted || (loading && !authenticated)) {
     return (
       <div className="admin-login-page">
-        <div className="admin-login-box">
-          <h2>Admin Login</h2>
-          <p style={{ color: "#888", textAlign: "center" }}>Loading...</p>
+        <div className="admin-login-card">
+          <div className="admin-login-logo">
+            <h1>Admin Login</h1>
+            <p>Loading...</p>
+          </div>
         </div>
       </div>
     );
@@ -229,19 +231,21 @@ export default function AdminPage() {
   if (!authenticated) {
     return (
       <div className="admin-login-page">
-        <div className="admin-login-box">
-          <h2>Admin Login</h2>
+        <div className="admin-login-card">
+          <div className="admin-login-logo">
+            <h1>Admin Login</h1>
+          </div>
           <form onSubmit={handleLogin}>
             <input
               type="password"
               value={passwordInput}
               onChange={(e) => setPasswordInput(e.target.value)}
               placeholder="Password"
-              className="admin-search-input"
+              className="admin-login-input"
               autoFocus
             />
-            {authError && <p style={{ color: "#e53e3e", marginTop: "0.5rem", fontSize: "0.875rem" }}>{authError}</p>}
-            <button type="submit" disabled={loading} style={{ marginTop: "1rem", padding: "0.75rem 2rem", background: "#009968", color: "white", border: "none", borderRadius: "0.5rem", cursor: "pointer", fontSize: "1rem", width: "100%" }}>
+            {authError && <p className="admin-login-error">{authError}</p>}
+            <button type="submit" disabled={loading} className="admin-login-btn">
               {loading ? "Signing in..." : "Sign In"}
             </button>
           </form>
@@ -303,37 +307,19 @@ export default function AdminPage() {
               {saving ? "Saving..." : `Save All (${modified.size})`}
             </button>
           )}
-          <button
-            onClick={handlePublish}
-            disabled={publishing || modified.size > 0}
-            className="admin-btn-publish"
-            title={modified.size > 0 ? "Save all changes first" : "Submit content changes for review"}
-          >
-            {publishing ? "Submitting..." : "Submit for Review"}
-          </button>
-          {publishStatus && (
-            <div className={`admin-publish-status ${publishStatus.type}`}>
-              <span>{publishStatus.message}</span>
-              {publishStatus.url && (
-                <a href={publishStatus.url} target="_blank" rel="noopener noreferrer" className="admin-publish-link">
-                  View on GitHub
-                </a>
-              )}
-            </div>
-          )}
         </div>
       </aside>
 
       <main className="admin-main">
-        <div className="admin-toolbar">
-          <div>
+        <div className="admin-toolbar" style={{ flexDirection: "column", alignItems: "center", gap: "0.75rem" }}>
+          <div style={{ textAlign: "center" }}>
             <h1 className="admin-page-title">{activeFile === "__submissions__" ? "Contact Submissions" : SECTION_LABELS[activeFile]}</h1>
             {activeFile !== "__submissions__" && (
               <p className="admin-file-path">data/{activeFile.startsWith("pages/") ? activeFile : `home/${activeFile}`}</p>
             )}
           </div>
           {activeFile !== "__submissions__" && (
-            <div className="admin-toolbar-actions">
+            <div className="admin-toolbar-actions" style={{ justifyContent: "center", width: "100%" }}>
               {saveStatus && (
                 <span className={`admin-save-status ${saveStatus.includes("Error") ? "error" : "success"}`}>
                   {saveStatus}
@@ -346,6 +332,25 @@ export default function AdminPage() {
               >
                 {saving ? "Saving..." : "Save Changes"}
               </button>
+              <button
+                onClick={handlePublish}
+                disabled={publishing || modified.size > 0}
+                className="admin-btn-publish"
+                style={{ width: "auto", borderRadius: "6px", marginTop: 0 }}
+                title={modified.size > 0 ? "Save all changes first" : "Submit content changes for review"}
+              >
+                {publishing ? "Submitting..." : "Submit for Review"}
+              </button>
+            </div>
+          )}
+          {publishStatus && (
+            <div className={`admin-publish-status ${publishStatus.type}`} style={{ width: "100%", maxWidth: "500px" }}>
+              <span>{publishStatus.message}</span>
+              {publishStatus.url && (
+                <a href={publishStatus.url} target="_blank" rel="noopener noreferrer" className="admin-publish-link">
+                  View on GitHub
+                </a>
+              )}
             </div>
           )}
         </div>
