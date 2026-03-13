@@ -218,9 +218,11 @@ export default function AdminPage() {
   if (!mounted || (loading && !authenticated)) {
     return (
       <div className="admin-login-page">
-        <div className="admin-login-box">
-          <h2>Admin Login</h2>
-          <p style={{ color: "#888", textAlign: "center" }}>Loading...</p>
+        <div className="admin-login-card">
+          <div className="admin-login-logo">
+            <h1>Admin Login</h1>
+            <p>Loading...</p>
+          </div>
         </div>
       </div>
     );
@@ -229,19 +231,21 @@ export default function AdminPage() {
   if (!authenticated) {
     return (
       <div className="admin-login-page">
-        <div className="admin-login-box">
-          <h2>Admin Login</h2>
+        <div className="admin-login-card">
+          <div className="admin-login-logo">
+            <h1>Admin Login</h1>
+          </div>
           <form onSubmit={handleLogin}>
             <input
               type="password"
               value={passwordInput}
               onChange={(e) => setPasswordInput(e.target.value)}
               placeholder="Password"
-              className="admin-search-input"
+              className="admin-login-input"
               autoFocus
             />
-            {authError && <p style={{ color: "#e53e3e", marginTop: "0.5rem", fontSize: "0.875rem" }}>{authError}</p>}
-            <button type="submit" disabled={loading} style={{ marginTop: "1rem", padding: "0.75rem 2rem", background: "#009968", color: "white", border: "none", borderRadius: "0.5rem", cursor: "pointer", fontSize: "1rem", width: "100%" }}>
+            {authError && <p className="admin-login-error">{authError}</p>}
+            <button type="submit" disabled={loading} className="admin-login-btn">
               {loading ? "Signing in..." : "Sign In"}
             </button>
           </form>
