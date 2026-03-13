@@ -5,12 +5,6 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-[[redirects]]
-  from = "https://brightpeak-energy.com/*"
-  to = "https://www.brightpeak-energy.com/:splat"
-  status = 301
-  force = true
-
 [[headers]]
   for = "/*"
   [headers.values]
