@@ -382,7 +382,7 @@ export function SmartEditorPage({
             type="color"
             value={data.length === 4 ? `#${data[1]}${data[1]}${data[2]}${data[2]}${data[3]}${data[3]}` : data.slice(0, 7)}
             onChange={(e) => onChange(path, e.target.value)}
-            style={{ width: "48px", height: "36px", border: "1px solid #333", borderRadius: "6px", cursor: "pointer", padding: "2px", background: "#1a1a2e" }}
+            style={{ width: "48px", height: "36px", border: "1px solid #e5e7eb", borderRadius: "6px", cursor: "pointer", padding: "2px", background: "#f9fafb" }}
           />
           <input
             type="text"
@@ -578,7 +578,7 @@ export function SmartEditorPage({
         {itemType === "dropdown" && (
           <div className="admin-field">
             <label className="admin-label" style={{ fontWeight: 500, fontSize: "0.8rem" }}>Sub-links</label>
-            <div style={{ paddingLeft: "1rem", borderLeft: "2px solid #333" }}>
+            <div style={{ paddingLeft: "1rem", borderLeft: "2px solid #e5e7eb" }}>
               {children.map((child, ci) => (
                 <div key={ci} style={{ marginBottom: "0.75rem", padding: "0.5rem 0" }}>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.4rem" }}>
@@ -630,9 +630,8 @@ export function SmartEditorPage({
     const obj = data as Record<string, unknown>;
     if (!path && obj.sections && obj.order && typeof obj.sections === "object" && Array.isArray(obj.order)) {
       return (
-        <div className="admin-field">
-          <label className="admin-label">Sections</label>
-          <p style={{ fontSize: "0.8rem", color: "#888", margin: "0 0 8px 0" }}>Toggle sections on/off and drag to reorder</p>
+        <div className="admin-field admin-field-nested admin-field-section">
+          <label className="admin-label admin-label-section">Toggle sections on/off and drag to reorder</label>
           <CombinedSectionManager
             sections={obj.sections as Record<string, boolean>}
             order={obj.order as string[]}

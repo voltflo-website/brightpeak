@@ -423,7 +423,7 @@ export function SmartEditorSidebar({
             type="color"
             value={data.length === 4 ? `#${data[1]}${data[1]}${data[2]}${data[2]}${data[3]}${data[3]}` : data.slice(0, 7)}
             onChange={(e) => onChange(path, e.target.value)}
-            style={{ width: "40px", height: "32px", border: "1px solid #333", borderRadius: "4px", cursor: "pointer", padding: "2px", background: "#1a1a2e" }}
+            style={{ width: "40px", height: "32px", border: "1px solid #e5e7eb", borderRadius: "4px", cursor: "pointer", padding: "2px", background: "#f9fafb" }}
           />
           <input
             type="text"
@@ -627,7 +627,7 @@ export function SmartEditorSidebar({
         {itemType === "dropdown" && (
           <div className="sb-field">
             <label className="sb-label" style={{ fontWeight: 500, fontSize: "0.75rem" }}>Sub-links</label>
-            <div style={{ paddingLeft: "0.75rem", borderLeft: "2px solid #333" }}>
+            <div style={{ paddingLeft: "0.75rem", borderLeft: "2px solid #e5e7eb" }}>
               {children.map((child, ci) => (
                 <div key={ci} style={{ marginBottom: "0.5rem", padding: "0.35rem 0" }}>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.3rem" }}>

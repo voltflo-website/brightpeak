@@ -430,7 +430,7 @@ export function ImageField({
         </button>
       </div>
       {value && (
-        <div style={{ marginTop: "6px", borderRadius: "6px", overflow: "hidden", border: "1px solid #333" }}>
+        <div style={{ marginTop: "6px", borderRadius: "6px", overflow: "hidden", border: "1px solid #e5e7eb" }}>
           <img src={value} alt="Preview" style={{ width: "100%", height: variant === "page" ? "100px" : "70px", objectFit: "cover", display: "block" }} />
         </div>
       )}
@@ -468,33 +468,33 @@ const styles: Record<string, React.CSSProperties> = {
     backdropFilter: "blur(2px)",
   },
   modal: {
-    background: "#1a1a2e",
+    background: "#ffffff",
     borderRadius: "12px",
     width: "min(900px, 92vw)",
     maxHeight: "85vh",
     display: "flex",
     flexDirection: "column",
-    boxShadow: "0 20px 60px rgba(0,0,0,0.5)",
-    border: "1px solid #333",
-    color: "#e0e0e0",
+    boxShadow: "0 20px 60px rgba(0,0,0,0.15)",
+    border: "1px solid #e5e7eb",
+    color: "#1d1d22",
   },
   header: {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
     padding: "16px 20px",
-    borderBottom: "1px solid #333",
+    borderBottom: "1px solid #e5e7eb",
   },
   headerTitle: {
     margin: 0,
     fontSize: "1.1rem",
     fontWeight: 700,
-    color: "#fff",
+    color: "#1d1d22",
   },
   closeBtn: {
     background: "none",
     border: "none",
-    color: "#888",
+    color: "#9ca3af",
     fontSize: "1.5rem",
     cursor: "pointer",
     padding: "0 4px",
@@ -502,7 +502,7 @@ const styles: Record<string, React.CSSProperties> = {
   },
   tabs: {
     display: "flex",
-    borderBottom: "1px solid #333",
+    borderBottom: "1px solid #e5e7eb",
   },
   tab: {
     flex: 1,
@@ -520,8 +520,8 @@ const styles: Record<string, React.CSSProperties> = {
     padding: "10px",
     background: "none",
     border: "none",
-    borderBottom: "2px solid #4fc3f7",
-    color: "#4fc3f7",
+    borderBottom: "2px solid #009968",
+    color: "#009968",
     cursor: "pointer",
     fontSize: "0.85rem",
     fontWeight: 600,
@@ -540,18 +540,18 @@ const styles: Record<string, React.CSSProperties> = {
     flex: 1,
     padding: "8px 12px",
     borderRadius: "6px",
-    border: "1px solid #444",
-    background: "#0d0d1a",
-    color: "#e0e0e0",
+    border: "1px solid #e5e7eb",
+    background: "#f9fafb",
+    color: "#1d1d22",
     fontSize: "0.85rem",
     outline: "none",
   },
   folderSelect: {
     padding: "8px 12px",
     borderRadius: "6px",
-    border: "1px solid #444",
-    background: "#0d0d1a",
-    color: "#e0e0e0",
+    border: "1px solid #e5e7eb",
+    background: "#f9fafb",
+    color: "#1d1d22",
     fontSize: "0.85rem",
     cursor: "pointer",
     outline: "none",
@@ -567,8 +567,8 @@ const styles: Record<string, React.CSSProperties> = {
     gap: "10px",
   },
   imageCard: {
-    background: "#0d0d1a",
-    border: "2px solid #333",
+    background: "#f9fafb",
+    border: "2px solid #e5e7eb",
     borderRadius: "8px",
     overflow: "hidden",
     cursor: "pointer",
@@ -577,14 +577,14 @@ const styles: Record<string, React.CSSProperties> = {
     transition: "border-color 0.2s, transform 0.15s",
   },
   imageCardSelected: {
-    borderColor: "#4fc3f7",
-    boxShadow: "0 0 0 1px #4fc3f7",
+    borderColor: "#009968",
+    boxShadow: "0 0 0 1px #009968",
   },
   imageThumbWrap: {
     width: "100%",
     height: "90px",
     overflow: "hidden",
-    background: "#111",
+    background: "#f3f4f6",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -602,7 +602,7 @@ const styles: Record<string, React.CSSProperties> = {
   },
   imageName: {
     fontSize: "0.7rem",
-    color: "#ccc",
+    color: "#4b5563",
     overflow: "hidden",
     textOverflow: "ellipsis",
     whiteSpace: "nowrap" as const,
@@ -624,11 +624,11 @@ const styles: Record<string, React.CSSProperties> = {
   uploadLabel: {
     fontSize: "0.85rem",
     fontWeight: 600,
-    color: "#ccc",
+    color: "#4b5563",
     whiteSpace: "nowrap" as const,
   },
   dropZone: {
-    border: "2px dashed #444",
+    border: "2px dashed #d1d5db",
     borderRadius: "10px",
     padding: "2rem",
     textAlign: "center" as const,
@@ -640,8 +640,8 @@ const styles: Record<string, React.CSSProperties> = {
     justifyContent: "center",
   },
   dropZoneActive: {
-    borderColor: "#4fc3f7",
-    background: "rgba(79,195,247,0.05)",
+    borderColor: "#009968",
+    background: "rgba(0,153,104,0.05)",
   },
   dropZoneText: {
     display: "flex",
@@ -653,11 +653,11 @@ const styles: Record<string, React.CSSProperties> = {
   },
   dropIcon: {
     fontSize: "2rem",
-    color: "#555",
+    color: "#9ca3af",
   },
   dropHint: {
     fontSize: "0.75rem",
-    color: "#666",
+    color: "#9ca3af",
   },
   uploadPreviewImg: {
     maxWidth: "100%",
@@ -673,14 +673,14 @@ const styles: Record<string, React.CSSProperties> = {
   },
   fileName: {
     fontSize: "0.8rem",
-    color: "#aaa",
+    color: "#6b7280",
   },
   uploadBtn: {
     padding: "8px 20px",
     borderRadius: "6px",
     border: "none",
-    background: "#4fc3f7",
-    color: "#000",
+    background: "#009968",
+    color: "#fff",
     fontWeight: 700,
     fontSize: "0.85rem",
     cursor: "pointer",
@@ -700,7 +700,7 @@ const styles: Record<string, React.CSSProperties> = {
   },
   savingsText: {
     fontSize: "0.8rem",
-    color: "#aaa",
+    color: "#6b7280",
   },
   useImageBtn: {
     alignSelf: "flex-start",
@@ -717,9 +717,9 @@ const styles: Record<string, React.CSSProperties> = {
   browseBtn: {
     padding: "6px 12px",
     borderRadius: "6px",
-    border: "1px solid #444",
-    background: "#2a2a3e",
-    color: "#ccc",
+    border: "1px solid #e5e7eb",
+    background: "#f9fafb",
+    color: "#4b5563",
     fontSize: "0.8rem",
     fontWeight: 600,
     cursor: "pointer",
@@ -770,20 +770,20 @@ const styles: Record<string, React.CSSProperties> = {
     borderRadius: "12px",
   },
   deleteDialog: {
-    background: "#1a1a2e",
+    background: "#ffffff",
     borderRadius: "10px",
     padding: "24px",
     maxWidth: "420px",
     width: "90%",
-    border: "1px solid #444",
-    color: "#e0e0e0",
+    border: "1px solid #e5e7eb",
+    color: "#1d1d22",
   },
   cancelDeleteBtn: {
     padding: "8px 18px",
     borderRadius: "6px",
-    border: "1px solid #555",
+    border: "1px solid #e5e7eb",
     background: "transparent",
-    color: "#ccc",
+    color: "#4b5563",
     fontSize: "0.85rem",
     fontWeight: 600,
     cursor: "pointer",

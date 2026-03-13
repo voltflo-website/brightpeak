@@ -307,37 +307,19 @@ export default function AdminPage() {
               {saving ? "Saving..." : `Save All (${modified.size})`}
             </button>
           )}
-          <button
-            onClick={handlePublish}
-            disabled={publishing || modified.size > 0}
-            className="admin-btn-publish"
-            title={modified.size > 0 ? "Save all changes first" : "Submit content changes for review"}
-          >
-            {publishing ? "Submitting..." : "Submit for Review"}
-          </button>
-          {publishStatus && (
-            <div className={`admin-publish-status ${publishStatus.type}`}>
-              <span>{publishStatus.message}</span>
-              {publishStatus.url && (
-                <a href={publishStatus.url} target="_blank" rel="noopener noreferrer" className="admin-publish-link">
-                  View on GitHub
-                </a>
-              )}
-            </div>
-          )}
         </div>
       </aside>
 
       <main className="admin-main">
-        <div className="admin-toolbar">
-          <div>
+        <div className="admin-toolbar" style={{ flexDirection: "column", alignItems: "center", gap: "0.75rem" }}>
+          <div style={{ textAlign: "center" }}>
             <h1 className="admin-page-title">{activeFile === "__submissions__" ? "Contact Submissions" : SECTION_LABELS[activeFile]}</h1>
             {activeFile !== "__submissions__" && (
               <p className="admin-file-path">data/{activeFile.startsWith("pages/") ? activeFile : `home/${activeFile}`}</p>
             )}
           </div>
           {activeFile !== "__submissions__" && (
-            <div className="admin-toolbar-actions">
+            <div className="admin-toolbar-actions" style={{ justifyContent: "center", width: "100%" }}>
               {saveStatus && (
                 <span className={`admin-save-status ${saveStatus.includes("Error") ? "error" : "success"}`}>
                   {saveStatus}
@@ -350,6 +332,25 @@ export default function AdminPage() {
               >
                 {saving ? "Saving..." : "Save Changes"}
               </button>
+              <button
+                onClick={handlePublish}
+                disabled={publishing || modified.size > 0}
+                className="admin-btn-publish"
+                style={{ width: "auto", borderRadius: "6px", marginTop: 0 }}
+                title={modified.size > 0 ? "Save all changes first" : "Submit content changes for review"}
+              >
+                {publishing ? "Submitting..." : "Submit for Review"}
+              </button>
+            </div>
+          )}
+          {publishStatus && (
+            <div className={`admin-publish-status ${publishStatus.type}`} style={{ width: "100%", maxWidth: "500px" }}>
+              <span>{publishStatus.message}</span>
+              {publishStatus.url && (
+                <a href={publishStatus.url} target="_blank" rel="noopener noreferrer" className="admin-publish-link">
+                  View on GitHub
+                </a>
+              )}
             </div>
           )}
         </div>

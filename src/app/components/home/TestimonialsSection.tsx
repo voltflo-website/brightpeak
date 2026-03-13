@@ -204,7 +204,7 @@ function TestimonialImageSlideshow({ images }: { images: string[] }) {
         <img
           key={src}
           src={src}
-          alt=""
+          alt={`Customer testimonial image ${i + 1}`}
           loading="lazy"
           className={`testimonial-slide-img ${i === activeIndex ? "active" : ""}`}
         />
