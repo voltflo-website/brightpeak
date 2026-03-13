@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import { apiUrl } from "../basePath";
 
 interface Submission {
   id: string;
@@ -14,7 +15,7 @@ interface Submission {
   read: boolean;
 }
 
-export function SubmissionsViewer({ getHeaders }: { getHeaders: (pw?: string) => Record<string, string> }) {
+export function SubmissionsViewer({ password }: { password: string }) {
   const [submissions, setSubmissions] = useState<Submission[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -23,7 +24,7 @@ export function SubmissionsViewer({ getHeaders }: { getHeaders: (pw?: string) =>
   const loadSubmissions = useCallback(async () => {
     setError(null);
     try {
-      const res = await fetch("/api/admin/submissions", { headers: getHeaders() });
+      const res = await fetch(apiUrl("/adm/submissions", password));
       if (res.status === 401) {
         setError("Unauthorized — please check your admin password.");
         setLoading(false);
@@ -40,7 +41,7 @@ export function SubmissionsViewer({ getHeaders }: { getHeaders: (pw?: string) =>
       setError("Failed to connect to server.");
     }
     setLoading(false);
-  }, [getHeaders]);
+  }, [password]);
 
   useEffect(() => {
     loadSubmissions();
@@ -48,9 +49,9 @@ export function SubmissionsViewer({ getHeaders }: { getHeaders: (pw?: string) =>
 
   const handleAction = async (id: string, action: string) => {
     try {
-      await fetch("/api/admin/submissions", {
+      await fetch(apiUrl("/adm/submissions", password), {
         method: "PUT",
-        headers: getHeaders(),
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ id, action }),
       });
       await loadSubmissions();

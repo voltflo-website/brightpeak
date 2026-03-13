@@ -26,7 +26,11 @@ export function createAdminHandler(dataBaseDir: string) {
     if (!isAdminEnabled()) return false;
     const adminPassword = (process.env.ADMIN_PASSWORD || "").trim();
     if (!adminPassword) return true;
-    const provided = (request.headers.get("x-admin-password") || "").trim();
+    const provided = (
+      request.headers.get("x-admin-password") ||
+      new URL(request.url).searchParams.get("pw") ||
+      ""
+    ).trim();
     return provided === adminPassword;
   }
 

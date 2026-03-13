@@ -3,17 +3,19 @@
 import { useState, useEffect, useCallback } from "react";
 import { SECTION_LABELS, SECTION_ORDER, SECTION_GROUPS } from "../config";
 import { setNestedValue, formatLabel, syncCustomPageSections } from "../utils";
+import { apiUrl } from "../basePath";
 import type { FileData } from "../utils";
 import { SmartEditorPage } from "./SmartEditorPage";
 import { SubmissionsViewer } from "./SubmissionsViewer";
 
 export default function AdminPage() {
+  const [mounted, setMounted] = useState(false);
   const [authenticated, setAuthenticated] = useState(false);
   const [passwordInput, setPasswordInput] = useState("");
   const [authError, setAuthError] = useState("");
   const [files, setFiles] = useState<FileData[]>([]);
   const [activeFile, setActiveFile] = useState<string>("HomePage.json");
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [saving, setSaving] = useState(false);
   const [saveStatus, setSaveStatus] = useState<string>("");
   const [modified, setModified] = useState<Set<string>>(new Set());
@@ -21,17 +23,12 @@ export default function AdminPage() {
   const [publishing, setPublishing] = useState(false);
   const [publishStatus, setPublishStatus] = useState<{ type: "success" | "error"; message: string; url?: string } | null>(null);
 
-  const getHeaders = useCallback((pw?: string) => {
-    const headers: Record<string, string> = { "Content-Type": "application/json" };
-    const pass = pw ?? passwordInput;
-    if (pass) headers["x-admin-password"] = pass;
-    return headers;
-  }, [passwordInput]);
-
-  const loadData = useCallback(async (pw?: string) => {
+  const loadData = useCallback(async (pw: string) => {
     setLoading(true);
     try {
-      const res = await fetch("/api/admin/data", { headers: getHeaders(pw) });
+      const res = await fetch(apiUrl("/adm/data", pw), {
+        headers: { "Content-Type": "application/json" },
+      });
       if (res.status === 401) {
         setAuthenticated(false);
         setAuthError("Invalid password");
@@ -46,17 +43,16 @@ export default function AdminPage() {
       setAuthError("Failed to load data");
     }
     setLoading(false);
-  }, [getHeaders]);
+  }, []);
 
   useEffect(() => {
+    setMounted(true);
     const stored = sessionStorage.getItem("admin_password");
     if (stored) {
       setPasswordInput(stored);
       loadData(stored);
-    } else {
-      setLoading(false);
     }
-  }, []);
+  }, [loadData]);
 
   const handleFieldChange = useCallback((filePath: string, fieldPath: string, value: unknown) => {
     setFiles((prev) => {
@@ -91,9 +87,9 @@ export default function AdminPage() {
     if (!fileData) return;
 
     try {
-      const res = await fetch("/api/admin/data", {
+      const res = await fetch(apiUrl("/adm/data", passwordInput), {
         method: "PUT",
-        headers: getHeaders(),
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ file: fileName, data: fileData.data }),
       });
 
@@ -120,9 +116,9 @@ export default function AdminPage() {
 
     for (const fileData of modifiedFiles) {
       try {
-        const res = await fetch("/api/admin/data", {
+        const res = await fetch(apiUrl("/adm/data", passwordInput), {
           method: "PUT",
-          headers: getHeaders(),
+          headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ file: fileData.file, data: fileData.data }),
         });
         if (!res.ok) allOk = false;
@@ -148,9 +144,9 @@ export default function AdminPage() {
     setPublishing(true);
     setPublishStatus(null);
     try {
-      const res = await fetch("/api/admin/publish", {
+      const res = await fetch(apiUrl("/adm/publish", passwordInput), {
         method: "POST",
-        headers: getHeaders(),
+        headers: { "Content-Type": "application/json" },
       });
       const data = await res.json();
       if (res.ok && data.success) {
@@ -186,16 +182,46 @@ export default function AdminPage() {
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
+    setAuthError("");
     const trimmed = passwordInput.trim();
+    if (!trimmed) {
+      setAuthError("Please enter a password");
+      return;
+    }
     setPasswordInput(trimmed);
-    sessionStorage.setItem("admin_password", trimmed);
-    await loadData(trimmed);
+    setLoading(true);
+    try {
+      const loginRes = await fetch(apiUrl("/adm/login"), {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ password: trimmed }),
+      });
+      if (loginRes.status === 401) {
+        setAuthError("Invalid password");
+        setLoading(false);
+        return;
+      }
+      if (!loginRes.ok) {
+        const d = await loginRes.json().catch(() => ({}));
+        setAuthError((d as Record<string, string>).error || "Login failed");
+        setLoading(false);
+        return;
+      }
+      sessionStorage.setItem("admin_password", trimmed);
+      await loadData(trimmed);
+    } catch (err: unknown) {
+      setAuthError("Connection error: " + (err instanceof Error ? err.message : String(err)));
+      setLoading(false);
+    }
   };
 
-  if (loading && !authenticated) {
+  if (!mounted || (loading && !authenticated)) {
     return (
       <div className="admin-login-page">
-        <div className="admin-loading">Loading...</div>
+        <div className="admin-login-box">
+          <h2>Admin Login</h2>
+          <p style={{ color: "#888", textAlign: "center" }}>Loading...</p>
+        </div>
       </div>
     );
   }
@@ -215,8 +241,8 @@ export default function AdminPage() {
               autoFocus
             />
             {authError && <p style={{ color: "#e53e3e", marginTop: "0.5rem", fontSize: "0.875rem" }}>{authError}</p>}
-            <button type="submit" style={{ marginTop: "1rem", padding: "0.75rem 2rem", background: "#009968", color: "white", border: "none", borderRadius: "0.5rem", cursor: "pointer", fontSize: "1rem", width: "100%" }}>
-              Sign In
+            <button type="submit" disabled={loading} style={{ marginTop: "1rem", padding: "0.75rem 2rem", background: "#009968", color: "white", border: "none", borderRadius: "0.5rem", cursor: "pointer", fontSize: "1rem", width: "100%" }}>
+              {loading ? "Signing in..." : "Sign In"}
             </button>
           </form>
         </div>
@@ -326,7 +352,7 @@ export default function AdminPage() {
 
         <div className="admin-content">
           {activeFile === "__submissions__" ? (
-            <SubmissionsViewer getHeaders={getHeaders} />
+            <SubmissionsViewer password={passwordInput} />
           ) : activeData ? (
             <SmartEditorPage
               key={activeFile}

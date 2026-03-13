@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { SECTION_LABELS, SECTION_ORDER, SECTION_GROUPS } from "../config";
+import { apiUrl } from "../basePath";
 import { setNestedValue, syncCustomPageSections } from "../utils";
 import type { FileData } from "../utils";
 import { SmartEditorSidebar } from "./SmartEditorSidebar";
@@ -25,17 +26,17 @@ export default function AdminSidebar() {
   const [publishing, setPublishing] = useState(false);
   const [publishStatus, setPublishStatus] = useState<{ type: "success" | "error"; message: string; url?: string } | null>(null);
 
-  const getHeaders = useCallback((pw?: string) => {
-    const headers: Record<string, string> = { "Content-Type": "application/json" };
-    const pass = pw ?? passwordInput;
-    if (pass) headers["x-admin-password"] = pass;
-    return headers;
-  }, [passwordInput]);
+  const getPass = useCallback((pw?: string) => pw ?? passwordInput, [passwordInput]);
+
+  const getHeaders = useCallback(() => {
+    return { "Content-Type": "application/json" };
+  }, []);
 
   const loadData = useCallback(async (pw?: string) => {
     setLoading(true);
+    const pass = getPass(pw);
     try {
-      const res = await fetch("/api/admin/data", { headers: getHeaders(pw) });
+      const res = await fetch(apiUrl("/adm/data", pass), { headers: getHeaders() });
       if (res.status === 401) {
         setAuthenticated(false);
         setAuthError("Invalid password");
@@ -79,10 +80,37 @@ export default function AdminSidebar() {
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
+    setAuthError("");
     const trimmed = passwordInput.trim();
+    if (!trimmed) {
+      setAuthError("Please enter a password");
+      return;
+    }
     setPasswordInput(trimmed);
-    sessionStorage.setItem("admin_password", trimmed);
-    await loadData(trimmed);
+    setLoading(true);
+    try {
+      const loginRes = await fetch(apiUrl("/adm/login"), {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ password: trimmed }),
+      });
+      if (loginRes.status === 401) {
+        setAuthError("Invalid password");
+        setLoading(false);
+        return;
+      }
+      if (!loginRes.ok) {
+        const d = await loginRes.json().catch(() => ({}));
+        setAuthError((d as Record<string, string>).error || "Login failed");
+        setLoading(false);
+        return;
+      }
+      sessionStorage.setItem("admin_password", trimmed);
+      await loadData(trimmed);
+    } catch (err: unknown) {
+      setAuthError("Connection error: " + (err instanceof Error ? err.message : String(err)));
+      setLoading(false);
+    }
   };
 
   const handleFieldChange = useCallback((filePath: string, fieldPath: string, value: unknown) => {
@@ -121,7 +149,7 @@ export default function AdminSidebar() {
     }
 
     try {
-      const res = await fetch("/api/admin/data", {
+      const res = await fetch(apiUrl("/adm/data", passwordInput), {
         method: "PUT",
         headers: getHeaders(),
         body: JSON.stringify({ file: fileName, data: fileData.data }),
@@ -152,7 +180,7 @@ export default function AdminSidebar() {
     setPublishing(true);
     setPublishStatus(null);
     try {
-      const res = await fetch("/api/admin/publish", { method: "POST", headers: getHeaders() });
+      const res = await fetch(apiUrl("/adm/publish", passwordInput), { method: "POST", headers: getHeaders() });
       const data = await res.json();
       if (res.ok && data.success) {
         if (data.filesCount === 0) {
@@ -314,7 +342,7 @@ export default function AdminSidebar() {
 
             <div className="sb-body">
               {activeFile === "__submissions__" ? (
-                <SubmissionsViewer getHeaders={getHeaders} />
+                <SubmissionsViewer password={passwordInput} />
               ) : activeData ? (
                 <SmartEditorSidebar
                   key={activeFile}
