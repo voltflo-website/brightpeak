@@ -7,6 +7,7 @@ import { apiUrl } from "../basePath";
 import type { FileData } from "../utils";
 import { SmartEditorPage } from "./SmartEditorPage";
 import { SubmissionsViewer } from "./SubmissionsViewer";
+import { RedirectsModal } from "./RedirectsModal";
 
 export default function AdminPage() {
   const [mounted, setMounted] = useState(false);
@@ -22,6 +23,7 @@ export default function AdminPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [publishing, setPublishing] = useState(false);
   const [publishStatus, setPublishStatus] = useState<{ type: "success" | "error"; message: string; url?: string } | null>(null);
+  const [showRedirects, setShowRedirects] = useState(false);
 
   const loadData = useCallback(async (pw: string) => {
     setLoading(true);
@@ -356,6 +358,25 @@ export default function AdminPage() {
         </div>
 
         <div className="admin-content">
+          {activeFile === "SiteSettings.json" && (
+            <div style={{ marginBottom: "16px" }}>
+              <button
+                onClick={() => setShowRedirects(true)}
+                style={{
+                  padding: "10px 20px",
+                  fontSize: "14px",
+                  fontWeight: 500,
+                  color: "#fff",
+                  background: "#2563eb",
+                  border: "none",
+                  borderRadius: "6px",
+                  cursor: "pointer",
+                }}
+              >
+                Migration URL Redirects
+              </button>
+            </div>
+          )}
           {activeFile === "__submissions__" ? (
             <SubmissionsViewer password={passwordInput} />
           ) : activeData ? (
@@ -367,6 +388,9 @@ export default function AdminPage() {
           ) : null}
         </div>
       </main>
+      {showRedirects && (
+        <RedirectsModal password={passwordInput} onClose={() => setShowRedirects(false)} />
+      )}
     </div>
   );
 }
