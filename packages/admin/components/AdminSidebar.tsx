@@ -8,6 +8,7 @@ import { setNestedValue, syncCustomPageSections } from "../utils";
 import type { FileData } from "../utils";
 import { SmartEditorSidebar } from "./SmartEditorSidebar";
 import { SubmissionsViewer } from "./SubmissionsViewer";
+import { RedirectsModal } from "./RedirectsModal";
 
 export default function AdminSidebar() {
   const router = useRouter();
@@ -25,6 +26,7 @@ export default function AdminSidebar() {
   const [loading, setLoading] = useState(false);
   const [publishing, setPublishing] = useState(false);
   const [publishStatus, setPublishStatus] = useState<{ type: "success" | "error"; message: string; url?: string } | null>(null);
+  const [showRedirects, setShowRedirects] = useState(false);
 
   const getPass = useCallback((pw?: string) => pw ?? passwordInput, [passwordInput]);
 
@@ -341,6 +343,26 @@ export default function AdminSidebar() {
             </div>
 
             <div className="sb-body">
+              {activeFile === "SiteSettings.json" && (
+                <div style={{ padding: "0 0 12px 0" }}>
+                  <button
+                    onClick={() => setShowRedirects(true)}
+                    style={{
+                      width: "100%",
+                      padding: "10px 16px",
+                      fontSize: "13px",
+                      fontWeight: 500,
+                      color: "#fff",
+                      background: "#2563eb",
+                      border: "none",
+                      borderRadius: "6px",
+                      cursor: "pointer",
+                    }}
+                  >
+                    Migration URL Redirects
+                  </button>
+                </div>
+              )}
               {activeFile === "__submissions__" ? (
                 <SubmissionsViewer password={passwordInput} />
               ) : activeData ? (
@@ -356,6 +378,9 @@ export default function AdminSidebar() {
           </>
         )}
       </div>
+      {showRedirects && (
+        <RedirectsModal password={passwordInput} onClose={() => setShowRedirects(false)} />
+      )}
     </>
   );
 }
