@@ -8,7 +8,7 @@ import { sanitizeHtml } from "../lib/sanitize";
 
 export const metadata = generatePageMetadata("/underfloor-heating");
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 export default function UnderfloorHeatingPage() {
   const pageData = loadPageJson("UnderfloorHeatingPage.json") as any;

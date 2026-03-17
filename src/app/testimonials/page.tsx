@@ -8,7 +8,7 @@ import { loadPageJson, loadNavFooterData } from "../lib/loadAllHomeData";
 
 export const metadata = generatePageMetadata("/testimonials");
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 export default function TestimonialsPage() {
   const pageData = loadPageJson("TestimonialsPage.json") as any;

@@ -8,7 +8,7 @@ import { sanitizeHtml } from "../lib/sanitize";
 
 export const metadata = generatePageMetadata("/heat-pumps");
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 export default function HeatPumpsPage() {
   const pageData = loadPageJson("HeatPumpsPage.json") as any;

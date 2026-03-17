@@ -6,7 +6,7 @@ import { sanitizeHtml } from "../lib/sanitize";
 import { loadCustomPages, CustomPage } from "../lib/customPages";
 import { checkRedirect } from "../lib/redirects";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 export default async function CustomPageRoute({
   params,

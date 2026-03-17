@@ -8,7 +8,7 @@ import { sanitizeHtml } from "../lib/sanitize";
 
 export const metadata = generatePageMetadata("/about");
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 export default function AboutPage() {
   const aboutData = loadPageJson("AboutPage.json") as any;

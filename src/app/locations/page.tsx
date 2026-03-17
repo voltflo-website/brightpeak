@@ -9,7 +9,7 @@ import path from "path";
 
 export const metadata = generatePageMetadata("/locations");
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 function loadLocations() {
   try {
