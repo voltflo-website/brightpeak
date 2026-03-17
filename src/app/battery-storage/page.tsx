@@ -8,7 +8,7 @@ import { sanitizeHtml } from "../lib/sanitize";
 
 export const metadata = generatePageMetadata("/battery-storage");
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 export default function BatteryStoragePage() {
   const pageData = loadPageJson("BatteryStoragePage.json") as any;

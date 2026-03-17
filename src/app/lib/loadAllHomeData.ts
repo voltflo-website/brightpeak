@@ -4,16 +4,27 @@ import { loadCustomPages } from "./customPages";
 
 const DATA_BASE = path.join(process.cwd(), "data");
 
+const CACHE_TTL_MS = 10_000;
+const jsonCache = new Map<string, { data: Record<string, unknown>; ts: number }>();
+
 function readJson(filePath: string): Record<string, unknown> {
+  const now = Date.now();
+  const cached = jsonCache.get(filePath);
+  if (cached && now - cached.ts < CACHE_TTL_MS) return cached.data;
+
   try {
     const content = fs.readFileSync(path.join(DATA_BASE, filePath), "utf-8");
-    return JSON.parse(content);
+    const data = JSON.parse(content);
+    jsonCache.set(filePath, { data, ts: now });
+    return data;
   } catch {
     return {};
   }
 }
 
-export function loadAllHomeData() {
+let homeDataCache: { data: ReturnType<typeof loadAllHomeDataUncached>; ts: number } | null = null;
+
+function loadAllHomeDataUncached() {
   const disabled = loadDisabledPages();
   return {
     homePage: readJson("home/HomePage.json"),
@@ -41,6 +52,20 @@ export function loadAllHomeData() {
   };
 }
 
+export function loadAllHomeData() {
+  const now = Date.now();
+  if (homeDataCache && now - homeDataCache.ts < CACHE_TTL_MS) return homeDataCache.data;
+  const data = loadAllHomeDataUncached();
+  homeDataCache = { data, ts: now };
+  return data;
+}
+
+export function invalidateHomeDataCache() {
+  homeDataCache = null;
+  disabledPagesCache = null;
+  jsonCache.clear();
+}
+
 export type HomeData = ReturnType<typeof loadAllHomeData>;
 
 export function loadPageJson(fileName: string): Record<string, unknown> {
@@ -53,7 +78,12 @@ export function loadHeroCta(): { label: string; href: string } {
   return { label: cta?.label || "Get a Free Quote", href: cta?.href || "/contact" };
 }
 
+let disabledPagesCache: { data: Set<string>; ts: number } | null = null;
+
 function loadDisabledPages(): Set<string> {
+  const now = Date.now();
+  if (disabledPagesCache && now - disabledPagesCache.ts < CACHE_TTL_MS) return disabledPagesCache.data;
+
   const disabled = new Set<string>();
   const pagesDir = path.join(DATA_BASE, "pages");
   try {
@@ -70,6 +100,7 @@ function loadDisabledPages(): Set<string> {
       }
     }
   } catch {}
+  disabledPagesCache = { data: disabled, ts: now };
   return disabled;
 }
 

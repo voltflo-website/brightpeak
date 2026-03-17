@@ -7,7 +7,7 @@ import { sanitizeHtml } from "../lib/sanitize";
 
 export const metadata = generatePageMetadata("/cookies");
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 export default function CookiesPage() {
   const pageData = loadPageJson("CookiesPage.json") as any;

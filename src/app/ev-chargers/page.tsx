@@ -8,7 +8,7 @@ import { sanitizeHtml } from "../lib/sanitize";
 
 export const metadata = generatePageMetadata("/ev-chargers");
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 export default function EvChargersPage() {
   const pageData = loadPageJson("EvChargersPage.json") as any;
