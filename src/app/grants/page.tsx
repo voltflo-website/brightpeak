@@ -8,7 +8,7 @@ import { loadPageJson, loadNavFooterData } from "../lib/loadAllHomeData";
 
 export const metadata = generatePageMetadata("/grants");
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 export default function GrantsPage() {
   const pageData = loadPageJson("GrantsPage.json") as any;

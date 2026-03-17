@@ -10,7 +10,7 @@ import path from "path";
 
 export const metadata = generatePageMetadata("/solar-guide");
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 function loadFaqData() {
   try {

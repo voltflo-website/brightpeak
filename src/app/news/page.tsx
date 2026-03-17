@@ -11,7 +11,7 @@ import Link from "next/link";
 
 export const metadata = generatePageMetadata("/news");
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 function loadNewsData(): any {
   try {

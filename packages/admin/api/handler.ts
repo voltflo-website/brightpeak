@@ -5,6 +5,11 @@ import path from "path";
 import { VALID_FILES } from "../config";
 import { ensureDataFiles } from "../schema";
 
+let _invalidateCache: (() => void) | null = null;
+export function setInvalidateCacheCallback(fn: () => void) {
+  _invalidateCache = fn;
+}
+
 export function createAdminHandler(dataBaseDir: string) {
   function toApiKey(fullPath: string): string {
     if (fullPath.startsWith("home/")) return fullPath.replace("home/", "");
@@ -128,6 +133,8 @@ export function createAdminHandler(dataBaseDir: string) {
         ? Object.fromEntries(Object.entries(data).filter(([k]) => !k.startsWith("_")))
         : data;
       fs.writeFileSync(filePath, JSON.stringify(saveData, null, 2) + "\n");
+
+      if (_invalidateCache) _invalidateCache();
 
       try {
         revalidatePath("/", "layout");

@@ -1,11 +1,12 @@
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import PageLayout from "../components/PageLayout";
 import PageBanner from "../components/PageBanner";
 import { loadNavFooterData } from "../lib/loadAllHomeData";
 import { sanitizeHtml } from "../lib/sanitize";
 import { loadCustomPages, CustomPage } from "../lib/customPages";
+import { checkRedirect } from "../lib/redirects";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 export default async function CustomPageRoute({
   params,
@@ -20,6 +21,10 @@ export default async function CustomPageRoute({
   );
 
   if (!page) {
+    const target = checkRedirect("/" + slug);
+    if (target) {
+      redirect(target);
+    }
     notFound();
   }
 
