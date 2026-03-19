@@ -8,7 +8,7 @@ import { sanitizeHtml } from "../lib/sanitize";
 
 export const metadata = generatePageMetadata("/solar-panels");
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 export default function SolarPanelsPage() {
   const pageData = loadPageJson("SolarPanelsPage.json") as any;

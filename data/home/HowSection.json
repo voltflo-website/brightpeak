@@ -1,48 +1,48 @@
 {
-  "enabled": true,
-  "eyebrow": "Easy as 1-2-3",
-  "title": "How It Works",
-  "subtitle": "We handle everything — from paperwork and grants to installation and setup!",
+  "cta": {
+    "href": "/contact",
+    "label": "Get Your Free Quote"
+  },
   "steps": [
     {
-      "number": "1",
       "icon": "📋",
       "time": "5 mins",
       "title": "Get Your Free Quote",
-      "description": "Use our AI-based tool to get a detailed quote immediately.  Later we can guide you through SEAI grants and available funding.",
+      "number": "1",
       "bullets": [
         "Free no-obligation quote",
         "SEAI grant guidance",
         "Tailored to your needs"
-      ]
+      ],
+      "description": "Use our AI-based tool to get a detailed quote immediately.  Later we can guide you through SEAI grants and available funding."
     },
     {
-      "number": "2",
       "icon": "🔍",
       "time": "1 hour",
       "title": "Free Site Survey",
-      "description": "Our experts visit your property to assess your roof, energy usage, and design the perfect system for your home.",
+      "number": "2",
       "bullets": [
         "Expert energy assessment",
         "Roof and property analysis",
         "Custom system design"
-      ]
+      ],
+      "description": "Our experts visit your property to assess your roof, energy usage, and design the perfect system for your home."
     },
     {
-      "number": "3",
       "icon": "🔧",
       "time": "1-2 days",
       "title": "Professional Installation",
-      "description": "Our own qualified team handles the full installation — no sub-contracting. Clean, tidy, on time, and on budget.",
+      "number": "3",
       "bullets": [
         "Certified installers",
         "No sub-contracting",
         "Lifetime workmanship guarantee"
-      ]
+      ],
+      "description": "Our own qualified team handles the full installation — no sub-contracting. Clean, tidy, on time, and on budget."
     }
   ],
-  "cta": {
-    "label": "Get Your Free Quote",
-    "href": "/contact"
-  }
+  "title": "How It Works",
+  "enabled": true,
+  "eyebrow": "Easy as 1-2-3",
+  "subtitle": "We handle everything — from paperwork and grants to installation and setup!"
 }

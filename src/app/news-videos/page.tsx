@@ -10,7 +10,7 @@ import path from "path";
 
 export const metadata = generatePageMetadata("/news-videos");
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 function loadNewsVideosData(): any {
   try {

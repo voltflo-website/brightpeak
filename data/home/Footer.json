@@ -1,107 +1,107 @@
 {
-  "enabled": true,
-  "footerStyle": "light",
-  "founder": {
-    "enabled": false,
-    "imageSrc": "/images/about/founder-portrait.webp",
-    "label": "Perry Williams, Founder"
-  },
-  "logoAlt": "BrightPeak Energy",
-  "logoSrc": "/images/company-logo.png",
-  "tagline": "With over 18 years of experience, BrightPeak Energy is Ireland's trusted partner delivering bespoke solar panel systems, battery storage, heat pumps, and EV charger installations for homes and businesses across Ireland.",
   "badges": {
     "primary": "SEAI Approved Installer",
     "secondary": "Lifetime Workmanship Guarantee"
   },
+  "bottom": {
+    "links": [
+      {
+        "href": "/privacy-policy",
+        "label": "Privacy Policy"
+      },
+      {
+        "href": "/cookies",
+        "label": "Cookie Policy"
+      },
+      {
+        "href": "/contact",
+        "label": "Contact"
+      }
+    ],
+    "copyright": "© 2026 BrightPeak Energy. All rights reserved."
+  },
   "columns": [
     {
-      "title": "Solutions",
       "links": [
         {
-          "label": "All Services",
-          "href": "/services"
+          "href": "/services",
+          "label": "All Services"
         },
         {
-          "label": "Solar Panels",
-          "href": "/solar-panels"
+          "href": "/solar-panels",
+          "label": "Solar Panels"
         },
         {
-          "label": "Commercial Solar",
-          "href": "/commercial-solar"
+          "href": "/commercial-solar",
+          "label": "Commercial Solar"
         },
         {
-          "label": "Battery Storage",
-          "href": "/battery-storage"
+          "href": "/battery-storage",
+          "label": "Battery Storage"
         },
         {
-          "label": "EV Chargers",
-          "href": "/ev-chargers"
+          "href": "/ev-chargers",
+          "label": "EV Chargers"
         }
-      ]
+      ],
+      "title": "Solutions"
     },
     {
-      "title": "Resources",
       "links": [
         {
-          "label": "Our Work",
-          "href": "/our-work"
+          "href": "/our-work",
+          "label": "Our Work"
         },
         {
-          "label": "News",
-          "href": "/news"
+          "href": "/news",
+          "label": "News"
         },
         {
-          "label": "Solar Guide",
-          "href": "/solar-guide"
+          "href": "/solar-guide",
+          "label": "Solar Guide"
         },
         {
-          "label": "Testimonials",
-          "href": "/testimonials"
+          "href": "/testimonials",
+          "label": "Testimonials"
         },
         {
-          "label": "Grants",
-          "href": "/grants"
+          "href": "/grants",
+          "label": "Grants"
         },
         {
-          "label": "Locations",
-          "href": "/locations"
+          "href": "/locations",
+          "label": "Locations"
         },
         {
-          "label": "About Us",
-          "href": "/about"
+          "href": "/about",
+          "label": "About Us"
         },
         {
-          "label": "Contact Us",
-          "href": "/contact"
+          "href": "/contact",
+          "label": "Contact Us"
         }
-      ]
+      ],
+      "title": "Resources"
     }
   ],
   "contact": {
-    "heading": "Get in Touch",
-    "phoneIcon": "📞",
-    "emailIcon": "✉️",
-    "locationIcon": "📍",
     "cta": {
       "label": "Get a Quote",
       "variant": "primary"
-    }
+    },
+    "heading": "Get in Touch",
+    "emailIcon": "✉️",
+    "phoneIcon": "📞",
+    "locationIcon": "📍"
   },
-  "bottom": {
-    "copyright": "© 2026 BrightPeak Energy. All rights reserved.",
-    "links": [
-      {
-        "label": "Privacy Policy",
-        "href": "/privacy-policy"
-      },
-      {
-        "label": "Cookie Policy",
-        "href": "/cookies"
-      },
-      {
-        "label": "Contact",
-        "href": "/contact"
-      }
-    ]
-  }
+  "enabled": true,
+  "founder": {
+    "label": "Perry Williams, Founder",
+    "enabled": false,
+    "imageSrc": "/images/about/founder-portrait.webp"
+  },
+  "logoAlt": "BrightPeak Energy",
+  "logoSrc": "/images/company-logo.png",
+  "tagline": "With over 18 years of experience, BrightPeak Energy is Ireland's trusted partner delivering bespoke solar panel systems, battery storage, heat pumps, and EV charger installations for homes and businesses across Ireland.",
+  "footerStyle": "light"
 }

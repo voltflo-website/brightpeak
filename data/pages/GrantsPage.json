@@ -1,103 +1,103 @@
 {
-  "enabled": true,
-  "hero": {
-    "eyebrow": "Save With SEAI",
-    "title": "SEAI Grants for Solar Panels",
-    "subtitle": "Take advantage of up to €2,100 in SEAI grants and 0% VAT on residential solar panel installations across Ireland.",
-    "bannerImage": "/images/services/home-solar.webp"
-  },
-  "details": {
-    "eyebrow": "Grant Details",
-    "title": "How Much Can You Save?",
-    "paragraphs": [
-      "The Sustainable Energy Authority of Ireland (SEAI) provides generous grants to homeowners who install solar PV systems. The grant covers a significant portion of your installation costs, making solar energy more affordable than ever.",
-      "In addition to the SEAI grant, residential solar panel installations benefit from 0% VAT, further reducing the overall cost. Combined with energy savings of up to 70%, solar panels pay for themselves within a few years.",
-      "As SEAI Registered installers, BrightPeak Energy handles the entire grant application process on your behalf — so you can sit back and enjoy the savings."
-    ],
-    "highlights": [
-      {
-        "title": "Up to €2,100",
-        "desc": "SEAI grant available for residential solar PV installations",
-        "icon": "💰"
-      },
-      {
-        "title": "0% VAT",
-        "desc": "No VAT charged on residential solar panel installations in Ireland",
-        "icon": "🏷️"
-      },
-      {
-        "title": "We Handle Everything",
-        "desc": "BrightPeak Energy manages your full SEAI grant application process",
-        "icon": "📋"
-      },
-      {
-        "title": "Fast Turnaround",
-        "desc": "Grant approval typically takes 4-6 weeks with our streamlined process",
-        "icon": "⚡"
-      }
-    ],
-    "enabled": true
-  },
-  "eligibility": {
-    "eyebrow": "Eligibility",
-    "title": "Who Can Apply?",
-    "items": [
-      {
-        "title": "Homeowners",
-        "desc": "Your home must have been built and occupied before 2021",
-        "icon": "🏠"
-      },
-      {
-        "title": "BER Assessment",
-        "desc": "A BER assessment after works is required as part of the process",
-        "icon": "📊"
-      },
-      {
-        "title": "SEAI Installer",
-        "desc": "Works must be carried out by an SEAI registered installer like us",
-        "icon": "✅"
-      },
-      {
-        "title": "Property Type",
-        "desc": "Detached, semi-detached, terraced houses, and apartments qualify",
-        "icon": "🏘️"
-      }
-    ],
-    "enabled": true
-  },
-  "howItWorks": {
-    "title": "How It Works",
-    "steps": [
-      {
-        "step": "1",
-        "title": "Get a Quote",
-        "desc": "Contact us for a free, no-obligation assessment and quote"
-      },
-      {
-        "step": "2",
-        "title": "Grant Application",
-        "desc": "We submit your SEAI grant application on your behalf"
-      },
-      {
-        "step": "3",
-        "title": "Installation",
-        "desc": "Our certified team installs your solar PV system"
-      },
-      {
-        "step": "4",
-        "title": "Receive Grant",
-        "desc": "SEAI pays your grant directly after installation"
-      }
-    ],
-    "enabled": true
-  },
   "cta": {
     "title": "Claim Your €2,100 SEAI Grant Today",
+    "enabled": true,
     "subtitle": "Let our team handle the grant process from start to finish.",
     "primaryButton": {
       "label": "Get Free Quote",
       "variant": "primary"
-    },
+    }
+  },
+  "hero": {
+    "title": "SEAI Grants for Solar Panels",
+    "eyebrow": "Save With SEAI",
+    "subtitle": "Take advantage of up to €2,100 in SEAI grants and 0% VAT on residential solar panel installations across Ireland.",
+    "bannerImage": "/images/services/home-solar.webp"
+  },
+  "details": {
+    "title": "How Much Can You Save?",
+    "enabled": true,
+    "eyebrow": "Grant Details",
+    "highlights": [
+      {
+        "desc": "SEAI grant available for residential solar PV installations",
+        "icon": "💰",
+        "title": "Up to €2,100"
+      },
+      {
+        "desc": "No VAT charged on residential solar panel installations in Ireland",
+        "icon": "🏷️",
+        "title": "0% VAT"
+      },
+      {
+        "desc": "BrightPeak Energy manages your full SEAI grant application process",
+        "icon": "📋",
+        "title": "We Handle Everything"
+      },
+      {
+        "desc": "Grant approval typically takes 4-6 weeks with our streamlined process",
+        "icon": "⚡",
+        "title": "Fast Turnaround"
+      }
+    ],
+    "paragraphs": [
+      "The Sustainable Energy Authority of Ireland (SEAI) provides generous grants to homeowners who install solar PV systems. The grant covers a significant portion of your installation costs, making solar energy more affordable than ever.",
+      "In addition to the SEAI grant, residential solar panel installations benefit from 0% VAT, further reducing the overall cost. Combined with energy savings of up to 70%, solar panels pay for themselves within a few years.",
+      "As SEAI Registered installers, BrightPeak Energy handles the entire grant application process on your behalf — so you can sit back and enjoy the savings."
+    ]
+  },
+  "enabled": true,
+  "howItWorks": {
+    "steps": [
+      {
+        "desc": "Contact us for a free, no-obligation assessment and quote",
+        "step": "1",
+        "title": "Get a Quote"
+      },
+      {
+        "desc": "We submit your SEAI grant application on your behalf",
+        "step": "2",
+        "title": "Grant Application"
+      },
+      {
+        "desc": "Our certified team installs your solar PV system",
+        "step": "3",
+        "title": "Installation"
+      },
+      {
+        "desc": "SEAI pays your grant directly after installation",
+        "step": "4",
+        "title": "Receive Grant"
+      }
+    ],
+    "title": "How It Works",
     "enabled": true
+  },
+  "eligibility": {
+    "items": [
+      {
+        "desc": "Your home must have been built and occupied before 2021",
+        "icon": "🏠",
+        "title": "Homeowners"
+      },
+      {
+        "desc": "A BER assessment after works is required as part of the process",
+        "icon": "📊",
+        "title": "BER Assessment"
+      },
+      {
+        "desc": "Works must be carried out by an SEAI registered installer like us",
+        "icon": "✅",
+        "title": "SEAI Installer"
+      },
+      {
+        "desc": "Detached, semi-detached, terraced houses, and apartments qualify",
+        "icon": "🏘️",
+        "title": "Property Type"
+      }
+    ],
+    "title": "Who Can Apply?",
+    "enabled": true,
+    "eyebrow": "Eligibility"
   }
 }

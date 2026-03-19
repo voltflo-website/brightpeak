@@ -1,127 +1,127 @@
 {
-  "enabled": true,
-  "eyebrow": "Our Work",
-  "title": "See Our Recent Projects",
-  "subtitle": "From residential homes to large-scale commercial installations, we've completed over 2,800 projects across Ireland. Here's a glimpse of our recent work.",
   "cards": [
     {
-      "slug": "home-solar-installation",
       "sub": "Residential Solar",
+      "slug": "home-solar-installation",
+      "image": {
+        "alt": "Residential Solar Installation",
+        "src": "/images/case-studies/residential-project.webp"
+      },
+      "stats": [
+        {
+          "label": "kWp",
+          "value": "10"
+        },
+        {
+          "label": "Panels",
+          "value": "24"
+        },
+        {
+          "label": "Savings",
+          "value": "€1,000/yr"
+        }
+      ],
       "title": "Home Solar Installation",
       "video": "https://youtube.com/shorts/RoHe3owFg6s?si=OykxKEA2MlfhliDY",
-      "image": {
-        "src": "/images/case-studies/residential-project.webp",
-        "alt": "Residential Solar Installation"
-      },
       "images": [
         "/images/case-studies/residential-project.webp",
         "/images/case-studies/roof-install.webp"
       ],
-      "description": "A full solar PV system designed to maximise energy generation, lower electricity bills, and increase home value. Professional installation by our certified team.\n\nA full solar PV system designed to maximise energy generation, lower electricity bills, and increase home value. Professional installation by our certified team.\n\nA full solar PV system designed to maximise energy generation, lower electricity bills, and increase home value. Professional installation by our certified team.",
-      "stats": [
-        {
-          "value": "10",
-          "label": "kWp"
-        },
-        {
-          "value": "24",
-          "label": "Panels"
-        },
-        {
-          "value": "€1,000/yr",
-          "label": "Savings"
-        }
-      ]
+      "description": "A full solar PV system designed to maximise energy generation, lower electricity bills, and increase home value. Professional installation by our certified team.\n\nA full solar PV system designed to maximise energy generation, lower electricity bills, and increase home value. Professional installation by our certified team.\n\nA full solar PV system designed to maximise energy generation, lower electricity bills, and increase home value. Professional installation by our certified team."
     },
     {
-      "slug": "business-solar-installation",
       "sub": "Commercial Solar",
+      "slug": "business-solar-installation",
+      "image": {
+        "alt": "Commercial Solar Installation",
+        "src": "/images/case-studies/commercial-project.webp"
+      },
+      "stats": [
+        {
+          "label": "kWp",
+          "value": "100+"
+        },
+        {
+          "label": "Panels",
+          "value": "250+"
+        },
+        {
+          "label": "Savings",
+          "value": "€25k/yr"
+        }
+      ],
       "title": "Business Solar Installation",
       "video": "",
-      "image": {
-        "src": "/images/case-studies/commercial-project.webp",
-        "alt": "Commercial Solar Installation"
-      },
       "images": [
         "/images/case-studies/commercial-project.webp",
         "/images/case-studies/commercial-solar.webp"
       ],
-      "description": "A large-scale commercial install delivering optimal energy efficiency, significant cost savings, and demonstrating a commitment to sustainability.",
-      "stats": [
-        {
-          "value": "100+",
-          "label": "kWp"
-        },
-        {
-          "value": "250+",
-          "label": "Panels"
-        },
-        {
-          "value": "€25k/yr",
-          "label": "Savings"
-        }
-      ]
+      "description": "A large-scale commercial install delivering optimal energy efficiency, significant cost savings, and demonstrating a commitment to sustainability."
     },
     {
-      "slug": "residential-development",
       "sub": "New Build Project",
+      "slug": "residential-development",
+      "image": {
+        "alt": "New Build Development",
+        "src": "/images/case-studies/new-build-solar.webp"
+      },
+      "stats": [
+        {
+          "label": "Houses",
+          "value": "26"
+        },
+        {
+          "label": "Renewable",
+          "value": "Full"
+        },
+        {
+          "label": "Rating",
+          "value": "BER A"
+        }
+      ],
       "title": "Residential Development",
       "video": "",
-      "image": {
-        "src": "/images/case-studies/new-build-solar.webp",
-        "alt": "New Build Development"
-      },
       "images": [
         "/images/case-studies/new-build-solar.webp",
         "/images/case-studies/residential-solar.webp"
       ],
-      "description": "Full renewable mechanical systems for an entire housing development — heat pumps, underfloor heating, and solar. Every home meets strict building regulations.",
-      "stats": [
-        {
-          "value": "26",
-          "label": "Houses"
-        },
-        {
-          "value": "Full",
-          "label": "Renewable"
-        },
-        {
-          "value": "BER A",
-          "label": "Rating"
-        }
-      ]
+      "description": "Full renewable mechanical systems for an entire housing development — heat pumps, underfloor heating, and solar. Every home meets strict building regulations."
     },
     {
-      "slug": "ev-charger-installation",
       "sub": "EV Charger",
+      "slug": "ev-charger-installation",
+      "image": {
+        "alt": "Residential Solar Installation",
+        "src": "/images/case-studies/residential-project.webp"
+      },
+      "stats": [
+        {
+          "label": "kWp",
+          "value": "10"
+        },
+        {
+          "label": "Panels",
+          "value": "24"
+        },
+        {
+          "label": "Savings",
+          "value": "€1,000/yr"
+        }
+      ],
       "title": "EV Charger Installation",
       "video": "",
-      "image": {
-        "src": "/images/case-studies/residential-project.webp",
-        "alt": "Residential Solar Installation"
-      },
       "images": [
         "/images/services/ev-charge.webp"
       ],
-      "description": "A full solar PV system m.",
-      "stats": [
-        {
-          "value": "10",
-          "label": "kWp"
-        },
-        {
-          "value": "24",
-          "label": "Panels"
-        },
-        {
-          "value": "€1,000/yr",
-          "label": "Savings"
-        }
-      ]
+      "description": "A full solar PV system m."
     }
   ],
+  "title": "See Our Recent Projects",
+  "enabled": true,
+  "eyebrow": "Our Work",
+  "subtitle": "From residential homes to large-scale commercial installations, we've completed over 2,800 projects across Ireland. Here's a glimpse of our recent work.",
   "footerCta": {
-    "label": "See All Our Projects →",
-    "href": "/our-work"
+    "href": "/our-work",
+    "label": "See All Our Projects →"
   }
 }

@@ -1,111 +1,7 @@
 {
-  "enabled": true,
-  "hero": {
-    "eyebrow": "Trusted Home Solar Installers",
-    "title": "Solar Panels",
-    "subtitle": "Hundreds of homeowners in Dublin and beyond have trusted BrightPeak to power their homes with clean, reliable solar energy.",
-    "bannerImage": "/images/banners/residential-solar-roof.webp"
-  },
-  "whySolar": {
-    "eyebrow": "Solar Panels",
-    "title": "A Smart Investment That Pays For Itself",
-    "cards": [
-      {
-        "subHeading": "What is Solar PV?",
-        "paragraph": "Solar PV (photovoltaic) is a technology that converts sunlight into electricity using semiconductor materials in panels. \"Photo\" means light and \"voltaic\" means electricity. So the panels use the sun's light to make electricity that you can use to power your home. \nThe more panels, the more electricity generated.\n",
-        "image": "/images/services/roof-solar-install.webp"
-      },
-      {
-        "subHeading": "Does Solar work in cloudy weather?",
-        "paragraph": "The panels today are very efficient. Most houses in Ireland can fit enough panels on their roof to meet a majority of their needs.  \n\nDoes it work in cloudy weather?\n\nYes.  This is because the panels need sunlight, not sunshine.  Ireland has a similar climate to Germany snd they have been a big solar success story.",
-        "image": "/images/services/panel-installation.webp"
-      },
-      {
-        "subHeading": "What other equipment do I need?",
-        "paragraph": "To make solar wok for your home you need two things:  \n\n1. Solar panels and \n2. An \"Inverter\".  \n\nThe inverter converts the DC electricity from the panels into AC electricity for your home electrical system.\n\nDo I need a Battery?\n\nAdding battery storage is a great idea and can significantly help you save money and become even more independent from the grid.  Check the Battery section of this site to learn more.\n",
-        "image": "/images/services/roof-solar-install.webp"
-      },
-      {
-        "subHeading": "Why choose BrightPeak Energy?",
-        "paragraph": "As one of Ireland's leading renewable energy installers with over 18 years of experience and 2,800+ completed projects, we deliver bespoke solar solutions tailored to your home. \n\nWe handle everything.\n\n- We will provide and install the panels \n- We will provide and connect the Inverter\n- We will handle the SEAI grants application \n\nAll work is done by our own qualified team \n- No sub-contractors\n",
-        "image": "/images/about/company-van.webp"
-      }
-    ],
-    "bullets": [
-      "SEAI Grants Available — up to €1,800 towards your solar system",
-      "Professional installation — smooth, tidy, and on time",
-      "We handle everything — paperwork, installation, and setup",
-      "Lifetime workmanship guarantee for total peace of mind",
-      "Lower your electricity bills every month",
-      "Get paid for surplus power sent back to the grid"
-    ],
-    "enabled": true
-  },
-  "process": {
-    "eyebrow": "Our Process",
-    "title": "From Consultation to Installation",
-    "steps": [
-      {
-        "step": "1",
-        "title": "Free Site Survey",
-        "desc": "We visit your property to assess your roof, energy usage, and advise on the best solar system for your needs"
-      },
-      {
-        "step": "2",
-        "title": "Custom Design",
-        "desc": "We design a bespoke solar PV system tailored to your home for maximum energy generation"
-      },
-      {
-        "step": "3",
-        "title": "Professional Install",
-        "desc": "Our own certified team installs your system — no sub-contracting. Clean, tidy, and on budget"
-      },
-      {
-        "step": "4",
-        "title": "Start Saving",
-        "desc": "Your system goes live and you immediately start generating your own clean electricity"
-      }
-    ],
-    "enabled": true
-  },
-  "included": {
-    "title": "What's Included",
-    "items": [
-      {
-        "title": "Premium Solar Panels",
-        "desc": "Cutting-edge solar technology with 25+ year performance warranty and maximum efficiency",
-        "icon": "☀️"
-      },
-      {
-        "title": "Hybrid Inverter",
-        "desc": "High-efficiency inverters that convert solar energy for home use and battery storage",
-        "icon": "🔌"
-      },
-      {
-        "title": "Full Monitoring",
-        "desc": "Real-time monitoring app so you can track your energy generation and savings",
-        "icon": "📱"
-      },
-      {
-        "title": "SEAI Grant Handling",
-        "desc": "We guide you through the grant process and help you claim up to €1,800",
-        "icon": "📋"
-      },
-      {
-        "title": "Certified Installation",
-        "desc": "Installed by our own Safe Electric certified electricians — no sub-contracting",
-        "icon": "🔒"
-      },
-      {
-        "title": "Lifetime Guarantee",
-        "desc": "We stand over our work with a lifetime workmanship guarantee for your total peace of mind",
-        "icon": "🛡️"
-      }
-    ],
-    "enabled": true
-  },
   "cta": {
     "title": "Ready to Go Solar?",
+    "enabled": true,
     "subtitle": "Use our Savings Calculator to get a Free Quote. We also offer a free site survey to advise on the best solar system for your needs.",
     "primaryButton": {
       "label": "Get Free Quote",
@@ -114,7 +10,111 @@
     "secondaryButton": {
       "label": "Learn About Grants",
       "variant": "secondary"
-    },
+    }
+  },
+  "hero": {
+    "title": "Solar Panels",
+    "eyebrow": "Trusted Home Solar Installers",
+    "subtitle": "Hundreds of homeowners in Dublin and beyond have trusted BrightPeak to power their homes with clean, reliable solar energy.",
+    "bannerImage": "/images/banners/residential-solar-roof.webp"
+  },
+  "enabled": true,
+  "process": {
+    "steps": [
+      {
+        "desc": "We visit your property to assess your roof, energy usage, and advise on the best solar system for your needs",
+        "step": "1",
+        "title": "Free Site Survey"
+      },
+      {
+        "desc": "We design a bespoke solar PV system tailored to your home for maximum energy generation",
+        "step": "2",
+        "title": "Custom Design"
+      },
+      {
+        "desc": "Our own certified team installs your system — no sub-contracting. Clean, tidy, and on budget",
+        "step": "3",
+        "title": "Professional Install"
+      },
+      {
+        "desc": "Your system goes live and you immediately start generating your own clean electricity",
+        "step": "4",
+        "title": "Start Saving"
+      }
+    ],
+    "title": "From Consultation to Installation",
+    "enabled": true,
+    "eyebrow": "Our Process"
+  },
+  "included": {
+    "items": [
+      {
+        "desc": "Cutting-edge solar technology with 25+ year performance warranty and maximum efficiency",
+        "icon": "☀️",
+        "title": "Premium Solar Panels"
+      },
+      {
+        "desc": "High-efficiency inverters that convert solar energy for home use and battery storage",
+        "icon": "🔌",
+        "title": "Hybrid Inverter"
+      },
+      {
+        "desc": "Real-time monitoring app so you can track your energy generation and savings",
+        "icon": "📱",
+        "title": "Full Monitoring"
+      },
+      {
+        "desc": "We guide you through the grant process and help you claim up to €1,800",
+        "icon": "📋",
+        "title": "SEAI Grant Handling"
+      },
+      {
+        "desc": "Installed by our own Safe Electric certified electricians — no sub-contracting",
+        "icon": "🔒",
+        "title": "Certified Installation"
+      },
+      {
+        "desc": "We stand over our work with a lifetime workmanship guarantee for your total peace of mind",
+        "icon": "🛡️",
+        "title": "Lifetime Guarantee"
+      }
+    ],
+    "title": "What's Included",
     "enabled": true
+  },
+  "whySolar": {
+    "cards": [
+      {
+        "image": "/images/services/roof-solar-install.webp",
+        "paragraph": "Solar PV (photovoltaic) is a technology that converts sunlight into electricity using semiconductor materials in panels. \"Photo\" means light and \"voltaic\" means electricity. So the panels use the sun's light to make electricity that you can use to power your home. \nThe more panels, the more electricity generated.\n",
+        "subHeading": "What is Solar PV?"
+      },
+      {
+        "image": "/images/services/panel-installation.webp",
+        "paragraph": "The panels today are very efficient. Most houses in Ireland can fit enough panels on their roof to meet a majority of their needs.  \n\nDoes it work in cloudy weather?\n\nYes.  This is because the panels need sunlight, not sunshine.  Ireland has a similar climate to Germany snd they have been a big solar success story.",
+        "subHeading": "Does Solar work in cloudy weather?"
+      },
+      {
+        "image": "/images/services/roof-solar-install.webp",
+        "paragraph": "To make solar wok for your home you need two things:  \n\n1. Solar panels and \n2. An \"Inverter\".  \n\nThe inverter converts the DC electricity from the panels into AC electricity for your home electrical system.\n\nDo I need a Battery?\n\nAdding battery storage is a great idea and can significantly help you save money and become even more independent from the grid.  Check the Battery section of this site to learn more.\n",
+        "subHeading": "What other equipment do I need?"
+      },
+      {
+        "image": "/images/about/company-van.webp",
+        "paragraph": "As one of Ireland's leading renewable energy installers with over 18 years of experience and 2,800+ completed projects, we deliver bespoke solar solutions tailored to your home. \n\nWe handle everything.\n\n- We will provide and install the panels \n- We will provide and connect the Inverter\n- We will handle the SEAI grants application \n\nAll work is done by our own qualified team \n- No sub-contractors\n",
+        "subHeading": "Why choose BrightPeak Energy?"
+      }
+    ],
+    "title": "A Smart Investment That Pays For Itself",
+    "bullets": [
+      "SEAI Grants Available — up to €1,800 towards your solar system",
+      "Professional installation — smooth, tidy, and on time",
+      "We handle everything — paperwork, installation, and setup",
+      "Lifetime workmanship guarantee for total peace of mind",
+      "Lower your electricity bills every month",
+      "Get paid for surplus power sent back to the grid"
+    ],
+    "enabled": true,
+    "eyebrow": "Solar Panels"
   }
 }

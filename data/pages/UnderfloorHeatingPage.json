@@ -1,104 +1,7 @@
 {
-  "enabled": false,
-  "hero": {
-    "eyebrow": "Market Leaders Since 2006",
-    "title": "Underfloor Heating",
-    "subtitle": "BrightPeak have been in operation since 2006, specialising in domestic and commercial projects and are one of the market leaders in design and supply of underfloor heating systems in Ireland.",
-    "bannerImage": "/images/services/underfloor-heating.webp"
-  },
-  "intro": {
-    "eyebrow": "About Our Systems",
-    "title": "Ireland's Leading Underfloor Heating Specialists",
-    "image": "/images/services/underfloor-heating.webp",
-    "imageAlt": "Engineer installing underfloor heating pipes",
-    "paragraphs": [
-      "<p>BrightPeak is one of the leading Irish suppliers of the highest quality and specification underfloor heating systems for domestic and commercial installations of any size. We are a distributor for Comisa multilayer Alupex-pipe and press fittings for all commercial and domestic plumbing and heating installations. Comisa multi-layer pipe technology meets the most stringent certification criteria and is covered by a comprehensive guarantee and insurance.</p>",
-      "We also offer design and supply only underfloor heating system packages direct to your plumbing or building contractor. Simply drop into our showroom with your floor plans or alternatively email in PDF or CAD drawings and we will expertly design your system. We can also offer full training on underfloor heating installation.",
-      "BrightPeak have carried out many major underfloor heating, renewable, and plumbing projects in Ireland in recent years in conjunction with some of the biggest mechanical contractors in the state. Projects such as Áras an Uachtaráin, 350 apartments in South Dublin (approx 16,000m²), large domestic housing developments in Donnybrook and Portmarnock, and a 24,000m² shopping centre in Drogheda. More recently we have done the underfloor heating system and the liquid screed in Beaumont Hospital and also the underfloor system in the new Audi Showroom in Naas."
-    ],
-    "enabled": true
-  },
-  "floorTypes": {
-    "title": "Floor Types We Work With",
-    "items": [
-      {
-        "title": "Suspended Timber Floor",
-        "icon": "🪵"
-      },
-      {
-        "title": "Timber Floor over Existing Slab with Screed or Trays",
-        "icon": "🏗️"
-      },
-      {
-        "title": "Intermediate Floor Hollow Core Pre-Cast Units",
-        "icon": "🧱"
-      },
-      {
-        "title": "Standard Solid Floor",
-        "icon": "🏠"
-      }
-    ],
-    "enabled": true
-  },
-  "variotherm": {
-    "eyebrow": "Retro Fit Solution",
-    "title": "Variotherm: The Perfect Retro Fit Underfloor System",
-    "image": "/images/services/underfloor-system.webp",
-    "imageAlt": "Variotherm underfloor heating system beneath modern living room floor",
-    "paragraphs": [
-      "A floor heating system that requires no conventional screed and that is easy to install. Suitable for renovation and new build — light, slim, but with a high output. All this is combined in the 20mm VarioComp floor heating system, which is perfect for renovations as there is no need to dig down for height for a traditional underfloor heating system.",
-      "The selected area is cleared and the VarioComp panels are fitted to the floor. The specially milled routing in the panel guarantees fast laying on all even subfloors. The VarioProFile pipe is then laid and immediately fixed into place with the pipe running back to the installed underfloor heating manifold. Finally, the VarioComp filling compound is poured over the boards and levelled off. The floor finish can be fixed after a short drying period of a minimum of 24 hours."
-    ],
-    "enabled": true
-  },
-  "servicing": {
-    "eyebrow": "Maintenance & Support",
-    "title": "Servicing & Repairs",
-    "paragraphs": [
-      "Like any mechanical equipment, underfloor heating systems need regular servicing and maintenance to guarantee they operate at their best. BrightPeak provide a comprehensive servicing and maintenance service.",
-      "Servicing allows our engineers to look out for signs of any failures in the heating system, ensuring that it is constantly running smoothly and efficiently. Our specialised team can problem solve most underfloor heating faults, giving customers peace of mind."
-    ],
-    "enabled": true
-  },
-  "benefits": {
-    "eyebrow": "Why Choose Underfloor Heating",
-    "title": "Benefits of Underfloor Heating",
-    "items": [
-      {
-        "title": "Comfort",
-        "desc": "Underfloor heating is radiant heat, similar to the heat you feel in direct sunlight on a warm summer's day. It radiates evenly and gently upwards from the entire floor area, providing warm feet and a cooler ceiling. Radiator-driven heating has inherent hot and cold spots that lead to draughts, particularly at floor level.",
-        "icon": "🌡️"
-      },
-      {
-        "title": "Health & Safety",
-        "desc": "With no hot and cold spots, airflow and draughts are eliminated and the circulation of dust and dust mites is significantly reduced. Underfloor heating operates at temperatures no warmer than the palm of your hand, unlike radiators which can reach very high temperatures — making it a much safer environment, particularly for young children.",
-        "icon": "🛡️"
-      },
-      {
-        "title": "Economy",
-        "desc": "Although installation is slightly more expensive than conventional radiators, the benefits far outweigh the costs. Underfloor heating typically offers savings of 15% to 25% on the household heating bill. The advantages are maximised when combined with a heat pump because the optimum economic operation produces water at between 35 and 40 degrees.",
-        "icon": "💶"
-      },
-      {
-        "title": "Heat Pump Compatible",
-        "desc": "Underfloor heating opens up the world of renewable energy for your home. Heat pumps (Air Source & Geothermal) are designed to work in conjunction with underfloor heating systems as they operate at a lower temperature. This results in very low running costs compared with conventional gas and oil boiler systems.",
-        "icon": "♻️"
-      },
-      {
-        "title": "Control",
-        "desc": "Good quality thermostats are at the heart of a properly designed underfloor heating system. Each zone or room has an adjustable thermostat set to the desired temperature, calling the heat source only when needed, thereby saving on energy costs. Multi-channel clocks provide overall control of the entire domestic heating and hot water system.",
-        "icon": "🎛️"
-      },
-      {
-        "title": "Floor Coverings",
-        "desc": "Tiles and stone floors heat up quickest, but most timber floors — whether solid or floating — are equally compatible with underfloor heating. Carpet is also very popular and comfortable with underfloor heating, giving you freedom in your choice of floor finishes.",
-        "icon": "🏠"
-      }
-    ],
-    "enabled": true
-  },
   "cta": {
     "title": "Get a No-Obligation Quote Today!",
+    "enabled": true,
     "subtitle": "Whether it's a new build, renovation, or retro fit — our team will design the perfect underfloor heating system for your home or commercial project. Get in touch for a free consultation.",
     "primaryButton": {
       "label": "Get Free Quote",
@@ -107,7 +10,104 @@
     "secondaryButton": {
       "label": "Call Us Today",
       "variant": "secondary"
-    },
+    }
+  },
+  "hero": {
+    "title": "Underfloor Heating",
+    "eyebrow": "Market Leaders Since 2006",
+    "subtitle": "BrightPeak have been in operation since 2006, specialising in domestic and commercial projects and are one of the market leaders in design and supply of underfloor heating systems in Ireland.",
+    "bannerImage": "/images/services/underfloor-heating.webp"
+  },
+  "intro": {
+    "image": "/images/services/underfloor-heating.webp",
+    "title": "Ireland's Leading Underfloor Heating Specialists",
+    "enabled": true,
+    "eyebrow": "About Our Systems",
+    "imageAlt": "Engineer installing underfloor heating pipes",
+    "paragraphs": [
+      "<p>BrightPeak is one of the leading Irish suppliers of the highest quality and specification underfloor heating systems for domestic and commercial installations of any size. We are a distributor for Comisa multilayer Alupex-pipe and press fittings for all commercial and domestic plumbing and heating installations. Comisa multi-layer pipe technology meets the most stringent certification criteria and is covered by a comprehensive guarantee and insurance.</p>",
+      "We also offer design and supply only underfloor heating system packages direct to your plumbing or building contractor. Simply drop into our showroom with your floor plans or alternatively email in PDF or CAD drawings and we will expertly design your system. We can also offer full training on underfloor heating installation.",
+      "BrightPeak have carried out many major underfloor heating, renewable, and plumbing projects in Ireland in recent years in conjunction with some of the biggest mechanical contractors in the state. Projects such as Áras an Uachtaráin, 350 apartments in South Dublin (approx 16,000m²), large domestic housing developments in Donnybrook and Portmarnock, and a 24,000m² shopping centre in Drogheda. More recently we have done the underfloor heating system and the liquid screed in Beaumont Hospital and also the underfloor system in the new Audi Showroom in Naas."
+    ]
+  },
+  "enabled": false,
+  "benefits": {
+    "items": [
+      {
+        "desc": "Underfloor heating is radiant heat, similar to the heat you feel in direct sunlight on a warm summer's day. It radiates evenly and gently upwards from the entire floor area, providing warm feet and a cooler ceiling. Radiator-driven heating has inherent hot and cold spots that lead to draughts, particularly at floor level.",
+        "icon": "🌡️",
+        "title": "Comfort"
+      },
+      {
+        "desc": "With no hot and cold spots, airflow and draughts are eliminated and the circulation of dust and dust mites is significantly reduced. Underfloor heating operates at temperatures no warmer than the palm of your hand, unlike radiators which can reach very high temperatures — making it a much safer environment, particularly for young children.",
+        "icon": "🛡️",
+        "title": "Health & Safety"
+      },
+      {
+        "desc": "Although installation is slightly more expensive than conventional radiators, the benefits far outweigh the costs. Underfloor heating typically offers savings of 15% to 25% on the household heating bill. The advantages are maximised when combined with a heat pump because the optimum economic operation produces water at between 35 and 40 degrees.",
+        "icon": "💶",
+        "title": "Economy"
+      },
+      {
+        "desc": "Underfloor heating opens up the world of renewable energy for your home. Heat pumps (Air Source & Geothermal) are designed to work in conjunction with underfloor heating systems as they operate at a lower temperature. This results in very low running costs compared with conventional gas and oil boiler systems.",
+        "icon": "♻️",
+        "title": "Heat Pump Compatible"
+      },
+      {
+        "desc": "Good quality thermostats are at the heart of a properly designed underfloor heating system. Each zone or room has an adjustable thermostat set to the desired temperature, calling the heat source only when needed, thereby saving on energy costs. Multi-channel clocks provide overall control of the entire domestic heating and hot water system.",
+        "icon": "🎛️",
+        "title": "Control"
+      },
+      {
+        "desc": "Tiles and stone floors heat up quickest, but most timber floors — whether solid or floating — are equally compatible with underfloor heating. Carpet is also very popular and comfortable with underfloor heating, giving you freedom in your choice of floor finishes.",
+        "icon": "🏠",
+        "title": "Floor Coverings"
+      }
+    ],
+    "title": "Benefits of Underfloor Heating",
+    "enabled": true,
+    "eyebrow": "Why Choose Underfloor Heating"
+  },
+  "servicing": {
+    "title": "Servicing & Repairs",
+    "enabled": true,
+    "eyebrow": "Maintenance & Support",
+    "paragraphs": [
+      "Like any mechanical equipment, underfloor heating systems need regular servicing and maintenance to guarantee they operate at their best. BrightPeak provide a comprehensive servicing and maintenance service.",
+      "Servicing allows our engineers to look out for signs of any failures in the heating system, ensuring that it is constantly running smoothly and efficiently. Our specialised team can problem solve most underfloor heating faults, giving customers peace of mind."
+    ]
+  },
+  "floorTypes": {
+    "items": [
+      {
+        "icon": "🪵",
+        "title": "Suspended Timber Floor"
+      },
+      {
+        "icon": "🏗️",
+        "title": "Timber Floor over Existing Slab with Screed or Trays"
+      },
+      {
+        "icon": "🧱",
+        "title": "Intermediate Floor Hollow Core Pre-Cast Units"
+      },
+      {
+        "icon": "🏠",
+        "title": "Standard Solid Floor"
+      }
+    ],
+    "title": "Floor Types We Work With",
     "enabled": true
+  },
+  "variotherm": {
+    "image": "/images/services/underfloor-system.webp",
+    "title": "Variotherm: The Perfect Retro Fit Underfloor System",
+    "enabled": true,
+    "eyebrow": "Retro Fit Solution",
+    "imageAlt": "Variotherm underfloor heating system beneath modern living room floor",
+    "paragraphs": [
+      "A floor heating system that requires no conventional screed and that is easy to install. Suitable for renovation and new build — light, slim, but with a high output. All this is combined in the 20mm VarioComp floor heating system, which is perfect for renovations as there is no need to dig down for height for a traditional underfloor heating system.",
+      "The selected area is cleared and the VarioComp panels are fitted to the floor. The specially milled routing in the panel guarantees fast laying on all even subfloors. The VarioProFile pipe is then laid and immediately fixed into place with the pipe running back to the installed underfloor heating manifold. Finally, the VarioComp filling compound is poured over the boards and levelled off. The floor finish can be fixed after a short drying period of a minimum of 24 hours."
+    ]
   }
 }

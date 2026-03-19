@@ -3,7 +3,7 @@ import { generatePageMetadata } from "./components/SeoHead";
 import StructuredData from "./components/StructuredData";
 import { loadAllHomeData } from "./lib/loadAllHomeData";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 export const metadata = generatePageMetadata("/");
 

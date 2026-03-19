@@ -1,10 +1,22 @@
 {
-  "enabled": true,
-  "title": "Our Accreditations",
   "logos": [
-    { "src": "/images/affiliations/affiliation-01.webp", "alt": "SEAI Approved" },
-    { "src": "/images/affiliations/affiliation-02.jpeg", "alt": "Sigenergy Certified" },
-    { "src": "/images/affiliations/affiliation-03.png", "alt": "Safe Electric Registered" },
-    { "src": "/images/affiliations/affiliation-04.jpeg", "alt": "ISEA Member" }
-  ]
+    {
+      "alt": "SEAI Approved",
+      "src": "/images/affiliations/affiliation-01.webp"
+    },
+    {
+      "alt": "Sigenergy Certified",
+      "src": "/images/affiliations/affiliation-02.jpeg"
+    },
+    {
+      "alt": "Safe Electric Registered",
+      "src": "/images/affiliations/affiliation-03.png"
+    },
+    {
+      "alt": "ISEA Member",
+      "src": "/images/affiliations/affiliation-04.jpeg"
+    }
+  ],
+  "title": "Our Accreditations",
+  "enabled": true
 }

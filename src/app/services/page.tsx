@@ -8,7 +8,7 @@ import path from "path";
 
 export const metadata = generatePageMetadata("/services");
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 const additionalServices = [
   {

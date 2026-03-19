@@ -1,11 +1,11 @@
 {
-  "enabled": true,
   "title": "Ireland's Trusted Renewable Energy Experts",
-  "subtitle": "Your local and trusted partner delivering bespoke solar panel systems since 2006 — designing, installing, and backing up every system we deliver.",
   "badges": [
     "SEAI Approved",
     "20+ Years Experience",
     "Lifetime Guarantee",
     "No Sub-Contracting"
-  ]
+  ],
+  "enabled": true,
+  "subtitle": "Your local and trusted partner delivering bespoke solar panel systems since 2006 — designing, installing, and backing up every system we deliver."
 }
