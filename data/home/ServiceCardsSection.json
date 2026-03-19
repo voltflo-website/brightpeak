@@ -1,31 +1,31 @@
 {
-  "enabled": true,
-  "style": 1,
   "arrow": "→",
   "cards": [
     {
-      "title": "Solar Panels",
-      "description": "Generate your own clean electricity and slash your energy bills",
       "href": "/solar-panels",
-      "image": "/images/services/panel-installation.webp"
+      "image": "/images/services/panel-installation.webp",
+      "title": "Solar Panels",
+      "description": "Generate your own clean electricity and slash your energy bills"
     },
     {
-      "title": "Battery Storage",
-      "description": "Store your solar energy and use it when you need it most",
       "href": "/battery-storage",
-      "image": "/images/case-studies/battery-install.webp"
+      "image": "/images/case-studies/battery-install.webp",
+      "title": "Battery Storage",
+      "description": "Store your solar energy and use it when you need it most"
     },
     {
-      "title": "EV Chargers",
-      "description": "Charge your electric vehicle at home with fast, reliable charging",
       "href": "/ev-chargers",
-      "image": "/images/services/ev-charge.webp"
+      "image": "/images/services/ev-charge.webp",
+      "title": "EV Chargers",
+      "description": "Charge your electric vehicle at home with fast, reliable charging"
     },
     {
-      "title": "Commercial Solar",
-      "description": "Reduce overheads and boost sustainability with commercial solar solutions",
       "href": "/commercial-solar",
-      "image": "/images/services/commercial-solar.webp"
+      "image": "/images/services/commercial-solar.webp",
+      "title": "Commercial Solar",
+      "description": "Reduce overheads and boost sustainability with commercial solar solutions"
     }
-  ]
+  ],
+  "style": 1,
+  "enabled": true
 }

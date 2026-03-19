@@ -2,6 +2,13 @@ import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 import sharp from "sharp";
+import {
+  isDeployed,
+  readGitHubFile,
+  writeGitHubBinaryFile,
+  deleteGitHubFile,
+  listGitHubDirectoryRecursive,
+} from "../../../../packages/admin/api/githubStorage";
 
 export const dynamic = "force-dynamic";
 
@@ -65,9 +72,48 @@ function getFolders(dir: string, baseDir: string): string[] {
   return folders;
 }
 
+async function getImagesFromGitHub(): Promise<{ images: { path: string; name: string; folder: string; size: number }[]; folders: string[] }> {
+  const items = await listGitHubDirectoryRecursive("public/images");
+  const images: { path: string; name: string; folder: string; size: number }[] = [];
+  const folderSet = new Set<string>(["/"] );
+
+  for (const item of items) {
+    if (item.type !== "file") continue;
+    const ext = path.extname(item.name).toLowerCase();
+    if (!IMAGE_EXTENSIONS.has(ext)) continue;
+
+    const relativePath = "/" + item.path.replace("public/", "");
+    const dirPart = path.dirname(item.path).replace("public/images", "").replace(/^\//, "");
+    const folder = dirPart || "/";
+
+    images.push({
+      path: relativePath,
+      name: item.name,
+      folder,
+      size: item.size,
+    });
+
+    if (folder !== "/") {
+      const parts = folder.split("/");
+      let accumulated = "";
+      for (const part of parts) {
+        accumulated = accumulated ? `${accumulated}/${part}` : part;
+        folderSet.add(accumulated);
+      }
+    }
+  }
+
+  return { images, folders: [...folderSet].sort() };
+}
+
 export async function GET(request: NextRequest) {
   if (!checkAuth(request)) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
+  if (isDeployed()) {
+    const result = await getImagesFromGitHub();
+    return NextResponse.json(result);
   }
 
   const images = getImagesRecursive(IMAGES_DIR, IMAGES_DIR);
@@ -96,14 +142,6 @@ export async function POST(request: NextRequest) {
     }
 
     const buffer = Buffer.from(await file.arrayBuffer());
-    const targetDir = path.resolve(folder === "/" ? IMAGES_DIR : path.join(IMAGES_DIR, folder));
-
-    if (targetDir !== IMAGES_DIR && !targetDir.startsWith(IMAGES_DIR + path.sep)) {
-      return NextResponse.json({ error: "Invalid folder" }, { status: 400 });
-    }
-
-    fs.mkdirSync(targetDir, { recursive: true });
-
     const baseName = path.basename(file.name, ext).replace(/[^a-zA-Z0-9_-]/g, "-").toLowerCase();
     let outputName: string;
     let outputBuffer: Buffer;
@@ -113,19 +151,61 @@ export async function POST(request: NextRequest) {
       outputBuffer = buffer;
     } else {
       outputName = `${baseName}.webp`;
-
       const image = sharp(buffer);
       const metadata = await image.metadata();
-
       let pipeline = image;
       if (metadata.width && metadata.width > MAX_DIMENSION) {
         pipeline = pipeline.resize({ width: MAX_DIMENSION, withoutEnlargement: true });
       } else if (metadata.height && metadata.height > MAX_DIMENSION) {
         pipeline = pipeline.resize({ height: MAX_DIMENSION, withoutEnlargement: true });
       }
-
       outputBuffer = await pipeline.webp({ quality: WEBP_QUALITY }).toBuffer();
     }
+
+    const deployed = isDeployed();
+
+    if (deployed) {
+      const sanitizedFolder = folder.replace(/\.\./g, "").replace(/^\/+/, "").replace(/\/+$/, "");
+      if (sanitizedFolder && (sanitizedFolder.startsWith("/") || sanitizedFolder.includes(".."))) {
+        return NextResponse.json({ error: "Invalid folder" }, { status: 400 });
+      }
+      const ghFolder = sanitizedFolder ? `public/images/${sanitizedFolder}` : "public/images";
+      const ghPath = `${ghFolder}/${outputName}`;
+
+      const existing = await listGitHubDirectoryRecursive(ghFolder).catch(() => []);
+      let finalName = outputName;
+      let counter = 1;
+      const existingNames = new Set(existing.map((e) => e.name));
+      while (existingNames.has(finalName)) {
+        const nameBase = path.basename(outputName, path.extname(outputName));
+        finalName = `${nameBase}-${counter}${path.extname(outputName)}`;
+        counter++;
+      }
+
+      const finalGhPath = `${ghFolder}/${finalName}`;
+      const base64Content = outputBuffer.toString("base64");
+      await writeGitHubBinaryFile(finalGhPath, base64Content, `Upload image ${finalName}`);
+
+      const publicPath = "/images/" + (folder === "/" ? "" : folder + "/") + finalName;
+      const cleanPath = publicPath.replace(/\/+/g, "/");
+
+      return NextResponse.json({
+        success: true,
+        path: cleanPath,
+        name: finalName,
+        size: outputBuffer.length,
+        originalSize: buffer.length,
+        storage: "github",
+      });
+    }
+
+    const targetDir = path.resolve(folder === "/" ? IMAGES_DIR : path.join(IMAGES_DIR, folder));
+
+    if (targetDir !== IMAGES_DIR && !targetDir.startsWith(IMAGES_DIR + path.sep)) {
+      return NextResponse.json({ error: "Invalid folder" }, { status: 400 });
+    }
+
+    fs.mkdirSync(targetDir, { recursive: true });
 
     let finalName = outputName;
     let counter = 1;
@@ -147,6 +227,7 @@ export async function POST(request: NextRequest) {
       name: finalName,
       size: outputBuffer.length,
       originalSize: buffer.length,
+      storage: "local",
     });
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : "Upload failed";
@@ -182,6 +263,26 @@ function findReferences(imagePath: string): string[] {
   return [...new Set(references)];
 }
 
+async function findReferencesGitHub(imagePath: string): Promise<string[]> {
+  const { readGitHubFile: readGH } = await import("../../../../packages/admin/api/githubStorage");
+  const references: string[] = [];
+  const { VALID_FILES } = await import("../../../../packages/admin/config");
+
+  for (const f of VALID_FILES) {
+    try {
+      const result = await readGH(`data/${f}`);
+      if (result) {
+        const content = JSON.stringify(result.data);
+        if (content.includes(imagePath)) {
+          references.push(`data/${f}`);
+        }
+      }
+    } catch {}
+  }
+
+  return [...new Set(references)];
+}
+
 export async function DELETE(request: NextRequest) {
   if (!checkAuth(request)) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
@@ -191,6 +292,27 @@ export async function DELETE(request: NextRequest) {
     const { imagePath, force } = await request.json();
     if (!imagePath || typeof imagePath !== "string") {
       return NextResponse.json({ error: "No image path provided" }, { status: 400 });
+    }
+
+    const deployed = isDeployed();
+
+    if (deployed) {
+      if (!imagePath.startsWith("/images/") || imagePath.includes("..")) {
+        return NextResponse.json({ error: "Invalid path" }, { status: 400 });
+      }
+      const ghPath = `public${imagePath}`;
+
+      const references = await findReferencesGitHub(imagePath);
+      if (references.length > 0 && !force) {
+        return NextResponse.json({
+          warning: true,
+          references,
+          message: `This image is referenced in ${references.length} file(s). Delete anyway?`,
+        });
+      }
+
+      await deleteGitHubFile(ghPath, `Delete image ${imagePath}`);
+      return NextResponse.json({ success: true, storage: "github" });
     }
 
     const fullPath = path.resolve(path.join(process.cwd(), "public", imagePath));
@@ -213,7 +335,7 @@ export async function DELETE(request: NextRequest) {
     }
 
     fs.unlinkSync(fullPath);
-    return NextResponse.json({ success: true });
+    return NextResponse.json({ success: true, storage: "local" });
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : "Delete failed";
     return NextResponse.json({ error: message }, { status: 500 });

@@ -273,4 +273,5 @@ export const VALID_FILES = [
   "seo.json",
   "home/SiteSettings.json",
   "home/HeaderSettings.json",
+  "redirects.json",
 ];

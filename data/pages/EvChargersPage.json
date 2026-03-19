@@ -1,82 +1,82 @@
 {
-  "enabled": true,
-  "hero": {
-    "eyebrow": "EV Car Chargers",
-    "title": "EV Charger Installation",
-    "subtitle": "Effortless, reliable charging solutions for a sustainable future. Powering your drive toward a greener tomorrow.",
-    "bannerImage": "/images/banners/home-ev-charger-car.webp"
-  },
-  "section1": {
-    "eyebrow": "Powering Your Drive Toward a Greener Future",
-    "title1": "Home EV Charging",
-    "subHeading": "",
-    "paragraph": "Whether you're upgrading to an electric vehicle or enhancing your eco-friendly home, our chargers combine efficiency, reliability, and smart technology to keep you moving.",
-    "image": "/images/services/ev-charger-home.webp",
-    "imageAlt": "Home EV charger installation in Ireland",
-    "enabled": true
-  },
-  "section2": {
-    "title2": "Commercial Solutions",
-    "subHeading": "",
-    "paragraph": "Installing EV chargers can be an excellent choice for any business. Not only is it a great way to encourage your employees to invest in an electric car but it can actually become a revenue stream for your business.\n\nAdding commercial EV charging points allows you to offer electricity at a slightly higher rate than cost. This will enable your staff to charge their cars for a good price and bring in revenue that allows you to recoup the installation cost and maintenance.\n\nThere are also government grants available that can help you make your commercial EV charger installation even more affordable.",
-    "image": "/images/services/ev-charger-home.webp",
-    "imageAlt": "Commercial EV charger installation",
-    "enabled": true
-  },
-  "features": {
-    "enabled": true,
-    "items": [
-      {
-        "title": "Top-Tier Equipment",
-        "desc": "Premium brands — high-quality, reliable, and future-proof",
-        "icon": "⚡"
-      },
-      {
-        "title": "Expert Installation",
-        "desc": "Directly employed, Safe Electric certified professionals providing seamless, safe installation",
-        "icon": "🔧"
-      },
-      {
-        "title": "Energy-Efficient",
-        "desc": "EV chargers that integrate with renewable energy sources, reducing your carbon footprint",
-        "icon": "☀️"
-      },
-      {
-        "title": "Smart Features",
-        "desc": "App controls, scheduling, and monitoring for full control over your EV charging",
-        "icon": "📱"
-      }
-    ]
-  },
-  "business": {
-    "title": "Why Make The Switch to Electric",
-    "subtitle": "Discover the benefits of driving electric and charging at home with BrightPeak Energy.",
-    "items": [
-      {
-        "title": "Environmentally Friendly",
-        "desc": "Zero tailpipe emissions — drive cleaner and reduce your carbon footprint every day",
-        "icon": "🌱"
-      },
-      {
-        "title": "Lower Running Costs",
-        "desc": "Electricity is significantly cheaper than petrol or diesel — save money on every journey",
-        "icon": "💰"
-      },
-      {
-        "title": "Grant Support",
-        "desc": "Government grants are available to help with the cost of installing a home EV charger",
-        "icon": "📋"
-      }
-    ],
-    "enabled": true
-  },
   "cta": {
     "title": "Get an EV Charger Installed",
+    "enabled": true,
     "subtitle": "Fast, professional installation by our expert team. Contact us today for a free, no-obligation quote.",
     "primaryButton": {
       "label": "Get a Quote",
       "variant": "primary"
-    },
+    }
+  },
+  "hero": {
+    "title": "EV Charger Installation",
+    "eyebrow": "EV Car Chargers",
+    "subtitle": "Effortless, reliable charging solutions for a sustainable future. Powering your drive toward a greener tomorrow.",
+    "bannerImage": "/images/banners/home-ev-charger-car.webp"
+  },
+  "enabled": true,
+  "business": {
+    "items": [
+      {
+        "desc": "Zero tailpipe emissions — drive cleaner and reduce your carbon footprint every day",
+        "icon": "🌱",
+        "title": "Environmentally Friendly"
+      },
+      {
+        "desc": "Electricity is significantly cheaper than petrol or diesel — save money on every journey",
+        "icon": "💰",
+        "title": "Lower Running Costs"
+      },
+      {
+        "desc": "Government grants are available to help with the cost of installing a home EV charger",
+        "icon": "📋",
+        "title": "Grant Support"
+      }
+    ],
+    "title": "Why Make The Switch to Electric",
+    "enabled": true,
+    "subtitle": "Discover the benefits of driving electric and charging at home with BrightPeak Energy."
+  },
+  "features": {
+    "items": [
+      {
+        "desc": "Premium brands — high-quality, reliable, and future-proof",
+        "icon": "⚡",
+        "title": "Top-Tier Equipment"
+      },
+      {
+        "desc": "Directly employed, Safe Electric certified professionals providing seamless, safe installation",
+        "icon": "🔧",
+        "title": "Expert Installation"
+      },
+      {
+        "desc": "EV chargers that integrate with renewable energy sources, reducing your carbon footprint",
+        "icon": "☀️",
+        "title": "Energy-Efficient"
+      },
+      {
+        "desc": "App controls, scheduling, and monitoring for full control over your EV charging",
+        "icon": "📱",
+        "title": "Smart Features"
+      }
+    ],
     "enabled": true
+  },
+  "section1": {
+    "image": "/images/services/ev-charger-home.webp",
+    "title1": "Home EV Charging",
+    "enabled": true,
+    "eyebrow": "Powering Your Drive Toward a Greener Future",
+    "imageAlt": "Home EV charger installation in Ireland",
+    "paragraph": "Whether you're upgrading to an electric vehicle or enhancing your eco-friendly home, our chargers combine efficiency, reliability, and smart technology to keep you moving.",
+    "subHeading": ""
+  },
+  "section2": {
+    "image": "/images/services/ev-charger-home.webp",
+    "title2": "Commercial Solutions",
+    "enabled": true,
+    "imageAlt": "Commercial EV charger installation",
+    "paragraph": "Installing EV chargers can be an excellent choice for any business. Not only is it a great way to encourage your employees to invest in an electric car but it can actually become a revenue stream for your business.\n\nAdding commercial EV charging points allows you to offer electricity at a slightly higher rate than cost. This will enable your staff to charge their cars for a good price and bring in revenue that allows you to recoup the installation cost and maintenance.\n\nThere are also government grants available that can help you make your commercial EV charger installation even more affordable.",
+    "subHeading": ""
   }
 }

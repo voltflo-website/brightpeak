@@ -2,6 +2,14 @@ import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 import crypto from "crypto";
+import {
+  isDeployed,
+  listGitHubDirectoryRecursive,
+} from "../../../../packages/admin/api/githubStorage";
+import {
+  isDbAvailable,
+  readAllContentFiles,
+} from "../../../../packages/admin/api/dbStorage";
 
 export const dynamic = "force-dynamic";
 
@@ -88,6 +96,57 @@ async function fetchFullTree(treeSha: string, token: string, repo: string): Prom
   return map;
 }
 
+async function collectDataFromDb(): Promise<{ relativePath: string; content: Buffer }[]> {
+  const results: { relativePath: string; content: Buffer }[] = [];
+  const allFiles = await readAllContentFiles();
+
+  for (const [filename, data] of allFiles) {
+    const content = JSON.stringify(data, null, 2) + "\n";
+    results.push({
+      relativePath: `data/${filename}`,
+      content: Buffer.from(content, "utf-8"),
+    });
+  }
+
+  return results;
+}
+
+async function collectImagesFromGitHub(): Promise<{ relativePath: string; content: Buffer }[]> {
+  const results: { relativePath: string; content: Buffer }[] = [];
+  const errors: string[] = [];
+
+  const imageItems = await listGitHubDirectoryRecursive("public/images");
+  for (const item of imageItems) {
+    if (item.type !== "file") continue;
+    try {
+      const res = await fetch(`https://api.github.com/repos/${process.env.GITHUB_REPO}/git/blobs/${item.sha}`, {
+        headers: {
+          Authorization: `token ${process.env.GITHUB_PERSONAL_ACCESS_TOKEN}`,
+          Accept: "application/vnd.github.v3+json",
+        },
+      });
+      if (!res.ok) {
+        throw new Error(`Blob fetch failed: ${res.status}`);
+      }
+      const blob = await res.json() as { content: string; encoding: string };
+      if (blob.encoding === "base64") {
+        results.push({
+          relativePath: item.path,
+          content: Buffer.from(blob.content, "base64"),
+        });
+      }
+    } catch (e) {
+      errors.push(`${item.path}: ${(e as Error).message}`);
+    }
+  }
+
+  if (errors.length > 0) {
+    throw new Error(`Failed to fetch ${errors.length} image blob(s): ${errors.join("; ")}`);
+  }
+
+  return results;
+}
+
 export async function POST(request: NextRequest) {
   if (!checkAuth(request)) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
@@ -102,10 +161,47 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "GITHUB_REPO environment variable not configured" }, { status: 500 });
   }
 
+  const deployed = isDeployed();
+
   try {
-    const dataFiles = collectFiles(DATA_BASE, DATA_BASE, "data", (name) => name.endsWith(".json"));
-    const imageFiles = collectFiles(IMAGES_BASE, IMAGES_BASE, "public/images");
-    const allLocalFiles = [...dataFiles, ...imageFiles];
+    let allLocalFiles: { relativePath: string; fullPath?: string; content?: Buffer }[];
+
+    const dbReady = isDbAvailable();
+
+    let dataFiles: { relativePath: string; fullPath?: string; content?: Buffer }[];
+    let dataSource = "local";
+    if (dbReady) {
+      try {
+        dataFiles = await collectDataFromDb();
+        dataSource = "db";
+      } catch (e) {
+        if (deployed) {
+          return NextResponse.json(
+            { error: `Failed to read content from database: ${(e as Error).message}` },
+            { status: 500 }
+          );
+        }
+        console.error(`[Publish] DB read failed, falling back to local JSON:`, (e as Error).message);
+        dataFiles = collectFiles(DATA_BASE, DATA_BASE, "data", (name) => name.endsWith(".json"));
+        dataSource = "local-fallback";
+      }
+    } else if (!deployed) {
+      dataFiles = collectFiles(DATA_BASE, DATA_BASE, "data", (name) => name.endsWith(".json"));
+    } else {
+      return NextResponse.json(
+        { error: "No content source available (DATABASE_URL not configured)" },
+        { status: 500 }
+      );
+    }
+
+    let imageFiles: { relativePath: string; fullPath?: string; content?: Buffer }[];
+    if (deployed) {
+      imageFiles = await collectImagesFromGitHub();
+    } else {
+      imageFiles = collectFiles(IMAGES_BASE, IMAGES_BASE, "public/images");
+    }
+
+    allLocalFiles = [...dataFiles, ...imageFiles];
 
     const mainRef = await githubApi("GET", "/git/refs/heads/main", token, undefined, 3, repo) as { object: { sha: string } };
     const baseSha = mainRef.object.sha;
@@ -114,22 +210,31 @@ export async function POST(request: NextRequest) {
     const remoteTree = await fetchFullTree(baseCommit.tree.sha, token, repo);
 
     const localPaths = new Set<string>();
-    const changedFiles: { relativePath: string; fullPath: string }[] = [];
+    const changedFiles: { relativePath: string; content: Buffer }[] = [];
+
     for (const file of allLocalFiles) {
       const normPath = file.relativePath.replace(/\\/g, "/");
       localPaths.add(normPath);
-      const content = fs.readFileSync(file.fullPath);
+
+      let content: Buffer;
+      if (file.content) {
+        content = file.content;
+      } else if (file.fullPath) {
+        content = fs.readFileSync(file.fullPath);
+      } else {
+        continue;
+      }
+
       const localSha = gitBlobSha(content);
       const remoteSha = remoteTree.get(normPath);
       if (localSha !== remoteSha) {
-        changedFiles.push({ ...file, relativePath: normPath });
+        changedFiles.push({ relativePath: normPath, content });
       }
     }
 
-    const TRACKED_PREFIXES = ["data/", "public/images/"];
     const deletedPaths: string[] = [];
     for (const remotePath of remoteTree.keys()) {
-      if (TRACKED_PREFIXES.some((p) => remotePath.startsWith(p)) && !localPaths.has(remotePath)) {
+      if (remotePath.startsWith("public/images/") && !localPaths.has(remotePath)) {
         deletedPaths.push(remotePath);
       }
     }
@@ -151,9 +256,8 @@ export async function POST(request: NextRequest) {
     const treeItems = [];
     for (let i = 0; i < changedFiles.length; i++) {
       const file = changedFiles[i];
-      const content = fs.readFileSync(file.fullPath);
       const blob = await githubApi("POST", "/git/blobs", token, {
-        content: content.toString("base64"),
+        content: file.content.toString("base64"),
         encoding: "base64",
       }, 3, repo);
       treeItems.push({
@@ -191,7 +295,7 @@ export async function POST(request: NextRequest) {
     if (deletedPaths.length > 0) parts.push(`${deletedPaths.length} file(s) removed`);
 
     const commit = await githubApi("POST", "/git/commits", token, {
-      message: `Content update ${now.toISOString().split("T")[0]}\n\n${parts.join(", ")}\nPublished from admin panel`,
+      message: `Content update ${now.toISOString().split("T")[0]}\n\n${parts.join(", ")}\nPublished from admin panel${deployed ? " (deployed)" : ""}${dbReady ? " [data from DB]" : ""}`,
       tree: (tree as { sha: string }).sha,
       parents: [baseSha],
     }, 3, repo);
@@ -207,6 +311,7 @@ export async function POST(request: NextRequest) {
       imageFiles: changedImageCount,
       deletedFiles: deletedPaths.length,
       totalScanned: allLocalFiles.length,
+      storage: dbReady ? "db" : (deployed ? "github" : "local"),
     });
   } catch (e) {
     return NextResponse.json(

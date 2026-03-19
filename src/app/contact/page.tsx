@@ -9,7 +9,7 @@ import { loadPageJson, loadNavFooterData } from "../lib/loadAllHomeData";
 
 export const metadata = generatePageMetadata("/contact");
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 export default function ContactPage() {
   const pageData = loadPageJson("ContactPage.json") as any;

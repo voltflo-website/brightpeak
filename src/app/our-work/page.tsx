@@ -9,7 +9,7 @@ import path from "path";
 
 export const metadata = generatePageMetadata("/our-work");
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 function loadCaseStudies() {
   try {

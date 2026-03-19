@@ -7,7 +7,7 @@ import { sanitizeHtml } from "../lib/sanitize";
 
 export const metadata = generatePageMetadata("/privacy-policy");
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 export default function PrivacyPolicyPage() {
   const pageData = loadPageJson("PrivacyPolicyPage.json") as any;

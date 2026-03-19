@@ -1,60 +1,60 @@
 {
-  "enabled": true,
   "pages": [
     {
-      "enabled": true,
+      "hero": {
+        "title": "",
+        "eyebrow": "",
+        "subtitle": "",
+        "bannerImage": ""
+      },
       "slug": "new_section",
       "type": "iframe",
-      "placement": "homepage",
+      "content": {
+        "cards": [],
+        "title": "asdasdasd",
+        "eyebrow": "Assad"
+      },
+      "enabled": true,
       "iframeUrl": "https://brightpeak-energy.comprehensive.voltflo.ie",
+      "placement": "homepage"
+    },
+    {
       "hero": {
-        "eyebrow": "",
-        "title": "",
+        "title": "Roofing",
+        "eyebrow": "Roofing eyebrow",
         "subtitle": "",
         "bannerImage": ""
       },
-      "content": {
-        "eyebrow": "Assad",
-        "title": "asdasdasd",
-        "cards": []
-      }
-    },
-    {
-      "enabled": false,
       "slug": "roofing",
       "type": "section",
-      "placement": "page",
-      "iframeUrl": "https://www.google.com",
-      "hero": {
-        "eyebrow": "Roofing eyebrow",
-        "title": "Roofing",
-        "subtitle": "",
-        "bannerImage": ""
-      },
       "content": {
-        "eyebrow": "",
+        "cards": [],
         "title": "",
-        "cards": []
-      }
+        "eyebrow": ""
+      },
+      "enabled": false,
+      "iframeUrl": "https://www.google.com",
+      "placement": "page"
     },
     {
-      "enabled": false,
-      "slug": "special-offer",
-      "type": "image",
-      "placement": "homepage",
-      "iframeUrl": "",
-      "imageUrl": "/images/special-offer.webp",
       "hero": {
-        "eyebrow": "",
         "title": "Special Offer",
+        "eyebrow": "",
         "subtitle": "",
         "bannerImage": ""
       },
+      "slug": "special-offer",
+      "type": "image",
       "content": {
-        "eyebrow": "",
+        "cards": [],
         "title": "",
-        "cards": []
-      }
+        "eyebrow": ""
+      },
+      "enabled": false,
+      "imageUrl": "/images/special-offer.webp",
+      "iframeUrl": "",
+      "placement": "homepage"
     }
-  ]
+  ],
+  "enabled": true
 }

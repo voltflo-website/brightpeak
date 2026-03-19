@@ -8,7 +8,7 @@ import { loadPageJson, loadNavFooterData } from "../lib/loadAllHomeData";
 
 export const metadata = generatePageMetadata("/finance");
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 export default function FinancePage() {
   const pageData = loadPageJson("FinancePage.json") as any;

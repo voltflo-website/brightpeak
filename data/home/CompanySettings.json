@@ -1,35 +1,35 @@
 {
-  "companyName": "BrightPeak Energy",
-  "logoSrc": "/images/company-logo.png",
-  "logoAlt": "BrightPeak Energy",
-  "siteUrl": "https://www.brightpeak-energy.com",
-  "copyright": "© 2025 BrightPeak Energy. All rights reserved.",
-  "phone": {
-    "icon": "📞",
-    "label": "+353 1 207 0006",
-    "href": "tel:+35312070006"
-  },
   "email": {
+    "href": "mailto:info@brightpeak-energy.com",
     "icon": "✉️",
-    "label": "info@brightpeak-energy.com",
-    "href": "mailto:info@brightpeak-energy.com"
+    "label": "info@brightpeak-energy.com"
+  },
+  "phone": {
+    "href": "tel:+35312070006",
+    "icon": "📞",
+    "label": "+353 1 207 0006"
   },
   "address": {
+    "city": "Dublin",
     "line1": "123 Main Street",
     "line2": "Suite 23",
-    "city": "Dublin",
     "county": "",
     "country": ""
   },
-  "openingHours": "Mon - Fri: 8am - 5pm",
+  "logoAlt": "BrightPeak Energy",
+  "logoSrc": "/images/company-logo.png",
+  "siteUrl": "https://www.brightpeak-energy.com",
+  "copyright": "© 2025 BrightPeak Energy. All rights reserved.",
+  "companyName": "BrightPeak Energy",
   "socialLinks": [
     {
-      "label": "Facebook",
-      "href": "https://www.facebook.com/brightpeakenergy"
+      "href": "https://www.facebook.com/brightpeakenergy",
+      "label": "Facebook"
     },
     {
-      "label": "YouTube",
-      "href": "https://www.youtube.com/@brightpeakenergy"
+      "href": "https://www.youtube.com/@brightpeakenergy",
+      "label": "YouTube"
     }
-  ]
+  ],
+  "openingHours": "Mon - Fri: 8am - 5pm"
 }

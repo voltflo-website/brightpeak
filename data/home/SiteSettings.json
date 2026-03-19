@@ -1,22 +1,22 @@
 {
   "font": "League Spartan",
-  "borderRadius": 3,
-  "voltfloCalculatorUrl": "https://brightpeak-energy.comprehensive.voltflo.ie",
-  "contactForm": "https://brightpeak-energy.form.voltflo.ie",
   "gtmId": "GTM-5Q28W67M",
-  "primaryColor": "#0042aa",
-  "primaryDark": "#002e7a",
   "accentColor": "#f5ec00",
+  "contactForm": "https://brightpeak-energy.form.voltflo.ie",
+  "primaryDark": "#002e7a",
+  "borderRadius": 3,
+  "primaryColor": "#0042aa",
   "bannerOverlay": "#0042aa",
   "quoteButtonColor": "#00ae00",
   "contactButtonColor": "#002e7a",
   "emailNotifications": {
     "enabled": false,
+    "fromName": "BrightPeak Energy",
     "smtpHost": "",
     "smtpPort": 587,
     "smtpUser": "",
-    "notifyEmail": "",
     "fromEmail": "",
-    "fromName": "BrightPeak Energy"
-  }
+    "notifyEmail": ""
+  },
+  "voltfloCalculatorUrl": "https://brightpeak-energy.comprehensive.voltflo.ie"
 }

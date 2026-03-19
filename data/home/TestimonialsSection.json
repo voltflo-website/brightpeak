@@ -1,134 +1,134 @@
 {
-  "enabled": true,
-  "ratingLabel": "4.5 Rating",
-  "ratingStars": "★★★★★",
-  "quoteMark": "\"",
+  "cta": {
+    "href": "https://www.google.com/search?q=BrightPeak+Energy+Reviews",
+    "label": "See All Reviews →"
+  },
   "title": "Don't Just Take Our Word For It",
-  "subtitle": "Over 1,000 happy customers across Ireland — here's what they have to say about working with us!",
   "groups": [
     {
-      "label": "Homeowners",
       "tone": "default",
       "items": [
         {
-          "company": "",
+          "role": "Dublin",
           "quote": "Professional service from beginning to end. The team at BrightPeak were knowledgeable, courteous, and completed the installation to the highest standard. Our electricity bills have dropped significantly and we couldn't be happier with the results.",
           "author": "Miriam Murphy",
-          "role": "Dublin",
           "avatar": "M",
-          "variant": "residential",
-          "images": []
+          "images": [],
+          "company": "",
+          "variant": "residential"
         },
         {
-          "company": "",
+          "role": "Dublin",
           "quote": "I couldn't recommend BrightPeak Energy highly enough. From the initial consultation to the final installation, everything was handled professionally. The team explained every step of the process and the system has been performing brilliantly since day one.",
           "author": "Enda Collins",
-          "role": "Dublin",
           "avatar": "E",
-          "variant": "residential",
-          "images": []
+          "images": [],
+          "company": "",
+          "variant": "residential"
         },
         {
-          "company": "",
+          "role": "Dublin",
           "quote": "The BrightPeak Energy team were amazing from start to finish. They designed a system perfectly suited to our home and energy needs. The installation was completed quickly and cleanly, and the follow-up support has been excellent.",
           "author": "Carol Dalton",
-          "role": "Dublin",
           "avatar": "C",
-          "variant": "residential",
-          "images": []
+          "images": [],
+          "company": "",
+          "variant": "residential"
         },
         {
-          "company": "",
+          "role": "Dublin",
           "quote": "We can only speak in the highest possible terms about the service we received from BrightPeak Energy. The entire process from quotation to installation was seamless. The team were professional, punctual, and left our property spotless.",
           "author": "Patrick J Cusack",
-          "role": "Dublin",
           "avatar": "P",
-          "variant": "residential",
-          "images": []
+          "images": [],
+          "company": "",
+          "variant": "residential"
         },
         {
-          "company": "",
+          "role": "Dublin",
           "quote": "Installed a 6.3 kWh system on my house. The whole process was smooth and professional. The team were friendly and efficient, and the system has been generating more energy than expected. Very happy with the results.",
           "author": "Derek Boyle",
-          "role": "Dublin",
           "avatar": "D",
-          "variant": "residential",
-          "images": []
+          "images": [],
+          "company": "",
+          "variant": "residential"
         },
         {
-          "company": "",
+          "role": "Dublin",
           "quote": "One of the best contractors I've dealt with. BrightPeak Energy delivered exactly what was promised, on time and on budget. Their expertise and professionalism set them apart from other companies I had spoken to.",
           "author": "Tom Farrell",
-          "role": "Dublin",
           "avatar": "T",
-          "variant": "residential",
-          "images": []
+          "images": [],
+          "company": "",
+          "variant": "residential"
         },
         {
-          "company": "",
+          "role": "Dublin",
           "quote": "Everyone at BrightPeak was fantastic. From the office staff to the installation crew, each person was helpful, knowledgeable and professional. The system is working brilliantly and we're already seeing significant savings on our energy bills.",
           "author": "Tom Johnson",
-          "role": "Dublin",
           "avatar": "T",
-          "variant": "residential",
-          "images": []
+          "images": [],
+          "company": "",
+          "variant": "residential"
         },
         {
-          "company": "",
+          "role": "Dublin",
           "quote": "BrightPeak Energy team did a really excellent job on our solar panel installation. They were professional, tidy, and completed the work faster than expected. The system has been performing flawlessly and we're delighted with the savings.",
           "author": "Eugene Hughes",
-          "role": "Dublin",
           "avatar": "E",
-          "variant": "residential",
-          "images": []
+          "images": [],
+          "company": "",
+          "variant": "residential"
         },
         {
-          "company": "",
+          "role": "Dublin",
           "quote": "Team BrightPeak Energy deserve 10 stars. From the initial survey to the final handover, everything was handled with the utmost professionalism. The installation team were courteous, efficient and left everything spotless. Highly recommend to anyone considering solar.",
           "author": "D Judge",
-          "role": "Dublin",
           "avatar": "D",
-          "variant": "residential",
-          "images": []
+          "images": [],
+          "company": "",
+          "variant": "residential"
         }
-      ]
+      ],
+      "label": "Homeowners"
     },
     {
-      "label": "More Reviews",
       "tone": "aqua",
       "items": [
         {
-          "company": "",
+          "role": "Dublin",
           "quote": "Fantastic experience from start to finish. The team at BrightPeak made the whole process easy and stress-free. Our solar panels are generating great returns and we're very happy with our decision.",
           "author": "Sarah O'Brien",
-          "role": "Dublin",
           "avatar": "S",
-          "variant": "residential",
-          "images": []
+          "images": [],
+          "company": "",
+          "variant": "residential"
         },
         {
-          "company": "",
+          "role": "Dublin",
           "quote": "Brilliant service all round. BrightPeak Energy were recommended to us by a neighbour and they didn't disappoint. Professional, reliable, and great value for money.",
           "author": "Michael Doyle",
-          "role": "Dublin",
           "avatar": "M",
-          "variant": "residential",
-          "images": []
+          "images": [],
+          "company": "",
+          "variant": "residential"
         },
         {
-          "company": "",
+          "role": "Dublin",
           "quote": "We had solar panels and a battery system installed by BrightPeak. The team were excellent — clean, professional and very knowledgeable. We're already seeing major savings on our electricity bills.",
           "author": "Aoife Kelly",
-          "role": "Dublin",
           "avatar": "A",
-          "variant": "residential",
-          "images": []
+          "images": [],
+          "company": "",
+          "variant": "residential"
         }
-      ]
+      ],
+      "label": "More Reviews"
     }
   ],
-  "cta": {
-    "label": "See All Reviews →",
-    "href": "https://www.google.com/search?q=BrightPeak+Energy+Reviews"
-  }
+  "enabled": true,
+  "subtitle": "Over 1,000 happy customers across Ireland — here's what they have to say about working with us!",
+  "quoteMark": "\"",
+  "ratingLabel": "4.5 Rating",
+  "ratingStars": "★★★★★"
 }

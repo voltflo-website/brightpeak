@@ -1,14 +1,5 @@
 {
-  "enabled": true,
-  "finalCtaLogo": {
-    "enabled": false,
-    "image": "/images/company-logo.png",
-    "alt": "BrightPeak Energy",
-    "name": "BrightPeak Energy",
-    "role": "Est. 2006"
-  },
   "title": "Ready to Start Saving?",
-  "subtitle": "Over 2,800 happy homes and businesses already have. Grab your free quote — it only takes a minute and there's zero obligation. We'll handle the rest!",
   "buttons": [
     {
       "label": "Get a Free Quote",
@@ -18,5 +9,14 @@
       "label": "Chat With Us",
       "variant": "outline"
     }
-  ]
+  ],
+  "enabled": true,
+  "subtitle": "Over 2,800 happy homes and businesses already have. Grab your free quote — it only takes a minute and there's zero obligation. We'll handle the rest!",
+  "finalCtaLogo": {
+    "alt": "BrightPeak Energy",
+    "name": "BrightPeak Energy",
+    "role": "Est. 2006",
+    "image": "/images/company-logo.png",
+    "enabled": false
+  }
 }
