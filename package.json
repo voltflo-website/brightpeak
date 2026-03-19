@@ -13,11 +13,11 @@
   },
   "dependencies": {
     "@sendgrid/mail": "^8.1.6",
-    "@tiptap/extension-link": "^2.27.2",
-    "@tiptap/extension-underline": "^2.27.2",
-    "@tiptap/pm": "^2.27.2",
-    "@tiptap/react": "^2.27.2",
-    "@tiptap/starter-kit": "^2.27.2",
+    "@tiptap/extension-link": "2.11.5",
+    "@tiptap/extension-underline": "2.11.5",
+    "@tiptap/pm": "2.11.5",
+    "@tiptap/react": "2.11.5",
+    "@tiptap/starter-kit": "2.11.5",
     "next": "^16.1.6",
     "next-themes": "^0.4.6",
     "pg": "^8.20.0",
@@ -26,19 +26,14 @@
     "sharp": "^0.34.5"
   },
   "devDependencies": {
-    "@replit/vite-plugin-cartographer": "*",
-    "@replit/vite-plugin-dev-banner": "*",
-    "@replit/vite-plugin-runtime-error-modal": "*",
     "@tailwindcss/postcss": "^4.2.1",
     "@types/node": "^20.19.33",
     "@types/pg": "^8.18.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "*",
     "eslint": "^9.39.3",
     "eslint-config-next": "^16.1.6",
     "tailwindcss": "^4.2.1",
-    "typescript": "^5.9.3",
-    "vite": "*"
+    "typescript": "^5.9.3"
   }
 }
