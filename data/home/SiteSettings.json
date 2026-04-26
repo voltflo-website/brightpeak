@@ -2,7 +2,7 @@
   "font": "League Spartan",
   "gtmId": "GTM-5Q28W67M",
   "accentColor": "#f5ec00",
-  "contactForm": "https://brightpeak-energy.form.voltflo.ie",
+  "contactForm": "https://brightpeak-energy.staging.form.voltflo.ie",
   "primaryDark": "#002e7a",
   "borderRadius": 3,
   "primaryColor": "#0042aa",
@@ -18,5 +18,5 @@
     "fromEmail": "",
     "notifyEmail": ""
   },
-  "voltfloCalculatorUrl": "brightpeak-energy.staging.comprehensive.voltflo.ie"
+  "voltfloCalculatorUrl": "https://brightpeak-energy.staging.comprehensive.voltflo.ie"
 }
