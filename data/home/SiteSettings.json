@@ -18,5 +18,5 @@
     "fromEmail": "",
     "notifyEmail": ""
   },
-  "voltfloCalculatorUrl": "brightpeak-energy.staging.comprehensive.voltflo.ie"
+  "voltfloCalculatorUrl": "https://brightpeak-energy.staging.comprehensive.voltflo.ie"
 }
