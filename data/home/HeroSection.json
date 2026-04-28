@@ -45,7 +45,7 @@
   "heroLayout": "diagonal",
   "subheading": "We are your one-stop-shop in Dublin for advanced clean energy solutions, including Solar panels, EV Chargers, Geothermal heat pumps, and Air-to-water heat pumps.",
   "scrollLabel": "Explore",
-  "showEyebrow": true,
+  "showEyebrow": false,
   "eyebrowColor": "#f5ec00",
   "mobileLayout": "fullscreen",
   "specialBadge": {
@@ -56,7 +56,7 @@
   "headlineLines": [
     "Power Your Home",
     "With Solar!",
-    "Save Up To 70% On Energy Bills"
+    "Save Up To 70%"
   ],
   "heroAlignment": "center",
   "headlineColors": {
@@ -71,9 +71,9 @@
     "line1Mobile": "2.5",
     "line2Mobile": "2.5",
     "line3Mobile": "2.5",
-    "line1Desktop": "4",
-    "line2Desktop": "4",
-    "line3Desktop": "3"
+    "line1Desktop": "3",
+    "line2Desktop": "3",
+    "line3Desktop": "2.5"
   },
   "wordWrapHeadlines": true,
   "backgroundImageEnabled": true
